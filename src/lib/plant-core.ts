@@ -276,7 +276,7 @@ export function habitSignals(r: Reading, b: Baseline): Record<Habit, boolean> {
 }
 
 /** Count a sip: one celebration per cooldown window. Mutates s. */
-function countDrink(s* PlantState, at: number, events: PlantEvent[]) {
+function countDrink(s: PlantState, at: number, events: PlantEvent[]) {
   events.push(event("drink", at));
   s.drinkHoldMs = 0;
   s.lastDrinkAt = at;
@@ -304,9 +304,23 @@ export function moodLabel(mood: number) {
   return "basically a stick";
 }
 
-export function tick(state: PlantState, reading: Reading, dtMs: number, baseline: Baseline) {
+/**
+ * Advance the plant by dtMs of plant time.
+ * Returns the new state plus any events the UI should react to.
+ */
+export function tick(
+  state: PlantState,
+  reading: Reading,
+  dtMs: number,
+  baseline: Baseline,
+): { state: PlantState; events: PlantEvent[] } {
+  const events: PlantEvent[] = [];
   const s: PlantState = { ...state, lastNagAt: { ...state.lastNagAt } };
   const at = reading.at;
+
+  // Screen time runs whether or not you are in frame. That is the whole point.
+  s.screenMs += dtMs;
+
   if (!reading.faceVisible) {
     s.awayMs += dtMs;
     if (s.awayMs >= RULES.awayMs && canNag(s, "away", at)) {
@@ -322,8 +336,12 @@ export function tick(state: PlantState, reading: Reading, dtMs: number, baseline
       events.push(event("back", at));
       s.mood += RULES.backBoost;
     }
+
+    // Drinking: a held signal, not a single frame, so a yawn cannot fool it.
     if (isDrink(reading, baseline)) s.drinkHoldMs += dtMs;
     else s.drinkHoldMs = 0;
+
+    // Only counts once Gerald has nagged about thirst and no sip has answered it yet.
     const thirstNagOpen = (s.lastNagAt.thirst ?? -Infinity) > s.lastDrinkAt;
     if (
       thirstNagOpen &&
@@ -334,6 +352,84 @@ export function tick(state: PlantState, reading: Reading, dtMs: number, baseline
     } else {
       s.dryMs += dtMs;
     }
+
+    const hs = habitSignals(reading, baseline);
+    s.habitMs = { ...s.habitMs };
+    s.habitOkMs = { ...s.habitOkMs };
+    s.habitNagged = { ...s.habitNagged };
+    for (const h of HABITS) {
+      if (hs[h]) {
+        s.habitMs[h] = (s.habitMs[h] ?? 0) + dtMs;
+        s.habitOkMs[h] = 0;
+        if ((s.habitMs[h] ?? 0) >= RULES.habitMs[h] && canNag(s, h, at)) {
+          events.push(event(h, at));
+          s.lastNagAt[h] = at;
+          s.habitNagged[h] = true;
+          s.mood -= RULES.habitHit;
+        }
+      } else {
+        s.habitMs[h] = 0;
+        s.habitOkMs[h] = (s.habitOkMs[h] ?? 0) + dtMs;
+        // a blink ends a stare at once; everything else must stop for a moment
+        const okFor = h === "stare" ? 0 : RULES.habitOkMs;
+        if (s.habitNagged[h] && (s.habitOkMs[h] ?? 0) >= okFor) {
+          s.habitNagged[h] = false;
+          events.push({ kind: "fixed", at, of: h });
+          s.mood += RULES.fixedBoost / 2;
+        }
+      }
+    }
+
+    if (isSlouch(reading, baseline)) {
+      s.slouchMs += dtMs;
+      s.uprightMs = 0;
+    } else {
+      s.slouchMs = 0;
+      s.uprightMs += dtMs;
+      if (s.slouchNagged && s.uprightMs >= RULES.uprightConfirmMs) {
+        s.slouchNagged = false;
+        events.push({ kind: "fixed", at, of: "slouch" });
+        s.mood += RULES.fixedBoost;
+      }
+      s.mood += (dtMs / 60_000) * RULES.uprightRecoveryPerMin;
+    }
   }
+
+  // Slouch and thirst timers keep growing after a nag, so an ongoing slouch
+  // earns a fresh, increasingly unhinged line every cooldown window instead
+  // of the plant silently forgiving you.
+  if (s.slouchMs >= RULES.slouchMs && canNag(s, "slouch", at)) {
+    events.push(event("slouch", at));
+    s.lastNagAt.slouch = at;
+    s.mood -= RULES.slouchHit;
+    s.slouchCount += 1;
+    s.slouchNagged = true;
+    s.drinkStreak = 0;
+  }
+
+  if (s.dryMs >= RULES.thirstMs && canNag(s, "thirst", at)) {
+    events.push(event("thirst", at));
+    s.lastNagAt.thirst = at;
+    s.mood -= RULES.thirstHit;
+    s.drinkStreak = 0;
+  }
+
+  if (s.screenMs >= RULES.screenMs && canNag(s, "screen", at)) {
+    events.push(event("screen", at));
+    s.lastNagAt.screen = at;
+    s.mood -= RULES.screenHit;
+    s.screenMs = 0;
+  }
+
+  s.mood = clamp(s.mood, RULES.moodMin, RULES.moodMax);
+
+  if (at - s.lastTrailAt >= RULES.trailEveryMs) {
+    s.trail = [
+      ...s.trail,
+      { at, mood: s.mood, drinks: s.drinkCount, slouches: s.slouchCount },
+    ].slice(-RULES.trailMax);
+    s.lastTrailAt = at;
+  }
+
   return { state: s, events };
 }
