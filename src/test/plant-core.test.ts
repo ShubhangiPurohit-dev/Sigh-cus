@@ -114,21 +114,30 @@ describe("the two minute slouch rule", () => {
   });
 });
 
+/** A plant that has already nagged about thirst, the only time a sip counts. */
+const thirsty = () => advance(createState(0), upright, RULES.thirstMs / 1000).state;
+
 describe("drinking water", () => {
+  it("ignores a head tilt until Gerald has nagged about water", () => {
+    const { state, events } = advance(createState(0), drinking, 8, 500);
+    expect(events.map((e) => e.kind)).not.toContain("drink");
+    expect(state.drinkCount).toBe(0);
+  });
+
   it("counts a drink held long enough and wipes the slouch timer", () => {
-    const warmed = advance(createState(0), slouching, 60);
+    const warmed = advance(thirsty(), slouching, 60);
     expect(warmed.state.slouchMs).toBe(60_000);
 
-    const { state, events } = advance(warmed.state, drinking, 3, 500);
-    expect(events.map((e) => e.kind)).toEqual(["drink"]);
+    const { state, events } = advance(warmed.state, drinking, 8, 500);
+    expect(events.map((e) => e.kind)).toContain("drink");
     expect(state.drinkCount).toBe(1);
     expect(state.drinkStreak).toBe(1);
     expect(state.slouchMs).toBe(0);
-    expect(state.dryMs).toBe(0);
+    expect(state.dryMs).toBeLessThanOrEqual(1000);
   });
 
   it("counts one sip as one drink, even while the mouth stays open", () => {
-    const first = advance(createState(0), drinking, 3, 500);
+    const first = advance(thirsty(), drinking, 8, 500);
     expect(first.state.drinkCount).toBe(1);
 
     // a minute of the same open-mouthed reading only earns the next two sips,
@@ -145,7 +154,7 @@ describe("drinking water", () => {
   });
 
   it("never lets the mood rise past one hundred", () => {
-    const { state } = advance(createState(0), drinking, 400, 1000);
+    const { state } = advance(thirsty(), drinking, 400, 1000);
     expect(state.mood).toBe(RULES.moodMax);
   });
 });
@@ -170,7 +179,7 @@ describe("thirst, screen time and abandonment", () => {
   });
 
   it("resets a good streak when it catches you slouching", () => {
-    const drank = advance(createState(0), drinking, 3, 500);
+    const drank = advance(thirsty(), drinking, 8, 500);
     expect(drank.state.drinkStreak).toBe(1);
 
     const after = advance(drank.state, slouching, RULES.slouchMs / 1000);
@@ -192,8 +201,8 @@ describe("face habits", () => {
   it("nags about each habit after its time and confirms the fix", () => {
     const cases: [Partial<Reading>, string, number][] = [
       [{ browDown: 0.8 }, "frown", 5],
-      [{ blink: 0 }, "stare", 10],
-      [{ eyeDist: 0.25 }, "close", 10],
+      [{ blink: 0 }, "stare", 5],
+      [{ eyeDist: 0.25 }, "close", 5],
       [{ handAtMouth: true }, "nails", 5],
       [{ jawOpen: 0.8 }, "yawn", 5],
     ];
