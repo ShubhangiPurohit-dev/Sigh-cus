@@ -13,3 +13,4 @@
 - Plant expressions use existing event pulses and mood in the Plant component, with reduced-motion-aware CSS; why: visual reactions stay synchronized without extra AI or voice calls.
 - Camera blink observations are latched in timestamped readings for the slower habit timer; why: short blinks must reset staring even between timer ticks.
 - Phone-use monitoring infers downward gaze or head-down posture supported by a hand below the face, without a slouch veto; why: phone posture overlaps slouch and this client-side tracker does not recognize phone objects.
+- Demo entry and controls are gated after hydration to local hosts and Lovable editor preview hosts; why: the same deployed code must keep simulated actions off public sites without hydration mismatches.
