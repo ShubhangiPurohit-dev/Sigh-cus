@@ -1,1 +1,13 @@
-PCEtLSBMT1ZBQkxFOkJFR0lOIC0tPgo+IFshSU1QT1JUQU5UXQo+IFRoaXMgcHJvamVjdCBpcyBjb25uZWN0ZWQgdG8gW0xvdmFibGVdKGh0dHBzOi8vbG92YWJsZS5kZXYpLiBBdm9pZCByZXdyaXRpbmcKPiBwdWJsaXNoZWQgZ2l0IGhpc3Rvcnkg4oCUIGZvcmNlIHB1c2hpbmcsIG9yIHJlYmFzaW5nL2FtZW5kaW5nL3NxdWFzaGluZyBjb21taXRzCj4gdGhhdCBhcmUgYWxyZWFkeSBwdXNoZWQg4oCUIGFzIGl0IHJld3JpdGVzIGhpc3Rvcnkgb24gTG92YWJsZSdzIHNpZGUgYW5kIHRoZQo+IHVzZXIgd2lsbCBsaWtlbHkgbG9zZSB0aGVpciBwcm9qZWN0IGhpc3RvcnkuCj4KPiBDb21taXRzIHlvdSBwdXNoIHRvIHRoZSBjb25uZWN0ZWQgYnJhbmNoIHN5bmMgYmFjayB0byBMb3ZhYmxlIGFuZCBzaG93IHVwIGluCj4gdGhlIGVkaXRvciwgc28ga2VlcCB0aGUgYnJhbmNoIGluIGEgd29ya2luZyBzdGF0ZS4KPCEtLSBMT1ZBQkxFOkVORCAtLT4KCi0gQUkgY2FsbHMgZ28gdGhyb3VnaCBhIGNyZWF0ZVNlcnZlckZuIHRoYXQgcmVhZHMgTE9WQUJMRV9BUElfS0VZIGluc2lkZSB0aGUgaGFuZGxlciAoc3JjL2xpYi9yZW1peC5mdW5jdGlvbnMudHMpOyB3aHk6IGtleSBtdXN0IHN0YXkgc2VydmVyLXNpZGUuCi0gUGxhbnQgZXhwcmVzc2lvbnMgdXNlIGV4aXN0aW5nIGV2ZW50IHB1bHNlcyBhbmQgbW9vZCBpbiB0aGUgUGxhbnQgY29tcG9uZW50LCB3aXRoIHJlZHVjZWQtbW90aW9uLWF3YXJlIENTUzsgd2h5OiB2aXN1YWwgcmVhY3Rpb25zIHN0YXkgc3luY2hyb25pemVkIHdpdGhvdXQgZXh0cmEgQUkgb3Igdm9pY2UgY2FsbHMuCg==
+<!-- LOVABLE:BEGIN -->
+> [!IMPORTANT]
+> This project is connected to [Lovable](https://lovable.dev). Avoid rewriting
+> published git history — force pushing, or rebasing/amending/squashing commits
+> that are already pushed — as it rewrites history on Lovable's side and the
+> user will likely lose their project history.
+>
+> Commits you push to the connected branch sync back to Lovable and show up in
+> the editor, so keep the branch in a working state.
+<!-- LOVABLE:END -->
+
+- AI calls go through a createServerFn that reads LOVABLE_API_KEY inside the handler (src/lib/remix.functions.ts); why: key must stay server-side.
+- Plant expressions use existing event pulses and mood in the Plant component, with reduced-motion-aware CSS; why: visual reactions stay synchronized without extra AI or voice calls.

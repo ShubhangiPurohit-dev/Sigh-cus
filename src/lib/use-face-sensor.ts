@@ -1,1 +1,248 @@
-aW1wb3J0IHsgdXNlQ2FsbGJhY2ssIHVzZUVmZmVjdCwgdXNlUmVmLCB1c2VTdGF0ZSB9IGZyb20gInJlYWN0IjsKaW1wb3J0IHR5cGUgeyBSZWFkaW5nIH0gZnJvbSAiLi9wbGFudC1jb3JlIjsKCmV4cG9ydCB0eXBlIFNlbnNvclN0YXR1cyA9CiAgfCAiaWRsZSIKICB8ICJsb2FkaW5nIgogIHwgInJ1bm5pbmciCiAgfCAiZGVuaWVkIgogIHwgInVuc3VwcG9ydGVkIgogIHwgImZhaWxlZCI7CgovKioKICogV2ViY2FtIGZhY2UgdHJhY2tpbmcuIE1lZGlhUGlwZSBpcyBsb2FkZWQgb25seSB3aGVuIHRoZSB1c2VyIGFjdHVhbGx5IHN0YXJ0cwogKiB0aGUgY2FtZXJhLCBzbyBub3RoaW5nIGJyb3dzZXItb25seSBpcyBwdWxsZWQgaW50byB0aGUgc2VydmVyIHJlbmRlci4KICovCmV4cG9ydCBmdW5jdGlvbiB1c2VGYWNlU2Vuc29yKG9uUmVhZGluZzogKHJlYWRpbmc6IFJlYWRpbmcpID0+IHZvaWQpIHsKICBjb25zdCB2aWRlb1JlZiA9IHVzZVJlZjxIVE1MVmlkZW9FbGVtZW50IHwgbnVsbD4obnVsbCk7CiAgY29uc3QgbGFuZG1hcmtlclJlZiA9IHVzZVJlZjx7CiAgICBkZXRlY3RGb3JWaWRlbzogKHY6IEhUTUxWaWRlb0VsZW1lbnQsIHQ6IG51bWJlcikgPT4gewogICAgICBmYWNlTGFuZG1hcmtzPzogeyB4OiBudW1iZXI7IHk6IG51bWJlciB9W11bXTsKICAgICAgZmFjZUJsZW5kc2hhcGVzPzogeyBjYXRlZ29yaWVzOiB7IGNhdGVnb3J5TmFtZTogc3RyaW5nOyBzY29yZTogbnVtYmVyIH1bXSB9W107CiAgICB9OwogIH0gfCBudWxsPihudWxsKTsKICBjb25zdCBoYW5kc1JlZiA9IHVzZVJlZjx7CiAgICBkZXRlY3RGb3JWaWRlbzogKHY6IEhUTUxWaWRlb0VsZW1lbnQsIHQ6IG51bWJlcikgPT4geyBsYW5kbWFya3M/OiB7IHg6IG51bWJlcjsgeTogbnVtYmVyIH1bXVtdIH07CiAgfSB8IG51bGw+KG51bGwpOwogIGNvbnN0IGhhbmRBdE1vdXRoUmVmID0gdXNlUmVmKGZhbHNlKTsKICBjb25zdCBoYW5kVGlja1JlZiA9IHVzZVJlZigwKTsKICBjb25zdCBzdHJlYW1SZWYgPSB1c2VSZWY8TWVkaWFTdHJlYW0gfCBudWxsPihudWxsKTsKICBjb25zdCBjYWxsYmFja1JlZiA9IHVzZVJlZihvblJlYWRpbmcpOwogIGNvbnN0IGNhbmNlbFJlZiA9IHVzZVJlZjwoKSA9PiB2b2lkPigoKSA9PiB1bmRlZmluZWQpOwogIGNvbnN0IGZyYW1lV2luUmVmID0gdXNlUmVmPFdpbmRvdyB8IG51bGw+KG51bGwpOwogIC8qKiBSdW4gdGhlIGxvb3Agb24gYW5vdGhlciB2aXNpYmxlIHdpbmRvdyAodGhlIGZsb2F0aW5nIHBsYW50KSBzbyB0cmFja2luZyBrZWVwcyBnb2luZyB3aGlsZSB0aGlzIHRhYiBpcyBoaWRkZW4uICovCiAgY29uc3Qgc2V0RnJhbWVTb3VyY2UgPSB1c2VDYWxsYmFjaygodzogV2luZG93IHwgbnVsbCkgPT4gewogICAgZnJhbWVXaW5SZWYuY3VycmVudCA9IHc7CiAgfSwgW10pOwogIGNvbnN0IGxhc3RBdFJlZiA9IHVzZVJlZigwKTsKICBjb25zdCBbc3RhdHVzLCBzZXRTdGF0dXNdID0gdXNlU3RhdGU8U2Vuc29yU3RhdHVzPigiaWRsZSIpOwogIGNvbnN0IFtlcnJvciwgc2V0RXJyb3JdID0gdXNlU3RhdGU8c3RyaW5nIHwgbnVsbD4obnVsbCk7CgogIGNhbGxiYWNrUmVmLmN1cnJlbnQgPSBvblJlYWRpbmc7CgogIGNvbnN0IHN0b3AgPSB1c2VDYWxsYmFjaygoKSA9PiB7CiAgICBjYW5jZWxSZWYuY3VycmVudCgpOwogICAgc3RyZWFtUmVmLmN1cnJlbnQ/LmdldFRyYWNrcygpLmZvckVhY2goKHQpID0+IHQuc3RvcCgpKTsKICAgIHN0cmVhbVJlZi5jdXJyZW50ID0gbnVsbDsKICAgIHNldFN0YXR1cygiaWRsZSIpOwogIH0sIFtdKTsKCiAgdXNlRWZmZWN0KCgpID0+IHN0b3AsIFtzdG9wXSk7CgogIGNvbnN0IHN0YXJ0ID0gdXNlQ2FsbGJhY2soYXN5bmMgKCkgPT4gewogICAgc2V0RXJyb3IobnVsbCk7CgogICAgaWYgKHR5cGVvZiBuYXZpZ2F0b3IgPT09ICJ1bmRlZmluZWQiIHx8ICFuYXZpZ2F0b3IubWVkaWFEZXZpY2VzPy5nZXRVc2VyTWVkaWEpIHsKICAgICAgc2V0U3RhdHVzKCJ1bnN1cHBvcnRlZCIpOwogICAgICBzZXRFcnJvcigiVGhpcyBicm93c2VyIGNhbm5vdCBvcGVuIGEgY2FtZXJhLiIpOwogICAgICByZXR1cm47CiAgICB9CgogICAgc2V0U3RhdHVzKCJsb2FkaW5nIik7CiAgICBsZXQgc3RyZWFtOiBNZWRpYVN0cmVhbTsKICAgIHRyeSB7CiAgICAgIHN0cmVhbSA9IGF3YWl0IG5hdmlnYXRvci5tZWRpYURldmljZXMuZ2V0VXNlck1lZGlhKHsKICAgICAgICB2aWRlbzogewogICAgICAgICAgd2lkdGg6IHsgaWRlYWw6IDEyODAgfSwKICAgICAgICAgIGhlaWdodDogeyBpZGVhbDogNzIwIH0sCiAgICAgICAgICBhc3BlY3RSYXRpbzogeyBpZGVhbDogMTYgLyA5IH0sCiAgICAgICAgICBmYWNpbmdNb2RlOiAidXNlciIsCiAgICAgICAgfSwKICAgICAgICBhdWRpbzogZmFsc2UsCiAgICAgIH0pOwogICAgfSBjYXRjaCAoZSkgewogICAgICBzZXRTdGF0dXMoImRlbmllZCIpOwogICAgICBzZXRFcnJvcigKICAgICAgICAoZSBhcyBFcnJvcikubmFtZSA9PT0gIk5vdEFsbG93ZWRFcnJvciIKICAgICAgICAgID8gIkNhbWVyYSBhY2Nlc3Mgd2FzIGJsb2NrZWQuIEFsbG93IGl0IGluIHlvdXIgYnJvd3NlciwgdGhlbiB0cnkgYWdhaW4uIgogICAgICAgICAgOiAiTm8gY2FtZXJhIGZvdW5kIG9uIHRoaXMgbWFjaGluZS4iLAogICAgICApOwogICAgICByZXR1cm47CiAgICB9CgogICAgc3RyZWFtUmVmLmN1cnJlbnQgPSBzdHJlYW07CiAgICBjb25zdCB2aWRlbyA9IHZpZGVvUmVmLmN1cnJlbnQ7CiAgICBpZiAoIXZpZGVvKSB7CiAgICAgIHN0b3AoKTsKICAgICAgcmV0dXJuOwogICAgfQogICAgdmlkZW8uc3JjT2JqZWN0ID0gc3RyZWFtOwogICAgYXdhaXQgdmlkZW8ucGxheSgpLmNhdGNoKCgpID0+IHVuZGVmaW5lZCk7CgogICAgdHJ5IHsKICAgICAgY29uc3QgeyBGYWNlTGFuZG1hcmtlciwgRmlsZXNldFJlc29sdmVyIH0gPSBhd2FpdCBpbXBvcnQoIkBtZWRpYXBpcGUvdGFza3MtdmlzaW9uIik7CiAgICAgIGNvbnN0IGZpbGVzZXQgPSBhd2FpdCBGaWxlc2V0UmVzb2x2ZXIuZm9yVmlzaW9uVGFza3MoCiAgICAgICAgImh0dHBzOi8vY2RuLmpzZGVsaXZyLm5ldC9ucG0vQG1lZGlhcGlwZS90YXNrcy12aXNpb25AMS4xLjAvd2FzbSIsCiAgICAgICk7CiAgICAgIGNvbnN0IG1ha2UgPSAoZGVsZWdhdGU6ICJHUFUiIHwgIkNQVSIpID0+CiAgICAgICAgRmFjZUxhbmRtYXJrZXIuY3JlYXRlRnJvbU9wdGlvbnMoZmlsZXNldCwgewogICAgICAgICAgYmFzZU9wdGlvbnM6IHsKICAgICAgICAgICAgbW9kZWxBc3NldFBhdGg6CiAgICAgICAgICAgICAgImh0dHBzOi8vc3RvcmFnZS5nb29nbGVhcGlzLmNvbS9tZWRpYXBpcGUtbW9kZWxzL2ZhY2VfbGFuZG1hcmtlci9mYWNlX2xhbmRtYXJrZXIvZmxvYXQxNi8xL2ZhY2VfbGFuZG1hcmtlci50YXNrIiwKICAgICAgICAgICAgZGVsZWdhdGUsCiAgICAgICAgICB9LAogICAgICAgICAgcnVubmluZ01vZGU6ICJWSURFTyIsCiAgICAgICAgICBudW1GYWNlczogMSwKICAgICAgICAgIG91dHB1dEZhY2VCbGVuZHNoYXBlczogdHJ1ZSwKICAgICAgICB9KTsKICAgICAgdHJ5IHsKICAgICAgICBsYW5kbWFya2VyUmVmLmN1cnJlbnQgPSBhd2FpdCBtYWtlKCJHUFUiKTsKICAgICAgfSBjYXRjaCB7CiAgICAgICAgbGFuZG1hcmtlclJlZi5jdXJyZW50ID0gYXdhaXQgbWFrZSgiQ1BVIik7CiAgICAgIH0KICAgICAgLy8gaGFuZHMgYXJlIG9ubHkgZm9yIG5haWwtYml0aW5nOyBpZiB0aGV5IGZhaWwgdG8gbG9hZCwgZXZlcnl0aGluZyBlbHNlIHN0aWxsIHdvcmtzCiAgICAgIHZvaWQgaW1wb3J0KCJAbWVkaWFwaXBlL3Rhc2tzLXZpc2lvbiIpCiAgICAgICAgLnRoZW4oKHsgSGFuZExhbmRtYXJrZXIgfSkgPT4KICAgICAgICAgIEhhbmRMYW5kbWFya2VyLmNyZWF0ZUZyb21PcHRpb25zKGZpbGVzZXQsIHsKICAgICAgICAgICAgYmFzZU9wdGlvbnM6IHsKICAgICAgICAgICAgICBtb2RlbEFzc2V0UGF0aDoKICAgICAgICAgICAgICAgICJodHRwczovL3N0b3JhZ2UuZ29vZ2xlYXBpcy5jb20vbWVkaWFwaXBlLW1vZGVscy9oYW5kX2xhbmRtYXJrZXIvaGFuZF9sYW5kbWFya2VyL2Zsb2F0MTYvMS9oYW5kX2xhbmRtYXJrZXIudGFzayIsCiAgICAgICAgICAgICAgZGVsZWdhdGU6ICJHUFUiLAogICAgICAgICAgICB9LAogICAgICAgICAgICBydW5uaW5nTW9kZTogIlZJREVPIiwKICAgICAgICAgICAgbnVtSGFuZHM6IDIsCiAgICAgICAgICB9KSwKICAgICAgICApCiAgICAgICAgLnRoZW4oKGgpID0+IHsKICAgICAgICAgIGhhbmRzUmVmLmN1cnJlbnQgPSBoOwogICAgICAgIH0pCiAgICAgICAgLmNhdGNoKCgpID0+IHVuZGVmaW5lZCk7CiAgICB9IGNhdGNoIChlKSB7CiAgICAgIHNldFN0YXR1cygiZmFpbGVkIik7CiAgICAgIHNldEVycm9yKAogICAgICAgIGBDb3VsZCBub3QgbG9hZCB0aGUgZmFjZSB0cmFja2VyICgkeyhlIGFzIEVycm9yKS5tZXNzYWdlfSkuIFlvdSBjYW4gc3RpbGwgcnVuIHRoZSBwbGFudCBpbiBkZW1vIG1vZGUuYCwKICAgICAgKTsKICAgICAgcmV0dXJuOwogICAgfQoKICAgIHNldFN0YXR1cygicnVubmluZyIpOwogICAgdm9pZCB2aWRlb1JlZi5jdXJyZW50Py5wbGF5KCkuY2F0Y2goKCkgPT4gdW5kZWZpbmVkKTsKCiAgICBjb25zdCBsb29wID0gKCkgPT4gewogICAgICBjb25zdCBmdyA9IGZyYW1lV2luUmVmLmN1cnJlbnQ7CiAgICAgIGlmIChmdyAmJiAhZncuY2xvc2VkKSB7CiAgICAgICAgY29uc3QgaWQgPSBmdy5yZXF1ZXN0QW5pbWF0aW9uRnJhbWUobG9vcCk7CiAgICAgICAgY2FuY2VsUmVmLmN1cnJlbnQgPSAoKSA9PiBmdy5jYW5jZWxBbmltYXRpb25GcmFtZShpZCk7CiAgICAgIH0gZWxzZSBpZiAoZG9jdW1lbnQuaGlkZGVuKSB7CiAgICAgICAgLy8gaGlkZGVuIHRhYjogYW5pbWF0aW9uIGZyYW1lcyBzdG9wLCB0aW1lcnMga2VlcCBnb2luZyAodGhyb3R0bGVkKQogICAgICAgIGNvbnN0IGlkID0gd2luZG93LnNldFRpbWVvdXQobG9vcCwgMjAwKTsKICAgICAgICBjYW5jZWxSZWYuY3VycmVudCA9ICgpID0+IHdpbmRvdy5jbGVhclRpbWVvdXQoaWQpOwogICAgICB9IGVsc2UgewogICAgICAgIGNvbnN0IGlkID0gcmVxdWVzdEFuaW1hdGlvbkZyYW1lKGxvb3ApOwogICAgICAgIGNhbmNlbFJlZi5jdXJyZW50ID0gKCkgPT4gY2FuY2VsQW5pbWF0aW9uRnJhbWUoaWQpOwogICAgICB9CiAgICAgIGNvbnN0IHYgPSB2aWRlb1JlZi5jdXJyZW50OwogICAgICBjb25zdCBsbSA9IGxhbmRtYXJrZXJSZWYuY3VycmVudDsKICAgICAgaWYgKCF2IHx8ICFsbSB8fCB2LnJlYWR5U3RhdGUgPCAyKSByZXR1cm47CgogICAgICBjb25zdCBub3cgPSBwZXJmb3JtYW5jZS5ub3coKTsKICAgICAgaWYgKG5vdyAtIGxhc3RBdFJlZi5jdXJyZW50IDwgMjAwKSByZXR1cm47IC8vIH41IHJlYWRpbmdzIGEgc2Vjb25kCiAgICAgIGxhc3RBdFJlZi5jdXJyZW50ID0gbm93OwoKICAgICAgY29uc3QgcmVzdWx0cyA9IGxtLmRldGVjdEZvclZpZGVvKHYsIG5vdyk7CiAgICAgIGNvbnN0IGZhY2UgPSByZXN1bHRzPy5mYWNlTGFuZG1hcmtzPy5bMF07CiAgICAgIGNvbnN0IGF0ID0gRGF0ZS5ub3coKTsKCiAgICAgIGlmICghZmFjZSkgewogICAgICAgIGNhbGxiYWNrUmVmLmN1cnJlbnQoewogICAgICAgICAgYXQsCiAgICAgICAgICBmYWNlVmlzaWJsZTogZmFsc2UsCiAgICAgICAgICBwaXRjaDogMCwKICAgICAgICAgIGZyYW1lWTogMCwKICAgICAgICAgIGV5ZURpc3Q6IDAsCiAgICAgICAgICBtb3V0aEdhcDogMCwKICAgICAgICB9KTsKICAgICAgICByZXR1cm47CiAgICAgIH0KCiAgICAgIC8vIFdvcmsgaW4gcGl4ZWxzOiBtaXhpbmcgYSBub3JtYWxpc2VkIHggd2l0aCBhIG5vcm1hbGlzZWQgeSB3b3VsZCBtYWtlCiAgICAgIC8vIHRoZSBhbmdsZXMgZGVwZW5kIG9uIHRoZSB2aWRlbydzIGFzcGVjdCByYXRpby4KICAgICAgY29uc3QgVyA9IHYudmlkZW9XaWR0aCB8fCA2NDA7CiAgICAgIGNvbnN0IEggPSB2LnZpZGVvSGVpZ2h0IHx8IDQ4MDsKICAgICAgY29uc3QgcHggPSAoaTogbnVtYmVyKSA9PiAoZmFjZVtpXT8ueCA/PyAwKSAqIFc7CiAgICAgIGNvbnN0IHB5ID0gKGk6IG51bWJlcikgPT4gKGZhY2VbaV0/LnkgPz8gMCkgKiBIOwoKICAgICAgY29uc3QgZXllTWlkWSA9IChweSgzMykgKyBweSgxMzMpKSAvIDI7CiAgICAgIGNvbnN0IGV5ZU1pZFggPSAocHgoMzMpICsgcHgoMTMzKSkgLyAyOwogICAgICBjb25zdCBleWVEaXN0ID0gTWF0aC5oeXBvdChweCgxMzMpIC0gcHgoMzMpLCBweSgxMzMpIC0gcHkoMzMpKTsKICAgICAgY29uc3QgbW91dGhHYXAgPSAocHkoMTQpIC0gcHkoMTMpKSAvIChleWVEaXN0IHx8IDEpOwoKICAgICAgY29uc3Qgc2hhcGVzID0gbmV3IE1hcCgKICAgICAgICAocmVzdWx0cy5mYWNlQmxlbmRzaGFwZXM/LlswXT8uY2F0ZWdvcmllcyA/PyBbXSkubWFwKChjKSA9PiBbYy5jYXRlZ29yeU5hbWUsIGMuc2NvcmVdKSwKICAgICAgKTsKICAgICAgY29uc3QgYm90aCA9IChhOiBzdHJpbmcpID0+CiAgICAgICAgKChzaGFwZXMuZ2V0KGAke2F9TGVmdGApID8/IDApICsgKHNoYXBlcy5nZXQoYCR7YX1SaWdodGApID8/IDApKSAvIDI7CgogICAgICAvLyBoYW5kcyBldmVyeSB+MC40IHM6IGlzIGEgZmluZ2VydGlwIGF0IHRoZSBtb3V0aD8KICAgICAgY29uc3QgaGFuZHMgPSBoYW5kc1JlZi5jdXJyZW50OwogICAgICBpZiAoaGFuZHMgJiYgbm93IC0gaGFuZFRpY2tSZWYuY3VycmVudCA+IDQwMCkgewogICAgICAgIGhhbmRUaWNrUmVmLmN1cnJlbnQgPSBub3c7CiAgICAgICAgdHJ5IHsKICAgICAgICAgIGNvbnN0IGhyID0gaGFuZHMuZGV0ZWN0Rm9yVmlkZW8odiwgbm93KTsKICAgICAgICAgIGNvbnN0IG14ID0gKHB4KDEzKSArIHB4KDE0KSkgLyAyOwogICAgICAgICAgY29uc3QgbXkgPSAocHkoMTMpICsgcHkoMTQpKSAvIDI7CiAgICAgICAgICBoYW5kQXRNb3V0aFJlZi5jdXJyZW50ID0gKGhyLmxhbmRtYXJrcyA/PyBbXSkuc29tZSgoaGFuZCkgPT4KICAgICAgICAgICAgWzQsIDgsIDEyLCAxNiwgMjBdLnNvbWUoKGkpID0+IHsKICAgICAgICAgICAgICBjb25zdCBwID0gaGFuZFtpXTsKICAgICAgICAgICAgICByZXR1cm4gcCAmJiBNYXRoLmh5cG90KHAueCAqIFcgLSBteCwgcC55ICogSCAtIG15KSA8IGV5ZURpc3QgKiAwLjk7CiAgICAgICAgICAgIH0pLAogICAgICAgICAgKTsKICAgICAgICB9IGNhdGNoIHsKICAgICAgICAgIGhhbmRBdE1vdXRoUmVmLmN1cnJlbnQgPSBmYWxzZTsKICAgICAgICB9CiAgICAgIH0KCiAgICAgIGNhbGxiYWNrUmVmLmN1cnJlbnQoewogICAgICAgIGF0LAogICAgICAgIGZhY2VWaXNpYmxlOiBleWVEaXN0ID4gOCwKICAgICAgICBwaXRjaDogKHB5KDEpIC0gZXllTWlkWSkgLyAoZXllRGlzdCB8fCAxKSwKICAgICAgICBmcmFtZVk6IGV5ZU1pZFkgLyBILAogICAgICAgIGV5ZURpc3Q6IGV5ZURpc3QgLyBXLAogICAgICAgIG1vdXRoR2FwLAogICAgICAgIGJyb3dEb3duOiBib3RoKCJicm93RG93biIpLAogICAgICAgIHNxdWludDogYm90aCgiZXllU3F1aW50IiksCiAgICAgICAgYmxpbms6IHNoYXBlcy5zaXplID8gTWF0aC5tYXgoc2hhcGVzLmdldCgiZXllQmxpbmtMZWZ0IikgPz8gMCwgc2hhcGVzLmdldCgiZXllQmxpbmtSaWdodCIpID8/IDApIDogdW5kZWZpbmVkLAogICAgICAgIGphd09wZW46IHNoYXBlcy5nZXQoImphd09wZW4iKSwKICAgICAgICBsb29rRG93bjogYm90aCgiZXllTG9va0Rvd24iKSwKICAgICAgICBoYW5kQXRNb3V0aDogaGFuZEF0TW91dGhSZWYuY3VycmVudCwKICAgICAgfSk7CiAgICB9OwogICAgbG9vcCgpOwogIH0sIFtzdG9wXSk7CgogIC8qKiBTbWFsbCBKUEVHIG9mIHRoZSBjdXJyZW50IGZyYW1lLCBmb3IgdGhlIG9uLWRlbWFuZCBwb3N0dXJlIGp1ZGdlbWVudC4gKi8KICBjb25zdCBjYXB0dXJlRnJhbWUgPSB1c2VDYWxsYmFjaygoKTogc3RyaW5nIHwgbnVsbCA9PiB7CiAgICBjb25zdCB2ID0gdmlkZW9SZWYuY3VycmVudDsKICAgIGlmICghdiB8fCB2LnJlYWR5U3RhdGUgPCAyKSByZXR1cm4gbnVsbDsKICAgIGNvbnN0IGMgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KCJjYW52YXMiKTsKICAgIGNvbnN0IHNjYWxlID0gTWF0aC5taW4oMSwgNTEyIC8gTWF0aC5tYXgodi52aWRlb1dpZHRoLCB2LnZpZGVvSGVpZ2h0KSk7CiAgICBjLndpZHRoID0gTWF0aC5yb3VuZCh2LnZpZGVvV2lkdGggKiBzY2FsZSk7CiAgICBjLmhlaWdodCA9IE1hdGgucm91bmQodi52aWRlb0hlaWdodCAqIHNjYWxlKTsKICAgIGNvbnN0IGN0eCA9IGMuZ2V0Q29udGV4dCgiMmQiKTsKICAgIGlmICghY3R4KSByZXR1cm4gbnVsbDsKICAgIGN0eC5kcmF3SW1hZ2UodiwgMCwgMCwgYy53aWR0aCwgYy5oZWlnaHQpOwogICAgcmV0dXJuIGMudG9EYXRhVVJMKCJpbWFnZS9qcGVnIiwgMC43KTsKICB9LCBbXSk7CgogIHJldHVybiB7IHZpZGVvUmVmLCBzdGFydCwgc3RvcCwgc3RhdHVzLCBlcnJvciwgY2FwdHVyZUZyYW1lLCBzZXRGcmFtZVNvdXJjZSB9Owp9Cg==
+import { useCallback, useEffect, useRef, useState } from "react";
+import type { Reading } from "./plant-core";
+
+export type SensorStatus =
+  | "idle"
+  | "loading"
+  | "running"
+  | "denied"
+  | "unsupported"
+  | "failed";
+
+/**
+ * Webcam face tracking. MediaPipe is loaded only when the user actually starts
+ * the camera, so nothing browser-only is pulled into the server render.
+ */
+export function useFaceSensor(onReading: (reading: Reading) => void) {
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+  const landmarkerRef = useRef<{
+    detectForVideo: (v: HTMLVideoElement, t: number) => {
+      faceLandmarks?: { x: number; y: number }[][];
+      faceBlendshapes?: { categories: { categoryName: string; score: number }[] }[];
+    };
+  } | null>(null);
+  const handsRef = useRef<{
+    detectForVideo: (v: HTMLVideoElement, t: number) => { landmarks?: { x: number; y: number }[][] };
+  } | null>(null);
+  const handAtMouthRef = useRef(false);
+  const handTickRef = useRef(0);
+  const streamRef = useRef<MediaStream | null>(null);
+  const callbackRef = useRef(onReading);
+  const cancelRef = useRef<() => void>(() => undefined);
+  const frameWinRef = useRef<Window | null>(null);
+  /** Run the loop on another visible window (the floating plant) so tracking keeps going while this tab is hidden. */
+  const setFrameSource = useCallback((w: Window | null) => {
+    frameWinRef.current = w;
+  }, []);
+  const lastAtRef = useRef(0);
+  const [status, setStatus] = useState<SensorStatus>("idle");
+  const [error, setError] = useState<string | null>(null);
+
+  callbackRef.current = onReading;
+
+  const stop = useCallback(() => {
+    cancelRef.current();
+    streamRef.current?.getTracks().forEach((t) => t.stop());
+    streamRef.current = null;
+    setStatus("idle");
+  }, []);
+
+  useEffect(() => stop, [stop]);
+
+  const start = useCallback(async () => {
+    setError(null);
+
+    if (typeof navigator === "undefined" || !navigator.mediaDevices?.getUserMedia) {
+      setStatus("unsupported");
+      setError("This browser cannot open a camera.");
+      return;
+    }
+
+    setStatus("loading");
+    let stream: MediaStream;
+    try {
+      stream = await navigator.mediaDevices.getUserMedia({
+        video: {
+          width: { ideal: 1280 },
+          height: { ideal: 720 },
+          aspectRatio: { ideal: 16 / 9 },
+          facingMode: "user",
+        },
+        audio: false,
+      });
+    } catch (e) {
+      setStatus("denied");
+      setError(
+        (e as Error).name === "NotAllowedError"
+          ? "Camera access was blocked. Allow it in your browser, then try again."
+          : "No camera found on this machine.",
+      );
+      return;
+    }
+
+    streamRef.current = stream;
+    const video = videoRef.current;
+    if (!video) {
+      stop();
+      return;
+    }
+    video.srcObject = stream;
+    await video.play().catch(() => undefined);
+
+    try {
+      const { FaceLandmarker, FilesetResolver } = await import("@mediapipe/tasks-vision");
+      const fileset = await FilesetResolver.forVisionTasks(
+        "https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@1.1.0/wasm",
+      );
+      const make = (delegate: "GPU" | "CPU") =>
+        FaceLandmarker.createFromOptions(fileset, {
+          baseOptions: {
+            modelAssetPath:
+              "https://storage.googleapis.com/mediapipe-models/face_landmarker/face_landmarker/float16/1/face_landmarker.task",
+            delegate,
+          },
+          runningMode: "VIDEO",
+          numFaces: 1,
+          outputFaceBlendshapes: true,
+        });
+      try {
+        landmarkerRef.current = await make("GPU");
+      } catch {
+        landmarkerRef.current = await make("CPU");
+      }
+      // hands are only for nail-biting; if they fail to load, everything else still works
+      void import("@mediapipe/tasks-vision")
+        .then(({ HandLandmarker }) =>
+          HandLandmarker.createFromOptions(fileset, {
+            baseOptions: {
+              modelAssetPath:
+                "https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task",
+              delegate: "GPU",
+            },
+            runningMode: "VIDEO",
+            numHands: 2,
+          }),
+        )
+        .then((h) => {
+          handsRef.current = h;
+        })
+        .catch(() => undefined);
+    } catch (e) {
+      setStatus("failed");
+      setError(
+        `Could not load the face tracker (${(e as Error).message}). You can still run the plant in demo mode.`,
+      );
+      return;
+    }
+
+    setStatus("running");
+    void videoRef.current?.play().catch(() => undefined);
+
+    const loop = () => {
+      const fw = frameWinRef.current;
+      if (fw && !fw.closed) {
+        const id = fw.requestAnimationFrame(loop);
+        cancelRef.current = () => fw.cancelAnimationFrame(id);
+      } else if (document.hidden) {
+        // hidden tab: animation frames stop, timers keep going (throttled)
+        const id = window.setTimeout(loop, 200);
+        cancelRef.current = () => window.clearTimeout(id);
+      } else {
+        const id = requestAnimationFrame(loop);
+        cancelRef.current = () => cancelAnimationFrame(id);
+      }
+      const v = videoRef.current;
+      const lm = landmarkerRef.current;
+      if (!v || !lm || v.readyState < 2) return;
+
+      const now = performance.now();
+      if (now - lastAtRef.current < 200) return; // ~5 readings a second
+      lastAtRef.current = now;
+
+      const results = lm.detectForVideo(v, now);
+      const face = results?.faceLandmarks?.[0];
+      const at = Date.now();
+
+      if (!face) {
+        callbackRef.current({
+          at,
+          faceVisible: false,
+          pitch: 0,
+          frameY: 0,
+          eyeDist: 0,
+          mouthGap: 0,
+        });
+        return;
+      }
+
+      // Work in pixels: mixing a normalised x with a normalised y would make
+      // the angles depend on the video's aspect ratio.
+      const W = v.videoWidth || 640;
+      const H = v.videoHeight || 480;
+      const px = (i: number) => (face[i]?.x ?? 0) * W;
+      const py = (i: number) => (face[i]?.y ?? 0) * H;
+
+      const eyeMidY = (py(33) + py(133)) / 2;
+      const eyeMidX = (px(33) + px(133)) / 2;
+      const eyeDist = Math.hypot(px(133) - px(33), py(133) - py(33));
+      const mouthGap = (py(14) - py(13)) / (eyeDist || 1);
+
+      const shapes = new Map(
+        (results.faceBlendshapes?.[0]?.categories ?? []).map((c) => [c.categoryName, c.score]),
+      );
+      const both = (a: string) =>
+        ((shapes.get(`${a}Left`) ?? 0) + (shapes.get(`${a}Right`) ?? 0)) / 2;
+
+      // hands every ~0.4 s: is a fingertip at the mouth?
+      const hands = handsRef.current;
+      if (hands && now - handTickRef.current > 400) {
+        handTickRef.current = now;
+        try {
+          const hr = hands.detectForVideo(v, now);
+          const mx = (px(13) + px(14)) / 2;
+          const my = (py(13) + py(14)) / 2;
+          handAtMouthRef.current = (hr.landmarks ?? []).some((hand) =>
+            [4, 8, 12, 16, 20].some((i) => {
+              const p = hand[i];
+              return p && Math.hypot(p.x * W - mx, p.y * H - my) < eyeDist * 0.9;
+            }),
+          );
+        } catch {
+          handAtMouthRef.current = false;
+        }
+      }
+
+      callbackRef.current({
+        at,
+        faceVisible: eyeDist > 8,
+        pitch: (py(1) - eyeMidY) / (eyeDist || 1),
+        frameY: eyeMidY / H,
+        eyeDist: eyeDist / W,
+        mouthGap,
+        browDown: both("browDown"),
+        squint: both("eyeSquint"),
+        blink: shapes.size ? Math.max(shapes.get("eyeBlinkLeft") ?? 0, shapes.get("eyeBlinkRight") ?? 0) : undefined,
+        jawOpen: shapes.get("jawOpen"),
+        lookDown: both("eyeLookDown"),
+        handAtMouth: handAtMouthRef.current,
+      });
+    };
+    loop();
+  }, [stop]);
+
+  /** Small JPEG of the current frame, for the on-demand posture judgement. */
+  const captureFrame = useCallback((): string | null => {
+    const v = videoRef.current;
+    if (!v || v.readyState < 2) return null;
+    const c = document.createElement("canvas");
+    const scale = Math.min(1, 512 / Math.max(v.videoWidth, v.videoHeight));
+    c.width = Math.round(v.videoWidth * scale);
+    c.height = Math.round(v.videoHeight * scale);
+    const ctx = c.getContext("2d");
+    if (!ctx) return null;
+    ctx.drawImage(v, 0, 0, c.width, c.height);
+    return c.toDataURL("image/jpeg", 0.7);
+  }, []);
+
+  return { videoRef, start, stop, status, error, captureFrame, setFrameSource };
+}

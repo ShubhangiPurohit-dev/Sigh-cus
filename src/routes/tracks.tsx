@@ -1,1 +1,93 @@
-aW1wb3J0IHsgY3JlYXRlRmlsZVJvdXRlLCBMaW5rIH0gZnJvbSAiQHRhbnN0YWNrL3JlYWN0LXJvdXRlciI7Cgpjb25zdCBUSVRMRSA9ICJPdXIgdHJhY2tzIOKAlCBTaWdoLWN1cyI7CmNvbnN0IERFU0MgPQogICJXaGljaCBDb2RlUkVEIE9yaW9uIGFuZCBNTEggdHJhY2tzIHRoZSBTaWdoLWN1cyBkZXNrIHBsYW50IGlzIGdvaW5nIGZvciwgYW5kIHdoZXJlIGVhY2ggb25lIHN0YW5kcy4iOwoKZXhwb3J0IGNvbnN0IFJvdXRlID0gY3JlYXRlRmlsZVJvdXRlKCIvdHJhY2tzIikoewogIGhlYWQ6ICgpID0+ICh7CiAgICBtZXRhOiBbCiAgICAgIHsgdGl0bGU6IFRJVExFIH0sCiAgICAgIHsgbmFtZTogImRlc2NyaXB0aW9uIiwgY29udGVudDogREVTQyB9LAogICAgICB7IHByb3BlcnR5OiAib2c6dGl0bGUiLCBjb250ZW50OiBUSVRMRSB9LAogICAgICB7IHByb3BlcnR5OiAib2c6ZGVzY3JpcHRpb24iLCBjb250ZW50OiBERVNDIH0sCiAgICAgIHsgcHJvcGVydHk6ICJvZzp0eXBlIiwgY29udGVudDogIndlYnNpdGUiIH0sCiAgICAgIHsgbmFtZTogInR3aXR0ZXI6Y2FyZCIsIGNvbnRlbnQ6ICJzdW1tYXJ5IiB9LAogICAgXSwKICB9KSwKICBjb21wb25lbnQ6IFRyYWNrc1BhZ2UsCn0pOwoKdHlwZSBJdGVtID0geyBuYW1lOiBzdHJpbmc7IG5vdGU6IHN0cmluZzsgc3RhdHVzOiBzdHJpbmcgfTsKCmNvbnN0IE1BSU46IEl0ZW1bXSA9IFsKICB7IG5hbWU6ICJCZXN0IE92ZXJhbGwgKCQxMDAwKSIsIG5vdGU6ICJPdXIgbWFpbiB0YXJnZXQuIEEgd2ViY2FtIHBsYW50IHRoYXQgZ3VpbHRzIHlvdSBpbnRvIHNpdHRpbmcgdXAgc3RyYWlnaHQuIiwgc3RhdHVzOiAiR29pbmcgZm9yIGl0IiB9LAogIHsgbmFtZTogIkJlc3QgUGl0Y2ggKCQ1MDApIiwgbm90ZTogIlRoZSBwbGFudCdzIHBhc3NpdmUtYWdncmVzc2l2ZSBwZXJzb25hbGl0eSBtYWtlcyB0aGUgZGVtbyBtZW1vcmFibGUuIiwgc3RhdHVzOiAiU3Ryb25nIGZpdCIgfSwKICB7IG5hbWU6ICJNb3N0IEltbWVyc2l2ZSBIYWNrIiwgbm90ZTogIkxpdmUgd2ViY2FtLCBzcG9rZW4gc2lnaHMgYW5kIGEgZ29zcGVsIGZhbmZhcmUgd2hlbiB5b3UgZHJpbmsgd2F0ZXIuIiwgc3RhdHVzOiAiU3Ryb25nIGZpdCIgfSwKICB7IG5hbWU6ICJCZXN0IEVudmlyb25tZW50IEhhY2sgKCQ1MDApIiwgbm90ZTogIk9ubHkgY291bnRzIHdpdGggYSByZWFsIGVjbyBoYWJpdDsgdGhpcyBpcyBhIHdlbGxuZXNzIGFwcC4iLCBzdGF0dXM6ICJOb3QgcHVyc3VpbmciIH0sCiAgeyBuYW1lOiAiQmVzdCBIYXJkd2FyZSIsIG5vdGU6ICJUaGUgcHJvamVjdCBpcyBzb2Z0d2FyZSBvbmx5LiIsIHN0YXR1czogIk5vdCBwdXJzdWluZyIgfSwKXTsKCmNvbnN0IE1MSDogSXRlbVtdID0gWwogIHsgbmFtZTogIkdlbWluaSBBUEkiLCBub3RlOiAiV3JpdGVzIEdlcmFsZCdzIGd1aWx0IGxpbmVzIGFuZCBqdWRnZXMgcG9zdHVyZSBmcm9tIGNhbWVyYSBmcmFtZXMuIiwgc3RhdHVzOiAiV29ya2luZyIgfSwKICB7IG5hbWU6ICJFbGV2ZW5MYWJzIiwgbm90ZTogIkdlcmFsZCdzIHZvaWNlIChEYW5pZWwsIGRyeSBCcml0aXNoKS4gVGhlIGtleSB3b3JrczsgdGhlIGFwcCBydW5zIHRleHQtb25seSBmb3Igbm93IHVudGlsIHdlIGxvY2sgaW4gdGhlIGxpbmVzLiIsIHN0YXR1czogIktleSB3b3JraW5nLCB2b2ljZSBwYXVzZWQiIH0sCiAgeyBuYW1lOiAiQmFja2JvYXJkLmlvIiwgbm90ZTogIlBsYW5uZWQ6IG1lbW9yeSBzbyBHZXJhbGQgcmVtZW1iZXJzIHlvdXIgcGFzdCBzbG91Y2hpbmcuIiwgc3RhdHVzOiAiV2FpdGluZyBvbiBBUEkga2V5IiB9LAogIHsgbmFtZTogIlRpZ2VyIERhdGEiLCBub3RlOiAiUGxhbm5lZDogc3RvcmUgZ3VpbHQgc3RyZWFrcyBsb25nIHRlcm0uIiwgc3RhdHVzOiAiTm90IHN0YXJ0ZWQiIH0sCiAgeyBuYW1lOiAiR29EYWRkeSBSZWdpc3RyeSIsIG5vdGU6ICJEb21haW4gc2lnaC1jdXMuZGVzaWduIGNsYWltZWQgd2l0aCB0aGUgZXZlbnQgcHJvbW8gY29kZSBhbmQgY29ubmVjdGVkIHRvIHRoZSBhcHAuIiwgc3RhdHVzOiAiRG9uZSIgfSwKICB7IG5hbWU6ICJTb2xhbmEiLCBub3RlOiAiRG9lc24ndCBmaXQgdGhlIGlkZWEuIiwgc3RhdHVzOiAiRHJvcHBlZCIgfSwKICB7IG5hbWU6ICJWdWx0ciIsIG5vdGU6ICJEb2Vzbid0IGZpdCB0aGUgaWRlYS4iLCBzdGF0dXM6ICJEcm9wcGVkIiB9LApdOwoKZnVuY3Rpb24gU2VjdGlvbih7IHRpdGxlLCBpdGVtcyB9OiB7IHRpdGxlOiBzdHJpbmc7IGl0ZW1zOiBJdGVtW10gfSkgewogIHJldHVybiAoCiAgICA8c2VjdGlvbiBjbGFzc05hbWU9Im10LTEwIj4KICAgICAgPGgyIGNsYXNzTmFtZT0idGV4dC14bCBmb250LXNlbWlib2xkIj57dGl0bGV9PC9oMj4KICAgICAgPHVsIGNsYXNzTmFtZT0ibXQtNCBncmlkIGdhcC0zIj4KICAgICAgICB7aXRlbXMubWFwKChpKSA9PiAoCiAgICAgICAgICA8bGkga2V5PXtpLm5hbWV9IGNsYXNzTmFtZT0icm91bmRlZC1sZyBib3JkZXIgYm9yZGVyLWJvcmRlciBiZy1jYXJkIHAtNCI+CiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGZsZXgtd3JhcCBpdGVtcy1iYXNlbGluZSBqdXN0aWZ5LWJldHdlZW4gZ2FwLTIiPgogICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0iZm9udC1tZWRpdW0iPntpLm5hbWV9PC9zcGFuPgogICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0idGV4dC1zbSB0ZXh0LW11dGVkLWZvcmVncm91bmQiPntpLnN0YXR1c308L3NwYW4+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8cCBjbGFzc05hbWU9Im10LTEgdGV4dC1zbSB0ZXh0LW11dGVkLWZvcmVncm91bmQiPntpLm5vdGV9PC9wPgogICAgICAgICAgPC9saT4KICAgICAgICApKX0KICAgICAgPC91bD4KICAgIDwvc2VjdGlvbj4KICApOwp9CgpmdW5jdGlvbiBUcmFja3NQYWdlKCkgewogIHJldHVybiAoCiAgICA8bWFpbiBjbGFzc05hbWU9Im14LWF1dG8gbWF4LXctMnhsIHB4LTUgcHktMTIiPgogICAgICA8TGluayB0bz0iLyIgY2xhc3NOYW1lPSJ0ZXh0LXNtIHRleHQtbXV0ZWQtZm9yZWdyb3VuZCB1bmRlcmxpbmUiPgogICAgICAgIOKGkCBNZWV0IEdlcmFsZCB0aGUgcGxhbnQKICAgICAgPC9MaW5rPgogICAgICA8aDEgY2xhc3NOYW1lPSJtdC00IHRleHQtM3hsIGZvbnQtYm9sZCI+T3VyIHRyYWNrczwvaDE+CiAgICAgIDxwIGNsYXNzTmFtZT0ibXQtMiB0ZXh0LW11dGVkLWZvcmVncm91bmQiPgogICAgICAgIENvZGVSRUQgT3Jpb24sIDI0IGhvdXJzLiBIZXJlIGlzIHdoYXQgd2UgYXJlIGdvaW5nIGZvciBhbmQgaG93IGZhciBhbG9uZyBlYWNoIHBpZWNlIGlzLgogICAgICA8L3A+CiAgICAgIDxkaXYgY2xhc3NOYW1lPSJtdC00IHJvdW5kZWQtbGcgYm9yZGVyIGJvcmRlci1ib3JkZXIgYmctY2FyZCBwLTQgdGV4dC1zbSI+CiAgICAgICAgPHA+CiAgICAgICAgICBBcHA6eyIgIn0KICAgICAgICAgIDxhIGhyZWY9Imh0dHBzOi8vc2lnaC1jdXMuZGVzaWduIiBjbGFzc05hbWU9InVuZGVybGluZSI+CiAgICAgICAgICAgIHNpZ2gtY3VzLmRlc2lnbgogICAgICAgICAgPC9hPnsiICJ9CiAgICAgICAgICAoYWxzbyB3b3JrcyBhdHsiICJ9CiAgICAgICAgICA8YSBocmVmPSJodHRwczovL3d3dy5zaWdoLWN1cy5kZXNpZ24iIGNsYXNzTmFtZT0idW5kZXJsaW5lIj4KICAgICAgICAgICAgd3d3LnNpZ2gtY3VzLmRlc2lnbgogICAgICAgICAgPC9hPgogICAgICAgICAgKQogICAgICAgIDwvcD4KICAgICAgICA8cCBjbGFzc05hbWU9Im10LTEiPgogICAgICAgICAgQ29kZTp7IiAifQogICAgICAgICAgPGEgaHJlZj0iaHR0cHM6Ly9naXRodWIuY29tL0tlZXJ0aVVtYWRpL1NpZ2gtY3VzIiBjbGFzc05hbWU9InVuZGVybGluZSI+CiAgICAgICAgICAgIGdpdGh1Yi5jb20vS2VlcnRpVW1hZGkvU2lnaC1jdXMKICAgICAgICAgIDwvYT4KICAgICAgICA8L3A+CiAgICAgIDwvZGl2PgogICAgICA8U2VjdGlvbiB0aXRsZT0iQ29kZVJFRCBPcmlvbiIgaXRlbXM9e01BSU59IC8+CiAgICAgIDxTZWN0aW9uIHRpdGxlPSJNTEggY2hhbGxlbmdlcyIgaXRlbXM9e01MSH0gLz4KICAgIDwvbWFpbj4KICApOwp9Cg==
+import { createFileRoute, Link } from "@tanstack/react-router";
+
+const TITLE = "Our tracks — Sigh-cus";
+const DESC =
+  "Which CodeRED Orion and MLH tracks the Sigh-cus desk plant is going for, and where each one stands.";
+
+export const Route = createFileRoute("/tracks")({
+  head: () => ({
+    meta: [
+      { title: TITLE },
+      { name: "description", content: DESC },
+      { property: "og:title", content: TITLE },
+      { property: "og:description", content: DESC },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
+    ],
+  }),
+  component: TracksPage,
+});
+
+type Item = { name: string; note: string; status: string };
+
+const MAIN: Item[] = [
+  { name: "Best Overall ($1000)", note: "Our main target. A webcam plant that guilts you into sitting up straight.", status: "Going for it" },
+  { name: "Best Pitch ($500)", note: "The plant's passive-aggressive personality makes the demo memorable.", status: "Strong fit" },
+  { name: "Most Immersive Hack", note: "Live webcam, spoken sighs and a gospel fanfare when you drink water.", status: "Strong fit" },
+  { name: "Best Environment Hack ($500)", note: "Only counts with a real eco habit; this is a wellness app.", status: "Not pursuing" },
+  { name: "Best Hardware", note: "The project is software only.", status: "Not pursuing" },
+];
+
+const MLH: Item[] = [
+  { name: "Gemini API", note: "Writes Gerald's guilt lines and judges posture from camera frames.", status: "Working" },
+  { name: "ElevenLabs", note: "Gerald's voice (Daniel, dry British). The key works; the app runs text-only for now until we lock in the lines.", status: "Key working, voice paused" },
+  { name: "Backboard.io", note: "Planned: memory so Gerald remembers your past slouching.", status: "Waiting on API key" },
+  { name: "Tiger Data", note: "Planned: store guilt streaks long term.", status: "Not started" },
+  { name: "GoDaddy Registry", note: "Domain sigh-cus.design claimed with the event promo code and connected to the app.", status: "Done" },
+  { name: "Solana", note: "Doesn't fit the idea.", status: "Dropped" },
+  { name: "Vultr", note: "Doesn't fit the idea.", status: "Dropped" },
+];
+
+function Section({ title, items }: { title: string; items: Item[] }) {
+  return (
+    <section className="mt-10">
+      <h2 className="text-xl font-semibold">{title}</h2>
+      <ul className="mt-4 grid gap-3">
+        {items.map((i) => (
+          <li key={i.name} className="rounded-lg border border-border bg-card p-4">
+            <div className="flex flex-wrap items-baseline justify-between gap-2">
+              <span className="font-medium">{i.name}</span>
+              <span className="text-sm text-muted-foreground">{i.status}</span>
+            </div>
+            <p className="mt-1 text-sm text-muted-foreground">{i.note}</p>
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
+}
+
+function TracksPage() {
+  return (
+    <main className="mx-auto max-w-2xl px-5 py-12">
+      <Link to="/" className="text-sm text-muted-foreground underline">
+        ← Meet Gerald the plant
+      </Link>
+      <h1 className="mt-4 text-3xl font-bold">Our tracks</h1>
+      <p className="mt-2 text-muted-foreground">
+        CodeRED Orion, 24 hours. Here is what we are going for and how far along each piece is.
+      </p>
+      <div className="mt-4 rounded-lg border border-border bg-card p-4 text-sm">
+        <p>
+          App:{" "}
+          <a href="https://sigh-cus.design" className="underline">
+            sigh-cus.design
+          </a>{" "}
+          (also works at{" "}
+          <a href="https://www.sigh-cus.design" className="underline">
+            www.sigh-cus.design
+          </a>
+          )
+        </p>
+        <p className="mt-1">
+          Code:{" "}
+          <a href="https://github.com/KeertiUmadi/Sigh-cus" className="underline">
+            github.com/KeertiUmadi/Sigh-cus
+          </a>
+        </p>
+      </div>
+      <Section title="CodeRED Orion" items={MAIN} />
+      <Section title="MLH challenges" items={MLH} />
+    </main>
+  );
+}

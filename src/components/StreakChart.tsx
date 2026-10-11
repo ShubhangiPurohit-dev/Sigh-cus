@@ -1,1 +1,60 @@
-aW1wb3J0IHR5cGUgeyBUcmFpbFBvaW50IH0gZnJvbSAiQC9saWIvcGxhbnQtY29yZSI7CgovKioKICogVGhlIGd1aWx0LXN0cmVhayBjaGFydDogR2VyYWxkJ3MgbW9vZCBvdmVyIHRoZSBzZXNzaW9uLCB3aXRoIGV2ZXJ5IGRyaW5rCiAqIGFuZCBldmVyeSBzbG91Y2ggbmFnIG1hcmtlZCBvbiB0aGUgbGluZS4KICovCmV4cG9ydCBmdW5jdGlvbiBTdHJlYWtDaGFydCh7IHRyYWlsIH06IHsgdHJhaWw6IFRyYWlsUG9pbnRbXSB9KSB7CiAgY29uc3QgVyA9IDYyMDsKICBjb25zdCBIID0gMTUwOwogIGNvbnN0IHBhZCA9IDg7CgogIGlmICh0cmFpbC5sZW5ndGggPCAyKSB7CiAgICByZXR1cm4gKAogICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBoLVsxNTBweF0gaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIHJvdW5kZWQteGwgYm9yZGVyIGJvcmRlci1kYXNoZWQgdGV4dC1zbSB0ZXh0LW11dGVkLWZvcmVncm91bmQiPgogICAgICAgIFRoZSBjaGFydCBmaWxscyBpbiBhcyB0aGUgcGxhbnQgd2F0Y2hlcyB5b3UuCiAgICAgIDwvZGl2PgogICAgKTsKICB9CgogIGNvbnN0IGZpcnN0ID0gdHJhaWxbMF0/LmF0ID8/IDA7CiAgY29uc3QgbGFzdCA9IHRyYWlsW3RyYWlsLmxlbmd0aCAtIDFdPy5hdCA/PyBmaXJzdCArIDE7CiAgY29uc3Qgc3BhbiA9IE1hdGgubWF4KDEsIGxhc3QgLSBmaXJzdCk7CiAgY29uc3QgeCA9IChhdDogbnVtYmVyKSA9PiBwYWQgKyAoKGF0IC0gZmlyc3QpIC8gc3BhbikgKiAoVyAtIHBhZCAqIDIpOwogIGNvbnN0IHkgPSAobW9vZDogbnVtYmVyKSA9PiBIIC0gcGFkIC0gKE1hdGgubWF4KDAsIE1hdGgubWluKDEwMCwgbW9vZCkpIC8gMTAwKSAqIChIIC0gcGFkICogMik7CgogIGNvbnN0IGxpbmUgPSB0cmFpbC5tYXAoKHAsIGkpID0+IGAke2kgPT09IDAgPyAiTSIgOiAiTCJ9JHt4KHAuYXQpLnRvRml4ZWQoMSl9ICR7eShwLm1vb2QpLnRvRml4ZWQoMSl9YCkuam9pbigiICIpOwogIGNvbnN0IGFyZWEgPSBgJHtsaW5lfSBMJHt4KGxhc3QpLnRvRml4ZWQoMSl9ICR7SCAtIHBhZH0gTCR7eChmaXJzdCkudG9GaXhlZCgxKX0gJHtIIC0gcGFkfSBaYDsKICBjb25zdCBtaW51dGVzID0gTWF0aC5yb3VuZChzcGFuIC8gNjBfMDAwKTsKCiAgcmV0dXJuICgKICAgIDxkaXY+CiAgICAgIDxzdmcgdmlld0JveD17YDAgMCAke1d9ICR7SH1gfSBjbGFzc05hbWU9InctZnVsbCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJQbGFudCBtb29kIG92ZXIgdGhlIHNlc3Npb24iPgogICAgICAgIDxwYXRoIGQ9e2FyZWF9IGZpbGw9InZhcigtLWNvbG9yLXByaW1hcnkpIiBvcGFjaXR5PSIwLjEiIC8+CiAgICAgICAgPHBhdGggZD17bGluZX0gZmlsbD0ibm9uZSIgc3Ryb2tlPSJ2YXIoLS1jb2xvci1wcmltYXJ5KSIgc3Ryb2tlV2lkdGg9IjIuNSIgc3Ryb2tlTGluZWpvaW49InJvdW5kIiAvPgoKICAgICAgICB7dHJhaWwubWFwKChwLCBpKSA9PgogICAgICAgICAgcC5zbG91Y2hlcyA+ICh0cmFpbFtpIC0gMV0/LnNsb3VjaGVzID8/IC0xKSA/ICgKICAgICAgICAgICAgPGNpcmNsZSBrZXk9e2BzJHtpfWB9IGN4PXt4KHAuYXQpfSBjeT17eShwLm1vb2QpfSByPSI0LjUiIGZpbGw9InZhcigtLWNvbG9yLWRlc3RydWN0aXZlKSIgLz4KICAgICAgICAgICkgOiBudWxsLAogICAgICAgICl9CiAgICAgICAge3RyYWlsLm1hcCgocCwgaSkgPT4KICAgICAgICAgIHAuZHJpbmtzID4gKHRyYWlsW2kgLSAxXT8uZHJpbmtzID8/IC0xKSA/ICgKICAgICAgICAgICAgPGNpcmNsZSBrZXk9e2BkJHtpfWB9IGN4PXt4KHAuYXQpfSBjeT17eShwLm1vb2QpfSByPSI0LjUiIGZpbGw9InZhcigtLWNvbG9yLXBsYW50LWxlYWYpIiAvPgogICAgICAgICAgKSA6IG51bGwsCiAgICAgICAgKX0KICAgICAgPC9zdmc+CiAgICAgIDxkaXYgY2xhc3NOYW1lPSJtdC0yIGZsZXggZmxleC13cmFwIGl0ZW1zLWNlbnRlciBnYXAtNCB0ZXh0LXhzIHRleHQtbXV0ZWQtZm9yZWdyb3VuZCI+CiAgICAgICAgPHNwYW4+CiAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9Im1yLTEgaW5saW5lLWJsb2NrIGgtMiB3LTIgcm91bmRlZC1mdWxsIGJnLXBsYW50LWxlYWYiIC8+CiAgICAgICAgICBkcmFuayB3YXRlcgogICAgICAgIDwvc3Bhbj4KICAgICAgICA8c3Bhbj4KICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0ibXItMSBpbmxpbmUtYmxvY2sgaC0yIHctMiByb3VuZGVkLWZ1bGwgYmctZGVzdHJ1Y3RpdmUiIC8+CiAgICAgICAgICBjYXVnaHQgc2xvdWNoaW5nCiAgICAgICAgPC9zcGFuPgogICAgICAgIDxzcGFuIGNsYXNzTmFtZT0ibWwtYXV0byI+bGFzdCB7bWludXRlc30gbWluPC9zcGFuPgogICAgICA8L2Rpdj4KICAgIDwvZGl2PgogICk7Cn0K
+import type { TrailPoint } from "@/lib/plant-core";
+
+/**
+ * The guilt-streak chart: Gerald's mood over the session, with every drink
+ * and every slouch nag marked on the line.
+ */
+export function StreakChart({ trail }: { trail: TrailPoint[] }) {
+  const W = 620;
+  const H = 150;
+  const pad = 8;
+
+  if (trail.length < 2) {
+    return (
+      <div className="flex h-[150px] items-center justify-center rounded-xl border border-dashed text-sm text-muted-foreground">
+        The chart fills in as the plant watches you.
+      </div>
+    );
+  }
+
+  const first = trail[0]?.at ?? 0;
+  const last = trail[trail.length - 1]?.at ?? first + 1;
+  const span = Math.max(1, last - first);
+  const x = (at: number) => pad + ((at - first) / span) * (W - pad * 2);
+  const y = (mood: number) => H - pad - (Math.max(0, Math.min(100, mood)) / 100) * (H - pad * 2);
+
+  const line = trail.map((p, i) => `${i === 0 ? "M" : "L"}${x(p.at).toFixed(1)} ${y(p.mood).toFixed(1)}`).join(" ");
+  const area = `${line} L${x(last).toFixed(1)} ${H - pad} L${x(first).toFixed(1)} ${H - pad} Z`;
+  const minutes = Math.round(span / 60_000);
+
+  return (
+    <div>
+      <svg viewBox={`0 0 ${W} ${H}`} className="w-full" role="img" aria-label="Plant mood over the session">
+        <path d={area} fill="var(--color-primary)" opacity="0.1" />
+        <path d={line} fill="none" stroke="var(--color-primary)" strokeWidth="2.5" strokeLinejoin="round" />
+
+        {trail.map((p, i) =>
+          p.slouches > (trail[i - 1]?.slouches ?? -1) ? (
+            <circle key={`s${i}`} cx={x(p.at)} cy={y(p.mood)} r="4.5" fill="var(--color-destructive)" />
+          ) : null,
+        )}
+        {trail.map((p, i) =>
+          p.drinks > (trail[i - 1]?.drinks ?? -1) ? (
+            <circle key={`d${i}`} cx={x(p.at)} cy={y(p.mood)} r="4.5" fill="var(--color-plant-leaf)" />
+          ) : null,
+        )}
+      </svg>
+      <div className="mt-2 flex flex-wrap items-center gap-4 text-xs text-muted-foreground">
+        <span>
+          <span className="mr-1 inline-block h-2 w-2 rounded-full bg-plant-leaf" />
+          drank water
+        </span>
+        <span>
+          <span className="mr-1 inline-block h-2 w-2 rounded-full bg-destructive" />
+          caught slouching
+        </span>
+        <span className="ml-auto">last {minutes} min</span>
+      </div>
+    </div>
+  );
+}

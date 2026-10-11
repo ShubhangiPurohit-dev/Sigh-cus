@@ -1,1 +1,37 @@
-LyoqCiAqIEEgc2hvcnQgZ29zcGVsLWlzaCByaXNlIHBsYXllZCBvbiBkcmluayBkZXRlY3Rpb24sIGJ1aWx0IGZyb20gb3NjaWxsYXRvcnMgc28KICogdGhlcmUgaXMgbm8gYXVkaW8gZmlsZSB0byBzaGlwLgogKi8KZXhwb3J0IGZ1bmN0aW9uIHBsYXlGYW5mYXJlKCkgewogIGlmICh0eXBlb2Ygd2luZG93ID09PSAidW5kZWZpbmVkIikgcmV0dXJuOwogIGNvbnN0IEN0b3IgPQogICAgd2luZG93LkF1ZGlvQ29udGV4dCA/PyAod2luZG93IGFzIHVua25vd24gYXMgeyB3ZWJraXRBdWRpb0NvbnRleHQ/OiB0eXBlb2YgQXVkaW9Db250ZXh0IH0pLndlYmtpdEF1ZGlvQ29udGV4dDsKICBpZiAoIUN0b3IpIHJldHVybjsKCiAgY29uc3QgY3R4ID0gbmV3IEN0b3IoKTsKICBjb25zdCBub3cgPSBjdHguY3VycmVudFRpbWU7CiAgLy8gSVYgLT4gViAtPiBJIGluIEMsIGFycGVnZ2lhdGVkLCB3aXRoIGEgc2hpbW1lciBvbiB0b3AKICBjb25zdCBjaG9yZHMgPSBbCiAgICBbMzQ5LjIzLCA0NDAuMCwgNTIzLjI1XSwKICAgIFszOTIuMCwgNDkzLjg4LCA1ODcuMzNdLAogICAgWzUyMy4yNSwgNjU5LjI1LCA3ODMuOTldLAogIF07CgogIGNob3Jkcy5mb3JFYWNoKChjaG9yZCwgaSkgPT4gewogICAgY2hvcmQuZm9yRWFjaCgoZnJlcSwgaikgPT4gewogICAgICBjb25zdCBvc2MgPSBjdHguY3JlYXRlT3NjaWxsYXRvcigpOwogICAgICBjb25zdCBnYWluID0gY3R4LmNyZWF0ZUdhaW4oKTsKICAgICAgb3NjLnR5cGUgPSBpID09PSAyID8gInRyaWFuZ2xlIiA6ICJzaW5lIjsKICAgICAgb3NjLmZyZXF1ZW5jeS52YWx1ZSA9IGZyZXE7CiAgICAgIGNvbnN0IHN0YXJ0ID0gbm93ICsgaSAqIDAuMTYgKyBqICogMC4wNDsKICAgICAgZ2Fpbi5nYWluLnNldFZhbHVlQXRUaW1lKDAuMDAwMSwgc3RhcnQpOwogICAgICBnYWluLmdhaW4uZXhwb25lbnRpYWxSYW1wVG9WYWx1ZUF0VGltZShpID09PSAyID8gMC4xNiA6IDAuMSwgc3RhcnQgKyAwLjA1KTsKICAgICAgZ2Fpbi5nYWluLmV4cG9uZW50aWFsUmFtcFRvVmFsdWVBdFRpbWUoMC4wMDAxLCBzdGFydCArIDAuNyk7CiAgICAgIG9zYy5jb25uZWN0KGdhaW4pLmNvbm5lY3QoY3R4LmRlc3RpbmF0aW9uKTsKICAgICAgb3NjLnN0YXJ0KHN0YXJ0KTsKICAgICAgb3NjLnN0b3Aoc3RhcnQgKyAwLjgpOwogICAgfSk7CiAgfSk7CgogIHdpbmRvdy5zZXRUaW1lb3V0KCgpID0+IGN0eC5jbG9zZSgpLmNhdGNoKCgpID0+IHVuZGVmaW5lZCksIDE2MDApOwp9Cg==
+/**
+ * A short gospel-ish rise played on drink detection, built from oscillators so
+ * there is no audio file to ship.
+ */
+export function playFanfare() {
+  if (typeof window === "undefined") return;
+  const Ctor =
+    window.AudioContext ?? (window as unknown as { webkitAudioContext?: typeof AudioContext }).webkitAudioContext;
+  if (!Ctor) return;
+
+  const ctx = new Ctor();
+  const now = ctx.currentTime;
+  // IV -> V -> I in C, arpeggiated, with a shimmer on top
+  const chords = [
+    [349.23, 440.0, 523.25],
+    [392.0, 493.88, 587.33],
+    [523.25, 659.25, 783.99],
+  ];
+
+  chords.forEach((chord, i) => {
+    chord.forEach((freq, j) => {
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+      osc.type = i === 2 ? "triangle" : "sine";
+      osc.frequency.value = freq;
+      const start = now + i * 0.16 + j * 0.04;
+      gain.gain.setValueAtTime(0.0001, start);
+      gain.gain.exponentialRampToValueAtTime(i === 2 ? 0.16 : 0.1, start + 0.05);
+      gain.gain.exponentialRampToValueAtTime(0.0001, start + 0.7);
+      osc.connect(gain).connect(ctx.destination);
+      osc.start(start);
+      osc.stop(start + 0.8);
+    });
+  });
+
+  window.setTimeout(() => ctx.close().catch(() => undefined), 1600);
+}

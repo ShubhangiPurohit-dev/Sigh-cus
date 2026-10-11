@@ -1,1 +1,431 @@
-LyoqCiAqIFRoZSBwbGFudCdzIGJyYWluLiBQdXJlIGFuZCBET00tZnJlZSBzbyB0aGUgcnVsZXMgY2FuIGJlIHRlc3RlZCB3aXRoIGEKICogc3RvcC13YXRjaCBpbnN0ZWFkIG9mIGEgd2ViY2FtLgogKgogKiBBbGwgdGltaW5ncyBhcmUgaW4gbWlsbGlzZWNvbmRzIG9mICpwbGFudCB0aW1lKi4gVGhlIGNhbGxlciBzY2FsZXMgcmVhbAogKiBlbGFwc2VkIHRpbWUgYnkgYSBkZW1vLXNwZWVkIGZhY3RvciBiZWZvcmUgaGFuZGluZyBpdCB0byB0aWNrKCksIHNvIHRoZQogKiBydWxlcyBiZWxvdyBhbHdheXMgcmVhZCBhcyBsaXRlcmFsLCBob25lc3QgbnVtYmVycy4KICovCgpleHBvcnQgdHlwZSBSZWFkaW5nID0gewogIC8qKiBlcG9jaCBtcyBvZiB0aGlzIHJlYWRpbmcgKi8KICBhdDogbnVtYmVyOwogIGZhY2VWaXNpYmxlOiBib29sZWFuOwogIC8qKgogICAqIG5vc2UgdGlwIGJlbG93IHRoZSBleWUgbGluZSwgZGl2aWRlZCBieSBleWUgc2l6ZS4gVGhlIG5vc2Ugc3RpY2tzIG91dCwgc28KICAgKiBkcm9wcGluZyB5b3VyIGhlYWQgcHVzaGVzIGl0IGZ1cnRoZXIgYmVsb3cgdGhlIGV5ZXMgKGxhcmdlcikgYW5kIHRpcHBpbmcKICAgKiB5b3VyIGNoaW4gdXAgcHVsbHMgaXQgdG93YXJkcyB0aGVtIChzbWFsbGVyKS4KICAgKi8KICBwaXRjaDogbnVtYmVyOwogIC8qKiBleWUgbGluZSBoZWlnaHQgaW4gdGhlIGZyYW1lLCAwID0gdG9wLCAxID0gYm90dG9tLiBMYXJnZXIgPSB5b3Ugc2FuayBkb3duLiAqLwogIGZyYW1lWTogbnVtYmVyOwogIC8qKiBkaXN0YW5jZSBiZXR3ZWVuIHRoZSBleWVzIHJlbGF0aXZlIHRvIGZyYW1lIHdpZHRoLiBMYXJnZXIgPSBjbG9zZXIgdG8gdGhlIGNhbWVyYS4gKi8KICBleWVEaXN0OiBudW1iZXI7CiAgLyoqIG1vdXRoIG9wZW5pbmcgcmVsYXRpdmUgdG8gZXllIGRpc3RhbmNlICovCiAgbW91dGhHYXA6IG51bWJlcjsKICAvKiogZmFjZSBibGVuZHNoYXBlcyAwLi4xIChjYW1lcmEgb25seTsgbWlzc2luZyA9IG5vdCBtZWFzdXJlZCkgKi8KICBicm93RG93bj86IG51bWJlciB8IHVuZGVmaW5lZDsKICBzcXVpbnQ/OiBudW1iZXIgfCB1bmRlZmluZWQ7CiAgYmxpbms/OiBudW1iZXIgfCB1bmRlZmluZWQ7CiAgamF3T3Blbj86IG51bWJlciB8IHVuZGVmaW5lZDsKICBsb29rRG93bj86IG51bWJlciB8IHVuZGVmaW5lZDsKICAvKiogYSBmaW5nZXJ0aXAgaXMgYXQgdGhlIG1vdXRoICovCiAgaGFuZEF0TW91dGg/OiBib29sZWFuIHwgdW5kZWZpbmVkOwp9OwoKZXhwb3J0IHR5cGUgQmFzZWxpbmUgPSB7CiAgLyoqIHdoYXQgInNpdHRpbmcgcHJvcGVybHkiIGxvb2tzIGxpa2UgZm9yIHRoaXMgcGVyc29uLCBvbiB0aGlzIGNhbWVyYSAqLwogIHBpdGNoOiBudW1iZXI7CiAgZnJhbWVZOiBudW1iZXI7CiAgZXllRGlzdDogbnVtYmVyOwogIG1vdXRoR2FwOiBudW1iZXI7CiAgYnJvd0Rvd24/OiBudW1iZXIgfCB1bmRlZmluZWQ7CiAgc3F1aW50PzogbnVtYmVyIHwgdW5kZWZpbmVkOwp9OwoKZXhwb3J0IGNvbnN0IFJVTEVTID0gewogIC8qKiAiU2xvdWNoIGZvciBtb3JlIHRoYW4gMiBtaW51dGVzLCBhbmQgdGhlIHBsYW50IHNpZ2hzLiIgKi8KICBzbG91Y2hNczogMTBfMDAwLAogIC8qKiBubyBkcmluayBmb3IgdGhpcyBsb25nIC0+IHRoaXJzdCBuYWcgKi8KICB0aGlyc3RNczogNjBfMDAwLAogIC8qKiB0aGlzIG11Y2ggc2NyZWVuIHRpbWUgLT4gZXllLXJlc3QgbmFnICovCiAgc2NyZWVuTXM6IDYwICogNjBfMDAwLAogIC8qKiBmYWNlIGdvbmUgZm9yIHRoaXMgbG9uZyAtPiBhYmFuZG9ubWVudCBuYWcgKi8KICBhd2F5TXM6IDEwXzAwMCwKICAvKiogY2hpbiB0aXBwZWQgdXAgKG1vdXRoIG9wZW4sIG9yIGNoaW4gd2F5IHVwKSBoZWxkIHRoaXMgbG9uZyBjb3VudHMgYXMgYSBkcmluayAqLwogIGRyaW5rSG9sZE1zOiAxMjAwLAogIC8qKiBhIHNpcCBpcyBvbmUgY2VsZWJyYXRpb24sIG5vdCBvbmUgcGVyIGZyYW1lICovCiAgZHJpbmtDb29sZG93bk1zOiAyMF8wMDAsCiAgLyoqIHRoZSBwbGFudCB3aWxsIG5vdCBuYWcgdHdpY2UgYWJvdXQgdGhlIHNhbWUgdGhpbmcgaW5zaWRlIHRoaXMgd2luZG93ICovCiAgbmFnQ29vbGRvd25NczogNDVfMDAwLAogIG1vb2RTdGFydDogNzIsCiAgbW9vZE1heDogMTAwLAogIG1vb2RNaW46IDAsCiAgc2xvdWNoSGl0OiAxOCwKICB0aGlyc3RIaXQ6IDgsCiAgc2NyZWVuSGl0OiA2LAogIGF3YXlIaXQ6IDQsCiAgLyoqIHNpdHRpbmcgdXAgc3RyYWlnaHQgdGhpcyBsb25nIGFmdGVyIGEgc2xvdWNoIG5hZyBjb3VudHMgYXMgZml4ZWQgKi8KICB1cHJpZ2h0Q29uZmlybU1zOiAzMDAwLAogIGZpeGVkQm9vc3Q6IDgsCiAgZHJpbmtCb29zdDogMTQsCiAgYmFja0Jvb3N0OiA2LAogIC8qKiBtb29kIHJlZ2FpbmVkIHBlciBtaW51dGUgc3BlbnQgc2l0dGluZyB1cCBzdHJhaWdodCAqLwogIHVwcmlnaHRSZWNvdmVyeVBlck1pbjogMywKICAvKiogZmFjZSBoYWJpdHM6IGhvdyBsb25nIGVhY2ggbXVzdCBsYXN0IGJlZm9yZSBHZXJhbGQgc2F5cyBzb21ldGhpbmcgKi8KICBoYWJpdE1zOiB7IGZyb3duOiA1XzAwMCwgc3RhcmU6IDEwXzAwMCwgY2xvc2U6IDEwXzAwMCwgbmFpbHM6IDVfMDAwLCB5YXduOiA1XzAwMCwgcGhvbmU6IDIwXzAwMCB9LAogIGhhYml0SGl0OiA1LAogIC8qKiBzdG9wcGluZyBhIG5hZ2dlZCBoYWJpdCBmb3IgdGhpcyBsb25nIGNvdW50cyBhcyBmaXhlZCAqLwogIGhhYml0T2tNczogMjAwMCwKICB0cmFpbEV2ZXJ5TXM6IDVfMDAwLAogIHRyYWlsTWF4OiA0MDAsCn0gYXMgY29uc3Q7CgovKioKICogSG93IG11Y2ggd29yc2UgdGhhbiB5b3VyIG93biBnb29kIHBvc3R1cmUgY291bnRzIGFzIHNsb3VjaGluZy4gRXhwb3NlZCB0bwogKiB0aGUgVUkgYXMgc2Vuc2l0aXZpdHksIGJlY2F1c2UgZXZlcnkgd2ViY2FtIGFuZCBjaGFpciBpcyBkaWZmZXJlbnQuCiAqLwpleHBvcnQgY29uc3QgU0VOU0lUSVZJVFkgPSB7CiAgLyoqIGhlYWQgZHJvcHBlZDogbm9zZSB0aGlzIG11Y2ggZnVydGhlciBiZWxvdyB0aGUgZXllcyB0aGFuIHdoZW4gY2FsaWJyYXRlZCAqLwogIHNsb3VjaFBpdGNoUmF0aW86IDEuMjIsCiAgc2xvdWNoRnJhbWVZOiAwLjA3LAogIHNsb3VjaEV5ZVJhdGlvOiAxLjI1LAogIC8qKiBtb3V0aCB0aGlzIG11Y2ggbW9yZSBvcGVuIHRoYW4gYXQgcmVzdCAqLwogIGRyaW5rR2FwQWRkOiAwLjE1LAogIC8qKiBjaGluIHVwOiBub3NlIHRoaXMgbXVjaCBjbG9zZXIgdG8gdGhlIGV5ZSBsaW5lIHRoYW4gd2hlbiBjYWxpYnJhdGVkICovCiAgZHJpbmtQaXRjaFJhdGlvOiAwLjc4LAogIC8qKiBjaGluIHNvIGZhciB1cCB0aGF0IGl0IGNvdW50cyBldmVuIHdoZW4gdGhlIGJvdHRsZSBoaWRlcyB0aGUgbW91dGggKi8KICBkcmlua1BpdGNoSGFyZFJhdGlvOiAwLjYsCn07CgpleHBvcnQgY29uc3QgSEFCSVRTID0gWyJmcm93biIsICJzdGFyZSIsICJjbG9zZSIsICJuYWlscyIsICJ5YXduIiwgInBob25lIl0gYXMgY29uc3Q7CmV4cG9ydCB0eXBlIEhhYml0ID0gKHR5cGVvZiBIQUJJVFMpW251bWJlcl07CmV4cG9ydCB0eXBlIE5hZ0tpbmQgPSAic2xvdWNoIiB8ICJ0aGlyc3QiIHwgInNjcmVlbiIgfCAiYXdheSIgfCBIYWJpdDsKZXhwb3J0IHR5cGUgRXZlbnRLaW5kID0gTmFnS2luZCB8ICJkcmluayIgfCAiYmFjayIgfCAiZml4ZWQiOwpleHBvcnQgdHlwZSBEZWxpdmVyeSA9ICJzaWdoIiB8ICJzY29sZCIgfCAiZ29zcGVsIiB8ICJ3aGlzcGVyIjsKZXhwb3J0IHR5cGUgTGVhZiA9ICJ3aXRoZXIiIHwgInBlcmsiIHwgImRyb29wIjsKCi8qKiBvZiA9IHdoaWNoIGJhZCBoYWJpdCBhIGZpeGVkIGV2ZW50IGNvbmZpcm1zICovCmV4cG9ydCB0eXBlIFBsYW50RXZlbnQgPSB7IGtpbmQ6IEV2ZW50S2luZDsgYXQ6IG51bWJlcjsgb2Y/OiAic2xvdWNoIiB8IEhhYml0IH07CgpleHBvcnQgY29uc3QgRkxBVk9SOiBSZWNvcmQ8RXZlbnRLaW5kLCB7IGRlbGl2ZXJ5OiBEZWxpdmVyeTsgbGVhZjogTGVhZiB9PiA9IHsKICBzbG91Y2g6IHsgZGVsaXZlcnk6ICJzaWdoIiwgbGVhZjogIndpdGhlciIgfSwKICB0aGlyc3Q6IHsgZGVsaXZlcnk6ICJ3aGlzcGVyIiwgbGVhZjogImRyb29wIiB9LAogIHNjcmVlbjogeyBkZWxpdmVyeTogInNjb2xkIiwgbGVhZjogImRyb29wIiB9LAogIGF3YXk6IHsgZGVsaXZlcnk6ICJ3aGlzcGVyIiwgbGVhZjogImRyb29wIiB9LAogIGRyaW5rOiB7IGRlbGl2ZXJ5OiAiZ29zcGVsIiwgbGVhZjogInBlcmsiIH0sCiAgYmFjazogeyBkZWxpdmVyeTogIndoaXNwZXIiLCBsZWFmOiAicGVyayIgfSwKICBmaXhlZDogeyBkZWxpdmVyeTogIndoaXNwZXIiLCBsZWFmOiAicGVyayIgfSwKICBmcm93bjogeyBkZWxpdmVyeTogInNjb2xkIiwgbGVhZjogImRyb29wIiB9LAogIHN0YXJlOiB7IGRlbGl2ZXJ5OiAid2hpc3BlciIsIGxlYWY6ICJkcm9vcCIgfSwKICBjbG9zZTogeyBkZWxpdmVyeTogInNjb2xkIiwgbGVhZjogImRyb29wIiB9LAogIG5haWxzOiB7IGRlbGl2ZXJ5OiAic2NvbGQiLCBsZWFmOiAid2l0aGVyIiB9LAogIHlhd246IHsgZGVsaXZlcnk6ICJzaWdoIiwgbGVhZjogImRyb29wIiB9LAogIHBob25lOiB7IGRlbGl2ZXJ5OiAic2NvbGQiLCBsZWFmOiAiZHJvb3AiIH0sCn07CgpleHBvcnQgdHlwZSBUcmFpbFBvaW50ID0gewogIGF0OiBudW1iZXI7CiAgbW9vZDogbnVtYmVyOwogIGRyaW5rczogbnVtYmVyOwogIHNsb3VjaGVzOiBudW1iZXI7Cn07CgpleHBvcnQgdHlwZSBQbGFudFN0YXRlID0gewogIG1vb2Q6IG51bWJlcjsKICBzbG91Y2hNczogbnVtYmVyOwogIGRyeU1zOiBudW1iZXI7CiAgc2NyZWVuTXM6IG51bWJlcjsKICBhd2F5TXM6IG51bWJlcjsKICBkcmlua0hvbGRNczogbnVtYmVyOwogIC8qKiB3aGVuIHRoZSBsYXN0IGRyaW5rIHdhcyBjb3VudGVkLCBzbyBvbmUgc2lwIGlzIG9uZSBjZWxlYnJhdGlvbiAqLwogIGxhc3REcmlua0F0OiBudW1iZXI7CiAgLyoqIGNvbnNlY3V0aXZlIGRyaW5rcyB3aXRob3V0IGEgbmFnIGluIGJldHdlZW4gKi8KICBkcmlua1N0cmVhazogbnVtYmVyOwogIGRyaW5rQ291bnQ6IG51bWJlcjsKICBzbG91Y2hDb3VudDogbnVtYmVyOwogIC8qKiBhIHNsb3VjaCBuYWcgaXMgb3V0c3RhbmRpbmcsIHdhaXRpbmcgZm9yIHlvdSB0byBzaXQgdXAgKi8KICBzbG91Y2hOYWdnZWQ6IGJvb2xlYW47CiAgdXByaWdodE1zOiBudW1iZXI7CiAgLyoqIGhvdyBsb25nIGVhY2ggZmFjZSBoYWJpdCBoYXMgYmVlbiBnb2luZyBvbiwgYW5kIHdoZXRoZXIgYSBuYWcgYXdhaXRzIGEgZml4ICovCiAgaGFiaXRNcz86IFBhcnRpYWw8UmVjb3JkPEhhYml0LCBudW1iZXI+PjsKICBoYWJpdE9rTXM/OiBQYXJ0aWFsPFJlY29yZDxIYWJpdCwgbnVtYmVyPj47CiAgaGFiaXROYWdnZWQ/OiBQYXJ0aWFsPFJlY29yZDxIYWJpdCwgYm9vbGVhbj4+OwogIGxhc3ROYWdBdDogUGFydGlhbDxSZWNvcmQ8TmFnS2luZCwgbnVtYmVyPj47CiAgc3RhcnRlZEF0OiBudW1iZXI7CiAgbGFzdFRyYWlsQXQ6IG51bWJlcjsKICB0cmFpbDogVHJhaWxQb2ludFtdOwp9OwoKZnVuY3Rpb24gY2xhbXAobjogbnVtYmVyLCBsbzogbnVtYmVyLCBoaTogbnVtYmVyKSB7CiAgcmV0dXJuIE1hdGgubWF4KGxvLCBNYXRoLm1pbihoaSwgbikpOwp9CgpmdW5jdGlvbiBldmVudChraW5kOiBFdmVudEtpbmQsIGF0OiBudW1iZXIpOiBQbGFudEV2ZW50IHsKICByZXR1cm4geyBraW5kLCBhdCB9Owp9CgpmdW5jdGlvbiBjYW5OYWcoczogUGxhbnRTdGF0ZSwga2luZDogTmFnS2luZCwgYXQ6IG51bWJlcikgewogIGNvbnN0IGxhc3QgPSBzLmxhc3ROYWdBdFtraW5kXTsKICByZXR1cm4gbGFzdCA9PT0gdW5kZWZpbmVkIHx8IGF0IC0gbGFzdCA+PSBSVUxFUy5uYWdDb29sZG93bk1zOwp9CgpleHBvcnQgZnVuY3Rpb24gY3JlYXRlU3RhdGUoYXQ6IG51bWJlcik6IFBsYW50U3RhdGUgewogIHJldHVybiB7CiAgICBtb29kOiBSVUxFUy5tb29kU3RhcnQsCiAgICBzbG91Y2hNczogMCwKICAgIGRyeU1zOiAwLAogICAgc2NyZWVuTXM6IDAsCiAgICBhd2F5TXM6IDAsCiAgICBkcmlua0hvbGRNczogMCwKICAgIGxhc3REcmlua0F0OiBhdCAtIFJVTEVTLmRyaW5rQ29vbGRvd25NcywKICAgIGRyaW5rU3RyZWFrOiAwLAogICAgZHJpbmtDb3VudDogMCwKICAgIHNsb3VjaENvdW50OiAwLAogICAgc2xvdWNoTmFnZ2VkOiBmYWxzZSwKICAgIHVwcmlnaHRNczogMCwKICAgIGhhYml0TXM6IHt9LAogICAgaGFiaXRPa01zOiB7fSwKICAgIGhhYml0TmFnZ2VkOiB7fSwKICAgIGxhc3ROYWdBdDoge30sCiAgICBzdGFydGVkQXQ6IGF0LAogICAgbGFzdFRyYWlsQXQ6IGF0LAogICAgdHJhaWw6IFt7IGF0LCBtb29kOiBSVUxFUy5tb29kU3RhcnQsIGRyaW5rczogMCwgc2xvdWNoZXM6IDAgfV0sCiAgfTsKfQoKLyoqCiAqIEF2ZXJhZ2UgYSBoYW5kZnVsIG9mICJJIGFtIHNpdHRpbmcgcHJvcGVybHkiIHJlYWRpbmdzIGludG8gYSBwZXJzb25hbAogKiBiYXNlbGluZS4gQ2FsaWJyYXRpbmcgYmVhdHMgaGFyZC1jb2RlZCBhbmdsZXM6IGl0IHdvcmtzIG9uIGFueSB3ZWJjYW0sCiAqIGFueSBsaWdodGluZywgYW55IGNoYWlyLgogKi8KZXhwb3J0IGZ1bmN0aW9uIGNhbGlicmF0ZShyZWFkaW5nczogUmVhZGluZ1tdKTogQmFzZWxpbmUgewogIGNvbnN0IHNlZW4gPSByZWFkaW5ncy5maWx0ZXIoKHIpID0+IHIuZmFjZVZpc2libGUpOwogIGlmIChzZWVuLmxlbmd0aCA9PT0gMCkgewogICAgdGhyb3cgbmV3IEVycm9yKCJObyBmYWNlIGZvdW5kIHlldC4gU2l0IHdoZXJlIHRoZSBjYW1lcmEgY2FuIHNlZSB5b3UgYW5kIHRyeSBhZ2Fpbi4iKTsKICB9CiAgY29uc3QgYXZnID0gKGY6IChyOiBSZWFkaW5nKSA9PiBudW1iZXIpID0+CiAgICBzZWVuLnJlZHVjZSgoc3VtLCByKSA9PiBzdW0gKyBmKHIpLCAwKSAvIHNlZW4ubGVuZ3RoOwogIHJldHVybiB7CiAgICBwaXRjaDogYXZnKChyKSA9PiByLnBpdGNoKSwKICAgIGZyYW1lWTogYXZnKChyKSA9PiByLmZyYW1lWSksCiAgICBleWVEaXN0OiBhdmcoKHIpID0+IHIuZXllRGlzdCksCiAgICBtb3V0aEdhcDogYXZnKChyKSA9PiByLm1vdXRoR2FwKSwKICAgIGJyb3dEb3duOiBhdmcoKHIpID0+IHIuYnJvd0Rvd24gPz8gMCksCiAgICBzcXVpbnQ6IGF2ZygocikgPT4gci5zcXVpbnQgPz8gMCksCiAgfTsKfQoKLyoqCiAqIFR3byBzaWduYWxzIG11c3QgYWdyZWUgKGhlYWQgZHJvcHBlZCwgc3VuayBsb3dlciBpbiBmcmFtZSwgbGVhbmVkIGluKSwgb3Igb25lCiAqIG11c3QgYmUgZXh0cmVtZS4gQSBzaW5nbGUgbWlsZCBzaWduYWwgaXMgdXN1YWxseSBqdXN0IGEgZ2xhbmNlIG9yIGEgc2hpZnQuCiAqLwpleHBvcnQgZnVuY3Rpb24gaXNTbG91Y2gocjogUmVhZGluZywgYjogQmFzZWxpbmUpIHsKICBpZiAoIXIuZmFjZVZpc2libGUpIHJldHVybiBmYWxzZTsKICBjb25zdCBwaXRjaERyb3AgPSByLnBpdGNoID4gYi5waXRjaCAqIFNFTlNJVElWSVRZLnNsb3VjaFBpdGNoUmF0aW87CiAgY29uc3Qgc3VuayA9IHIuZnJhbWVZID4gYi5mcmFtZVkgKyBTRU5TSVRJVklUWS5zbG91Y2hGcmFtZVk7CiAgY29uc3QgbGVhbmVkID0gci5leWVEaXN0ID4gYi5leWVEaXN0ICogU0VOU0lUSVZJVFkuc2xvdWNoRXllUmF0aW87CiAgY29uc3QgaGl0cyA9IE51bWJlcihwaXRjaERyb3ApICsgTnVtYmVyKHN1bmspICsgTnVtYmVyKGxlYW5lZCk7CiAgaWYgKGhpdHMgPj0gMikgcmV0dXJuIHRydWU7CiAgcmV0dXJuICgKICAgIHIucGl0Y2ggPiBiLnBpdGNoICogKFNFTlNJVElWSVRZLnNsb3VjaFBpdGNoUmF0aW8gKyAwLjE4KSB8fAogICAgci5mcmFtZVkgPiBiLmZyYW1lWSArIFNFTlNJVElWSVRZLnNsb3VjaEZyYW1lWSAqIDIgfHwKICAgIHIuZXllRGlzdCA+IGIuZXllRGlzdCAqIChTRU5TSVRJVklUWS5zbG91Y2hFeWVSYXRpbyArIDAuMikKICApOwp9CgovKiogVGhlIHR3byB0aGluZ3MgYSBzaXAgbG9va3MgbGlrZSB0byB0aGUgY2FtZXJhLCBleHBvc2VkIHNvIHRoZSBVSSBjYW4gc2hvdyB0aGVtIGxpdmUuICovCmV4cG9ydCBmdW5jdGlvbiBkcmlua1NpZ25hbHMocjogUmVhZGluZywgYjogQmFzZWxpbmUpIHsKICBpZiAoIXIuZmFjZVZpc2libGUpIHJldHVybiB7IGNoaW5VcDogZmFsc2UsIG1vdXRoT3BlbjogZmFsc2UsIGNoaW5XYXlVcDogZmFsc2UgfTsKICByZXR1cm4gewogICAgY2hpblVwOiByLnBpdGNoIDwgYi5waXRjaCAqIFNFTlNJVElWSVRZLmRyaW5rUGl0Y2hSYXRpbywKICAgIGNoaW5XYXlVcDogci5waXRjaCA8IGIucGl0Y2ggKiBTRU5TSVRJVklUWS5kcmlua1BpdGNoSGFyZFJhdGlvLAogICAgbW91dGhPcGVuOiByLm1vdXRoR2FwID4gYi5tb3V0aEdhcCArIFNFTlNJVElWSVRZLmRyaW5rR2FwQWRkLAogIH07Cn0KCi8qKgogKiBDaGluIHRpcHBlZCB1cCB3aXRoIHRoZSBtb3V0aCBvcGVuLCBvciB0aGUgY2hpbiB0aXBwZWQgcmlnaHQgYmFjayAodGhlCiAqIGJvdHRsZSB1c3VhbGx5IGhpZGVzIHRoZSBtb3V0aCB0aGVuKS4gQSB5YXduIGtlZXBzIHRoZSBjaGluIGxldmVsLgogKi8KZXhwb3J0IGZ1bmN0aW9uIGlzRHJpbmsocjogUmVhZGluZywgYjogQmFzZWxpbmUpIHsKICBjb25zdCBzID0gZHJpbmtTaWduYWxzKHIsIGIpOwogIHJldHVybiBzLmNoaW5VcCAmJiAocy5tb3V0aE9wZW4gfHwgcy5jaGluV2F5VXApOwp9CgovKiogTGVhbmluZyBpbiBjbG9zZSB0byB0aGUgc2NyZWVuLCBvbiBpdHMgb3duIChub3QgcGFydCBvZiBhIHNsb3VjaCkuICovCmV4cG9ydCBmdW5jdGlvbiBpc0Nsb3NlKHI6IFJlYWRpbmcsIGI6IEJhc2VsaW5lKSB7CiAgcmV0dXJuIHIuZmFjZVZpc2libGUgJiYgci5leWVEaXN0ID4gYi5leWVEaXN0ICogU0VOU0lUSVZJVFkuc2xvdWNoRXllUmF0aW8gJiYgIWlzU2xvdWNoKHIsIGIpOwp9CgovKiogV2hpY2ggZmFjZSBoYWJpdHMgYXJlIGhhcHBlbmluZyBpbiB0aGlzIG9uZSByZWFkaW5nLiAic3RhcmUiIG1lYW5zIG5vIGJsaW5rLiAqLwpleHBvcnQgZnVuY3Rpb24gaGFiaXRTaWduYWxzKHI6IFJlYWRpbmcsIGI6IEJhc2VsaW5lKTogUmVjb3JkPEhhYml0LCBib29sZWFuPiB7CiAgY29uc3QgdiA9IHIuZmFjZVZpc2libGU7CiAgY29uc3QgbWVhc3VyZWQgPSByLmJsaW5rICE9PSB1bmRlZmluZWQ7CiAgcmV0dXJuIHsKICAgIGZyb3duOgogICAgICB2ICYmCiAgICAgICgoci5icm93RG93biA/PyAwKSA+IChiLmJyb3dEb3duID8/IDApICsgMC4zIHx8IChyLnNxdWludCA/PyAwKSA+IChiLnNxdWludCA/PyAwKSArIDAuMzUpLAogICAgc3RhcmU6IHYgJiYgbWVhc3VyZWQgJiYgKHIuYmxpbmsgPz8gMCkgPCAwLjM1LAogICAgY2xvc2U6IGlzQ2xvc2UociwgYiksCiAgICBuYWlsczogdiAmJiAhIXIuaGFuZEF0TW91dGgsCiAgICB5YXduOiB2ICYmIChyLmphd09wZW4gPz8gMCkgPiAwLjU1ICYmICFpc0RyaW5rKHIsIGIpLAogICAgcGhvbmU6IHYgJiYgKHIubG9va0Rvd24gPz8gMCkgPiAwLjUgJiYgIWlzU2xvdWNoKHIsIGIpLAogIH07Cn0KCi8qKiBDb3VudCBhIHNpcDogb25lIGNlbGVicmF0aW9uIHBlciBjb29sZG93biB3aW5kb3cuIE11dGF0ZXMgcy4gKi8KZnVuY3Rpb24gY291bnREcmluayhzOiBQbGFudFN0YXRlLCBhdDogbnVtYmVyLCBldmVudHM6IFBsYW50RXZlbnRbXSkgewogIGV2ZW50cy5wdXNoKGV2ZW50KCJkcmluayIsIGF0KSk7CiAgcy5kcmlua0hvbGRNcyA9IDA7CiAgcy5sYXN0RHJpbmtBdCA9IGF0OwogIHMuZHJpbmtDb3VudCArPSAxOwogIHMuZHJpbmtTdHJlYWsgKz0gMTsKICBzLm1vb2QgPSBjbGFtcChzLm1vb2QgKyBSVUxFUy5kcmlua0Jvb3N0LCBSVUxFUy5tb29kTWluLCBSVUxFUy5tb29kTWF4KTsKICBzLmRyeU1zID0gMDsKICBzLnNsb3VjaE1zID0gMDsKfQoKLyoqICJJIGp1c3QgZHJhbmsiIHByZXNzZWQgYnkgaGFuZCwgZm9yIHdoZW4gdGhlIGNhbWVyYSBtaXNzZWQgdGhlIHNpcC4gKi8KZXhwb3J0IGZ1bmN0aW9uIGxvZ0RyaW5rKHN0YXRlOiBQbGFudFN0YXRlLCBhdDogbnVtYmVyKTogeyBzdGF0ZTogUGxhbnRTdGF0ZTsgZXZlbnRzOiBQbGFudEV2ZW50W10gfSB7CiAgY29uc3QgZXZlbnRzOiBQbGFudEV2ZW50W10gPSBbXTsKICBjb25zdCBzOiBQbGFudFN0YXRlID0geyAuLi5zdGF0ZSwgbGFzdE5hZ0F0OiB7IC4uLnN0YXRlLmxhc3ROYWdBdCB9IH07CiAgaWYgKGF0IC0gcy5sYXN0RHJpbmtBdCA8IFJVTEVTLmRyaW5rQ29vbGRvd25NcykgcmV0dXJuIHsgc3RhdGU6IHMsIGV2ZW50cyB9OwogIGNvdW50RHJpbmsocywgYXQsIGV2ZW50cyk7CiAgcmV0dXJuIHsgc3RhdGU6IHMsIGV2ZW50cyB9Owp9CgpleHBvcnQgZnVuY3Rpb24gbW9vZExhYmVsKG1vb2Q6IG51bWJlcikgewogIGlmIChtb29kID49IDgwKSByZXR1cm4gInRocml2aW5nIjsKICBpZiAobW9vZCA+PSA1NSkgcmV0dXJuICJoYW5naW5nIGluIHRoZXJlIjsKICBpZiAobW9vZCA+PSAzMCkgcmV0dXJuICJ3aWx0aW5nIjsKICBpZiAobW9vZCA+PSAxMikgcmV0dXJuICJkcmFtYXRpY2FsbHkgZHlpbmciOwogIHJldHVybiAiYmFzaWNhbGx5IGEgc3RpY2siOwp9CgovKioKICogQWR2YW5jZSB0aGUgcGxhbnQgYnkgZHRNcyBvZiBwbGFudCB0aW1lLgogKiBSZXR1cm5zIHRoZSBuZXcgc3RhdGUgcGx1cyBhbnkgZXZlbnRzIHRoZSBVSSBzaG91bGQgcmVhY3QgdG8uCiAqLwpleHBvcnQgZnVuY3Rpb24gdGljaygKICBzdGF0ZTogUGxhbnRTdGF0ZSwKICByZWFkaW5nOiBSZWFkaW5nLAogIGR0TXM6IG51bWJlciwKICBiYXNlbGluZTogQmFzZWxpbmUsCik6IHsgc3RhdGU6IFBsYW50U3RhdGU7IGV2ZW50czogUGxhbnRFdmVudFtdIH0gewogIGNvbnN0IGV2ZW50czogUGxhbnRFdmVudFtdID0gW107CiAgY29uc3QgczogUGxhbnRTdGF0ZSA9IHsgLi4uc3RhdGUsIGxhc3ROYWdBdDogeyAuLi5zdGF0ZS5sYXN0TmFnQXQgfSB9OwogIGNvbnN0IGF0ID0gcmVhZGluZy5hdDsKCiAgLy8gU2NyZWVuIHRpbWUgcnVucyB3aGV0aGVyIG9yIG5vdCB5b3UgYXJlIGluIGZyYW1lLiBUaGF0IGlzIHRoZSB3aG9sZSBwb2ludC4KICBzLnNjcmVlbk1zICs9IGR0TXM7CgogIGlmICghcmVhZGluZy5mYWNlVmlzaWJsZSkgewogICAgcy5hd2F5TXMgKz0gZHRNczsKICAgIGlmIChzLmF3YXlNcyA+PSBSVUxFUy5hd2F5TXMgJiYgY2FuTmFnKHMsICJhd2F5IiwgYXQpKSB7CiAgICAgIGV2ZW50cy5wdXNoKGV2ZW50KCJhd2F5IiwgYXQpKTsKICAgICAgcy5sYXN0TmFnQXQuYXdheSA9IGF0OwogICAgICBzLm1vb2QgLT0gUlVMRVMuYXdheUhpdDsKICAgICAgcy5hd2F5TXMgPSAwOwogICAgfQogIH0gZWxzZSB7CiAgICBjb25zdCB3YXNHb25lID0gcy5hd2F5TXMgPj0gUlVMRVMuYXdheU1zOwogICAgcy5hd2F5TXMgPSAwOwogICAgaWYgKHdhc0dvbmUpIHsKICAgICAgZXZlbnRzLnB1c2goZXZlbnQoImJhY2siLCBhdCkpOwogICAgICBzLm1vb2QgKz0gUlVMRVMuYmFja0Jvb3N0OwogICAgfQoKICAgIC8vIERyaW5raW5nOiBhIGhlbGQgc2lnbmFsLCBub3QgYSBzaW5nbGUgZnJhbWUsIHNvIGEgeWF3biBjYW5ub3QgZm9vbCBpdC4KICAgIGlmIChpc0RyaW5rKHJlYWRpbmcsIGJhc2VsaW5lKSkgcy5kcmlua0hvbGRNcyArPSBkdE1zOwogICAgZWxzZSBzLmRyaW5rSG9sZE1zID0gMDsKCiAgICBpZiAoCiAgICAgIHMuZHJpbmtIb2xkTXMgPj0gUlVMRVMuZHJpbmtIb2xkTXMgJiYKICAgICAgYXQgLSBzLmxhc3REcmlua0F0ID49IFJVTEVTLmRyaW5rQ29vbGRvd25NcwogICAgKSB7CiAgICAgIGNvdW50RHJpbmsocywgYXQsIGV2ZW50cyk7CiAgICB9IGVsc2UgewogICAgICBzLmRyeU1zICs9IGR0TXM7CiAgICB9CgogICAgY29uc3QgaHMgPSBoYWJpdFNpZ25hbHMocmVhZGluZywgYmFzZWxpbmUpOwogICAgcy5oYWJpdE1zID0geyAuLi5zLmhhYml0TXMgfTsKICAgIHMuaGFiaXRPa01zID0geyAuLi5zLmhhYml0T2tNcyB9OwogICAgcy5oYWJpdE5hZ2dlZCA9IHsgLi4ucy5oYWJpdE5hZ2dlZCB9OwogICAgZm9yIChjb25zdCBoIG9mIEhBQklUUykgewogICAgICBpZiAoaHNbaF0pIHsKICAgICAgICBzLmhhYml0TXNbaF0gPSAocy5oYWJpdE1zW2hdID8/IDApICsgZHRNczsKICAgICAgICBzLmhhYml0T2tNc1toXSA9IDA7CiAgICAgICAgaWYgKChzLmhhYml0TXNbaF0gPz8gMCkgPj0gUlVMRVMuaGFiaXRNc1toXSAmJiBjYW5OYWcocywgaCwgYXQpKSB7CiAgICAgICAgICBldmVudHMucHVzaChldmVudChoLCBhdCkpOwogICAgICAgICAgcy5sYXN0TmFnQXRbaF0gPSBhdDsKICAgICAgICAgIHMuaGFiaXROYWdnZWRbaF0gPSB0cnVlOwogICAgICAgICAgcy5tb29kIC09IFJVTEVTLmhhYml0SGl0OwogICAgICAgIH0KICAgICAgfSBlbHNlIHsKICAgICAgICBzLmhhYml0TXNbaF0gPSAwOwogICAgICAgIHMuaGFiaXRPa01zW2hdID0gKHMuaGFiaXRPa01zW2hdID8/IDApICsgZHRNczsKICAgICAgICAvLyBhIGJsaW5rIGVuZHMgYSBzdGFyZSBhdCBvbmNlOyBldmVyeXRoaW5nIGVsc2UgbXVzdCBzdG9wIGZvciBhIG1vbWVudAogICAgICAgIGNvbnN0IG9rRm9yID0gaCA9PT0gInN0YXJlIiA/IDAgOiBSVUxFUy5oYWJpdE9rTXM7CiAgICAgICAgaWYgKHMuaGFiaXROYWdnZWRbaF0gJiYgKHMuaGFiaXRPa01zW2hdID8/IDApID49IG9rRm9yKSB7CiAgICAgICAgICBzLmhhYml0TmFnZ2VkW2hdID0gZmFsc2U7CiAgICAgICAgICBldmVudHMucHVzaCh7IGtpbmQ6ICJmaXhlZCIsIGF0LCBvZjogaCB9KTsKICAgICAgICAgIHMubW9vZCArPSBSVUxFUy5maXhlZEJvb3N0IC8gMjsKICAgICAgICB9CiAgICAgIH0KICAgIH0KCiAgICBpZiAoaXNTbG91Y2gocmVhZGluZywgYmFzZWxpbmUpKSB7CiAgICAgIHMuc2xvdWNoTXMgKz0gZHRNczsKICAgICAgcy51cHJpZ2h0TXMgPSAwOwogICAgfSBlbHNlIHsKICAgICAgcy5zbG91Y2hNcyA9IDA7CiAgICAgIHMudXByaWdodE1zICs9IGR0TXM7CiAgICAgIGlmIChzLnNsb3VjaE5hZ2dlZCAmJiBzLnVwcmlnaHRNcyA+PSBSVUxFUy51cHJpZ2h0Q29uZmlybU1zKSB7CiAgICAgICAgcy5zbG91Y2hOYWdnZWQgPSBmYWxzZTsKICAgICAgICBldmVudHMucHVzaCh7IGtpbmQ6ICJmaXhlZCIsIGF0LCBvZjogInNsb3VjaCIgfSk7CiAgICAgICAgcy5tb29kICs9IFJVTEVTLmZpeGVkQm9vc3Q7CiAgICAgIH0KICAgICAgcy5tb29kICs9IChkdE1zIC8gNjBfMDAwKSAqIFJVTEVTLnVwcmlnaHRSZWNvdmVyeVBlck1pbjsKICAgIH0KICB9CgogIC8vIFNsb3VjaCBhbmQgdGhpcnN0IHRpbWVycyBrZWVwIGdyb3dpbmcgYWZ0ZXIgYSBuYWcsIHNvIGFuIG9uZ29pbmcgc2xvdWNoCiAgLy8gZWFybnMgYSBmcmVzaCwgaW5jcmVhc2luZ2x5IHVuaGluZ2VkIGxpbmUgZXZlcnkgY29vbGRvd24gd2luZG93IGluc3RlYWQKICAvLyBvZiB0aGUgcGxhbnQgc2lsZW50bHkgZm9yZ2l2aW5nIHlvdS4KICBpZiAocy5zbG91Y2hNcyA+PSBSVUxFUy5zbG91Y2hNcyAmJiBjYW5OYWcocywgInNsb3VjaCIsIGF0KSkgewogICAgZXZlbnRzLnB1c2goZXZlbnQoInNsb3VjaCIsIGF0KSk7CiAgICBzLmxhc3ROYWdBdC5zbG91Y2ggPSBhdDsKICAgIHMubW9vZCAtPSBSVUxFUy5zbG91Y2hIaXQ7CiAgICBzLnNsb3VjaENvdW50ICs9IDE7CiAgICBzLnNsb3VjaE5hZ2dlZCA9IHRydWU7CiAgICBzLmRyaW5rU3RyZWFrID0gMDsKICB9CgogIGlmIChzLmRyeU1zID49IFJVTEVTLnRoaXJzdE1zICYmIGNhbk5hZyhzLCAidGhpcnN0IiwgYXQpKSB7CiAgICBldmVudHMucHVzaChldmVudCgidGhpcnN0IiwgYXQpKTsKICAgIHMubGFzdE5hZ0F0LnRoaXJzdCA9IGF0OwogICAgcy5tb29kIC09IFJVTEVTLnRoaXJzdEhpdDsKICAgIHMuZHJpbmtTdHJlYWsgPSAwOwogIH0KCiAgaWYgKHMuc2NyZWVuTXMgPj0gUlVMRVMuc2NyZWVuTXMgJiYgY2FuTmFnKHMsICJzY3JlZW4iLCBhdCkpIHsKICAgIGV2ZW50cy5wdXNoKGV2ZW50KCJzY3JlZW4iLCBhdCkpOwogICAgcy5sYXN0TmFnQXQuc2NyZWVuID0gYXQ7CiAgICBzLm1vb2QgLT0gUlVMRVMuc2NyZWVuSGl0OwogICAgcy5zY3JlZW5NcyA9IDA7CiAgfQoKICBzLm1vb2QgPSBjbGFtcChzLm1vb2QsIFJVTEVTLm1vb2RNaW4sIFJVTEVTLm1vb2RNYXgpOwoKICBpZiAoYXQgLSBzLmxhc3RUcmFpbEF0ID49IFJVTEVTLnRyYWlsRXZlcnlNcykgewogICAgcy50cmFpbCA9IFsKICAgICAgLi4ucy50cmFpbCwKICAgICAgeyBhdCwgbW9vZDogcy5tb29kLCBkcmlua3M6IHMuZHJpbmtDb3VudCwgc2xvdWNoZXM6IHMuc2xvdWNoQ291bnQgfSwKICAgIF0uc2xpY2UoLVJVTEVTLnRyYWlsTWF4KTsKICAgIHMubGFzdFRyYWlsQXQgPSBhdDsKICB9CgogIHJldHVybiB7IHN0YXRlOiBzLCBldmVudHMgfTsKfQo=
+/**
+ * The plant's brain. Pure and DOM-free so the rules can be tested with a
+ * stop-watch instead of a webcam.
+ *
+ * All timings are in milliseconds of *plant time*. The caller scales real
+ * elapsed time by a demo-speed factor before handing it to tick(), so the
+ * rules below always read as literal, honest numbers.
+ */
+
+export type Reading = {
+  /** epoch ms of this reading */
+  at: number;
+  faceVisible: boolean;
+  /**
+   * nose tip below the eye line, divided by eye size. The nose sticks out, so
+   * dropping your head pushes it further below the eyes (larger) and tipping
+   * your chin up pulls it towards them (smaller).
+   */
+  pitch: number;
+  /** eye line height in the frame, 0 = top, 1 = bottom. Larger = you sank down. */
+  frameY: number;
+  /** distance between the eyes relative to frame width. Larger = closer to the camera. */
+  eyeDist: number;
+  /** mouth opening relative to eye distance */
+  mouthGap: number;
+  /** face blendshapes 0..1 (camera only; missing = not measured) */
+  browDown?: number | undefined;
+  squint?: number | undefined;
+  blink?: number | undefined;
+  jawOpen?: number | undefined;
+  lookDown?: number | undefined;
+  /** a fingertip is at the mouth */
+  handAtMouth?: boolean | undefined;
+};
+
+export type Baseline = {
+  /** what "sitting properly" looks like for this person, on this camera */
+  pitch: number;
+  frameY: number;
+  eyeDist: number;
+  mouthGap: number;
+  browDown?: number | undefined;
+  squint?: number | undefined;
+};
+
+export const RULES = {
+  /** "Slouch for more than 2 minutes, and the plant sighs." */
+  slouchMs: 10_000,
+  /** no drink for this long -> thirst nag */
+  thirstMs: 60_000,
+  /** this much screen time -> eye-rest nag */
+  screenMs: 60 * 60_000,
+  /** face gone for this long -> abandonment nag */
+  awayMs: 10_000,
+  /** chin tipped up (mouth open, or chin way up) held this long counts as a drink */
+  drinkHoldMs: 1200,
+  /** a sip is one celebration, not one per frame */
+  drinkCooldownMs: 20_000,
+  /** the plant will not nag twice about the same thing inside this window */
+  nagCooldownMs: 45_000,
+  moodStart: 72,
+  moodMax: 100,
+  moodMin: 0,
+  slouchHit: 18,
+  thirstHit: 8,
+  screenHit: 6,
+  awayHit: 4,
+  /** sitting up straight this long after a slouch nag counts as fixed */
+  uprightConfirmMs: 3000,
+  fixedBoost: 8,
+  drinkBoost: 14,
+  backBoost: 6,
+  /** mood regained per minute spent sitting up straight */
+  uprightRecoveryPerMin: 3,
+  /** face habits: how long each must last before Gerald says something */
+  habitMs: { frown: 5_000, stare: 10_000, close: 10_000, nails: 5_000, yawn: 5_000, phone: 20_000 },
+  habitHit: 5,
+  /** stopping a nagged habit for this long counts as fixed */
+  habitOkMs: 2000,
+  trailEveryMs: 5_000,
+  trailMax: 400,
+} as const;
+
+/**
+ * How much worse than your own good posture counts as slouching. Exposed to
+ * the UI as sensitivity, because every webcam and chair is different.
+ */
+export const SENSITIVITY = {
+  /** head dropped: nose this much further below the eyes than when calibrated */
+  slouchPitchRatio: 1.22,
+  slouchFrameY: 0.07,
+  slouchEyeRatio: 1.25,
+  /** mouth this much more open than at rest */
+  drinkGapAdd: 0.15,
+  /** chin up: nose this much closer to the eye line than when calibrated */
+  drinkPitchRatio: 0.78,
+  /** chin so far up that it counts even when the bottle hides the mouth */
+  drinkPitchHardRatio: 0.6,
+};
+
+export const HABITS = ["frown", "stare", "close", "nails", "yawn", "phone"] as const;
+export type Habit = (typeof HABITS)[number];
+export type NagKind = "slouch" | "thirst" | "screen" | "away" | Habit;
+export type EventKind = NagKind | "drink" | "back" | "fixed";
+export type Delivery = "sigh" | "scold" | "gospel" | "whisper";
+export type Leaf = "wither" | "perk" | "droop";
+
+/** of = which bad habit a fixed event confirms */
+export type PlantEvent = { kind: EventKind; at: number; of?: "slouch" | Habit };
+
+export const FLAVOR: Record<EventKind, { delivery: Delivery; leaf: Leaf }> = {
+  slouch: { delivery: "sigh", leaf: "wither" },
+  thirst: { delivery: "whisper", leaf: "droop" },
+  screen: { delivery: "scold", leaf: "droop" },
+  away: { delivery: "whisper", leaf: "droop" },
+  drink: { delivery: "gospel", leaf: "perk" },
+  back: { delivery: "whisper", leaf: "perk" },
+  fixed: { delivery: "whisper", leaf: "perk" },
+  frown: { delivery: "scold", leaf: "droop" },
+  stare: { delivery: "whisper", leaf: "droop" },
+  close: { delivery: "scold", leaf: "droop" },
+  nails: { delivery: "scold", leaf: "wither" },
+  yawn: { delivery: "sigh", leaf: "droop" },
+  phone: { delivery: "scold", leaf: "droop" },
+};
+
+export type TrailPoint = {
+  at: number;
+  mood: number;
+  drinks: number;
+  slouches: number;
+};
+
+export type PlantState = {
+  mood: number;
+  slouchMs: number;
+  dryMs: number;
+  screenMs: number;
+  awayMs: number;
+  drinkHoldMs: number;
+  /** when the last drink was counted, so one sip is one celebration */
+  lastDrinkAt: number;
+  /** consecutive drinks without a nag in between */
+  drinkStreak: number;
+  drinkCount: number;
+  slouchCount: number;
+  /** a slouch nag is outstanding, waiting for you to sit up */
+  slouchNagged: boolean;
+  uprightMs: number;
+  /** how long each face habit has been going on, and whether a nag awaits a fix */
+  habitMs?: Partial<Record<Habit, number>>;
+  habitOkMs?: Partial<Record<Habit, number>>;
+  habitNagged?: Partial<Record<Habit, boolean>>;
+  lastNagAt: Partial<Record<NagKind, number>>;
+  startedAt: number;
+  lastTrailAt: number;
+  trail: TrailPoint[];
+};
+
+function clamp(n: number, lo: number, hi: number) {
+  return Math.max(lo, Math.min(hi, n));
+}
+
+function event(kind: EventKind, at: number): PlantEvent {
+  return { kind, at };
+}
+
+function canNag(s: PlantState, kind: NagKind, at: number) {
+  const last = s.lastNagAt[kind];
+  return last === undefined || at - last >= RULES.nagCooldownMs;
+}
+
+export function createState(at: number): PlantState {
+  return {
+    mood: RULES.moodStart,
+    slouchMs: 0,
+    dryMs: 0,
+    screenMs: 0,
+    awayMs: 0,
+    drinkHoldMs: 0,
+    lastDrinkAt: at - RULES.drinkCooldownMs,
+    drinkStreak: 0,
+    drinkCount: 0,
+    slouchCount: 0,
+    slouchNagged: false,
+    uprightMs: 0,
+    habitMs: {},
+    habitOkMs: {},
+    habitNagged: {},
+    lastNagAt: {},
+    startedAt: at,
+    lastTrailAt: at,
+    trail: [{ at, mood: RULES.moodStart, drinks: 0, slouches: 0 }],
+  };
+}
+
+/**
+ * Average a handful of "I am sitting properly" readings into a personal
+ * baseline. Calibrating beats hard-coded angles: it works on any webcam,
+ * any lighting, any chair.
+ */
+export function calibrate(readings: Reading[]): Baseline {
+  const seen = readings.filter((r) => r.faceVisible);
+  if (seen.length === 0) {
+    throw new Error("No face found yet. Sit where the camera can see you and try again.");
+  }
+  const avg = (f: (r: Reading) => number) =>
+    seen.reduce((sum, r) => sum + f(r), 0) / seen.length;
+  return {
+    pitch: avg((r) => r.pitch),
+    frameY: avg((r) => r.frameY),
+    eyeDist: avg((r) => r.eyeDist),
+    mouthGap: avg((r) => r.mouthGap),
+    browDown: avg((r) => r.browDown ?? 0),
+    squint: avg((r) => r.squint ?? 0),
+  };
+}
+
+/**
+ * Two signals must agree (head dropped, sunk lower in frame, leaned in), or one
+ * must be extreme. A single mild signal is usually just a glance or a shift.
+ */
+export function isSlouch(r: Reading, b: Baseline) {
+  if (!r.faceVisible) return false;
+  const pitchDrop = r.pitch > b.pitch * SENSITIVITY.slouchPitchRatio;
+  const sunk = r.frameY > b.frameY + SENSITIVITY.slouchFrameY;
+  const leaned = r.eyeDist > b.eyeDist * SENSITIVITY.slouchEyeRatio;
+  const hits = Number(pitchDrop) + Number(sunk) + Number(leaned);
+  if (hits >= 2) return true;
+  return (
+    r.pitch > b.pitch * (SENSITIVITY.slouchPitchRatio + 0.18) ||
+    r.frameY > b.frameY + SENSITIVITY.slouchFrameY * 2 ||
+    r.eyeDist > b.eyeDist * (SENSITIVITY.slouchEyeRatio + 0.2)
+  );
+}
+
+/** The two things a sip looks like to the camera, exposed so the UI can show them live. */
+export function drinkSignals(r: Reading, b: Baseline) {
+  if (!r.faceVisible) return { chinUp: false, mouthOpen: false, chinWayUp: false };
+  return {
+    chinUp: r.pitch < b.pitch * SENSITIVITY.drinkPitchRatio,
+    chinWayUp: r.pitch < b.pitch * SENSITIVITY.drinkPitchHardRatio,
+    mouthOpen: r.mouthGap > b.mouthGap + SENSITIVITY.drinkGapAdd,
+  };
+}
+
+/**
+ * Chin tipped up with the mouth open, or the chin tipped right back (the
+ * bottle usually hides the mouth then). A yawn keeps the chin level.
+ */
+export function isDrink(r: Reading, b: Baseline) {
+  const s = drinkSignals(r, b);
+  return s.chinUp && (s.mouthOpen || s.chinWayUp);
+}
+
+/** Leaning in close to the screen, on its own (not part of a slouch). */
+export function isClose(r: Reading, b: Baseline) {
+  return r.faceVisible && r.eyeDist > b.eyeDist * SENSITIVITY.slouchEyeRatio && !isSlouch(r, b);
+}
+
+/** Which face habits are happening in this one reading. "stare" means no blink. */
+export function habitSignals(r: Reading, b: Baseline): Record<Habit, boolean> {
+  const v = r.faceVisible;
+  const measured = r.blink !== undefined;
+  return {
+    frown:
+      v &&
+      ((r.browDown ?? 0) > (b.browDown ?? 0) + 0.3 || (r.squint ?? 0) > (b.squint ?? 0) + 0.35),
+    stare: v && measured && (r.blink ?? 0) < 0.35,
+    close: isClose(r, b),
+    nails: v && !!r.handAtMouth,
+    yawn: v && (r.jawOpen ?? 0) > 0.55 && !isDrink(r, b),
+    phone: v && (r.lookDown ?? 0) > 0.5 && !isSlouch(r, b),
+  };
+}
+
+/** Count a sip: one celebration per cooldown window. Mutates s. */
+function countDrink(s: PlantState, at: number, events: PlantEvent[]) {
+  events.push(event("drink", at));
+  s.drinkHoldMs = 0;
+  s.lastDrinkAt = at;
+  s.drinkCount += 1;
+  s.drinkStreak += 1;
+  s.mood = clamp(s.mood + RULES.drinkBoost, RULES.moodMin, RULES.moodMax);
+  s.dryMs = 0;
+  s.slouchMs = 0;
+}
+
+/** "I just drank" pressed by hand, for when the camera missed the sip. */
+export function logDrink(state: PlantState, at: number): { state: PlantState; events: PlantEvent[] } {
+  const events: PlantEvent[] = [];
+  const s: PlantState = { ...state, lastNagAt: { ...state.lastNagAt } };
+  if (at - s.lastDrinkAt < RULES.drinkCooldownMs) return { state: s, events };
+  countDrink(s, at, events);
+  return { state: s, events };
+}
+
+export function moodLabel(mood: number) {
+  if (mood >= 80) return "thriving";
+  if (mood >= 55) return "hanging in there";
+  if (mood >= 30) return "wilting";
+  if (mood >= 12) return "dramatically dying";
+  return "basically a stick";
+}
+
+/**
+ * Advance the plant by dtMs of plant time.
+ * Returns the new state plus any events the UI should react to.
+ */
+export function tick(
+  state: PlantState,
+  reading: Reading,
+  dtMs: number,
+  baseline: Baseline,
+): { state: PlantState; events: PlantEvent[] } {
+  const events: PlantEvent[] = [];
+  const s: PlantState = { ...state, lastNagAt: { ...state.lastNagAt } };
+  const at = reading.at;
+
+  // Screen time runs whether or not you are in frame. That is the whole point.
+  s.screenMs += dtMs;
+
+  if (!reading.faceVisible) {
+    s.awayMs += dtMs;
+    if (s.awayMs >= RULES.awayMs && canNag(s, "away", at)) {
+      events.push(event("away", at));
+      s.lastNagAt.away = at;
+      s.mood -= RULES.awayHit;
+      s.awayMs = 0;
+    }
+  } else {
+    const wasGone = s.awayMs >= RULES.awayMs;
+    s.awayMs = 0;
+    if (wasGone) {
+      events.push(event("back", at));
+      s.mood += RULES.backBoost;
+    }
+
+    // Drinking: a held signal, not a single frame, so a yawn cannot fool it.
+    if (isDrink(reading, baseline)) s.drinkHoldMs += dtMs;
+    else s.drinkHoldMs = 0;
+
+    if (
+      s.drinkHoldMs >= RULES.drinkHoldMs &&
+      at - s.lastDrinkAt >= RULES.drinkCooldownMs
+    ) {
+      countDrink(s, at, events);
+    } else {
+      s.dryMs += dtMs;
+    }
+
+    const hs = habitSignals(reading, baseline);
+    s.habitMs = { ...s.habitMs };
+    s.habitOkMs = { ...s.habitOkMs };
+    s.habitNagged = { ...s.habitNagged };
+    for (const h of HABITS) {
+      if (hs[h]) {
+        s.habitMs[h] = (s.habitMs[h] ?? 0) + dtMs;
+        s.habitOkMs[h] = 0;
+        if ((s.habitMs[h] ?? 0) >= RULES.habitMs[h] && canNag(s, h, at)) {
+          events.push(event(h, at));
+          s.lastNagAt[h] = at;
+          s.habitNagged[h] = true;
+          s.mood -= RULES.habitHit;
+        }
+      } else {
+        s.habitMs[h] = 0;
+        s.habitOkMs[h] = (s.habitOkMs[h] ?? 0) + dtMs;
+        // a blink ends a stare at once; everything else must stop for a moment
+        const okFor = h === "stare" ? 0 : RULES.habitOkMs;
+        if (s.habitNagged[h] && (s.habitOkMs[h] ?? 0) >= okFor) {
+          s.habitNagged[h] = false;
+          events.push({ kind: "fixed", at, of: h });
+          s.mood += RULES.fixedBoost / 2;
+        }
+      }
+    }
+
+    if (isSlouch(reading, baseline)) {
+      s.slouchMs += dtMs;
+      s.uprightMs = 0;
+    } else {
+      s.slouchMs = 0;
+      s.uprightMs += dtMs;
+      if (s.slouchNagged && s.uprightMs >= RULES.uprightConfirmMs) {
+        s.slouchNagged = false;
+        events.push({ kind: "fixed", at, of: "slouch" });
+        s.mood += RULES.fixedBoost;
+      }
+      s.mood += (dtMs / 60_000) * RULES.uprightRecoveryPerMin;
+    }
+  }
+
+  // Slouch and thirst timers keep growing after a nag, so an ongoing slouch
+  // earns a fresh, increasingly unhinged line every cooldown window instead
+  // of the plant silently forgiving you.
+  if (s.slouchMs >= RULES.slouchMs && canNag(s, "slouch", at)) {
+    events.push(event("slouch", at));
+    s.lastNagAt.slouch = at;
+    s.mood -= RULES.slouchHit;
+    s.slouchCount += 1;
+    s.slouchNagged = true;
+    s.drinkStreak = 0;
+  }
+
+  if (s.dryMs >= RULES.thirstMs && canNag(s, "thirst", at)) {
+    events.push(event("thirst", at));
+    s.lastNagAt.thirst = at;
+    s.mood -= RULES.thirstHit;
+    s.drinkStreak = 0;
+  }
+
+  if (s.screenMs >= RULES.screenMs && canNag(s, "screen", at)) {
+    events.push(event("screen", at));
+    s.lastNagAt.screen = at;
+    s.mood -= RULES.screenHit;
+    s.screenMs = 0;
+  }
+
+  s.mood = clamp(s.mood, RULES.moodMin, RULES.moodMax);
+
+  if (at - s.lastTrailAt >= RULES.trailEveryMs) {
+    s.trail = [
+      ...s.trail,
+      { at, mood: s.mood, drinks: s.drinkCount, slouches: s.slouchCount },
+    ].slice(-RULES.trailMax);
+    s.lastTrailAt = at;
+  }
+
+  return { state: s, events };
+}

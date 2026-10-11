@@ -1,1 +1,213 @@
-aW1wb3J0IHsgdXNlRWZmZWN0LCB1c2VJZCwgdXNlU3RhdGUsIHR5cGUgQ1NTUHJvcGVydGllcyB9IGZyb20gInJlYWN0IjsKaW1wb3J0IHR5cGUgeyBFdmVudEtpbmQsIExlYWYgfSBmcm9tICJAL2xpYi9wbGFudC1jb3JlIjsKCi8qKgogKiBHZXJhbGQuIEEgcG90dGVkIHBsYW50IHdob3NlIGxlYXZlcyBwaHlzaWNhbGx5IGRyb29wIGFzIGhpcyBtb29kIGRyb3BzLCBhbmQKICogd2hvc2UgZmFjZSBzaWdocyB3aGVuIGhlIHNwZWFrcy4KICovCgpjb25zdCBBVFRBQ0ggPSBbCiAgeyB5OiAxNTQsIHNpZGU6IC0xLCBzaXplOiAxIH0sCiAgeyB5OiAxMzYsIHNpZGU6IDEsIHNpemU6IDEuMTIgfSwKICB7IHk6IDExOCwgc2lkZTogLTEsIHNpemU6IDEuMDUgfSwKICB7IHk6IDEwMSwgc2lkZTogMSwgc2l6ZTogMC45IH0sCiAgeyB5OiA4Niwgc2lkZTogLTEsIHNpemU6IDAuNzggfSwKXTsKCmNvbnN0IExFQUZfUEFUSCA9ICJNMCAwIEMgMjAgLTE2LCA0NCAtMTMsIDU4IDEgQyA0NCAxNSwgMjAgMTcsIDAgMCBaIjsKCmV4cG9ydCB0eXBlIFBsYW50RXhwcmVzc2lvbiA9ICJzcXVpbnQiIHwgImV5ZS1yb2xsIiB8ICJwcmVzc2VkLWxpcHMiIHwgImhlYWQtc2hha2UiIHwgInNtdWciIHwgInVuaW1wcmVzc2VkIiB8ICJ3YXRjaGZ1bCI7CgpleHBvcnQgZnVuY3Rpb24gUGxhbnQoewogIG1vb2QsCiAgbGVhZiwKICBzcGVha2luZywKICBwdWxzZSwKICByZWFjdGlvbiwKICBwcmV2aWV3RXhwcmVzc2lvbiwKfTogewogIG1vb2Q6IG51bWJlcjsKICBsZWFmOiBMZWFmOwogIHNwZWFraW5nOiBib29sZWFuOwogIHB1bHNlOiBudW1iZXI7CiAgcmVhY3Rpb24/OiBFdmVudEtpbmQgfCB1bmRlZmluZWQ7CiAgcHJldmlld0V4cHJlc3Npb24/OiBQbGFudEV4cHJlc3Npb24gfCB1bmRlZmluZWQ7Cn0pIHsKICBjb25zdCBleWVDbGlwID0gdXNlSWQoKS5yZXBsYWNlKC86L2csICIiKTsKICBjb25zdCBbcmVhY3RpbmcsIHNldFJlYWN0aW5nXSA9IHVzZVN0YXRlKGZhbHNlKTsKICB1c2VFZmZlY3QoKCkgPT4gewogICAgaWYgKHB1bHNlID09PSAwKSByZXR1cm47CiAgICBzZXRSZWFjdGluZyh0cnVlKTsKICAgIGNvbnN0IHRpbWVvdXQgPSBzZXRUaW1lb3V0KCgpID0+IHNldFJlYWN0aW5nKGZhbHNlKSwgNDIwMCk7CiAgICByZXR1cm4gKCkgPT4gY2xlYXJUaW1lb3V0KHRpbWVvdXQpOwogIH0sIFtwdWxzZV0pOwogIGNvbnN0IHBsZWFzZWQgPSBwcmV2aWV3RXhwcmVzc2lvbiA/IHByZXZpZXdFeHByZXNzaW9uID09PSAic211ZyIgOiByZWFjdGluZyAmJiAocmVhY3Rpb24gPT09ICJkcmluayIgfHwgcmVhY3Rpb24gPT09ICJiYWNrIiB8fCByZWFjdGlvbiA9PT0gImZpeGVkIik7CiAgY29uc3QgYW5ub3llZCA9IHByZXZpZXdFeHByZXNzaW9uID8gWyJzcXVpbnQiLCAiZXllLXJvbGwiLCAicHJlc3NlZC1saXBzIiwgImhlYWQtc2hha2UiXS5pbmNsdWRlcyhwcmV2aWV3RXhwcmVzc2lvbikgOiByZWFjdGluZyAmJiAhcGxlYXNlZDsKICBjb25zdCBleHByZXNzaW9uID0gcHJldmlld0V4cHJlc3Npb24gPz8gKHBsZWFzZWQgPyAic211ZyIgOiBhbm5veWVkID8gImFubm95ZWQiIDogbW9vZCA8IDQ1ID8gInVuaW1wcmVzc2VkIiA6ICJ3YXRjaGZ1bCIpOwogIGNvbnN0IHNoYWtlID0gcHJldmlld0V4cHJlc3Npb24gPyBwcmV2aWV3RXhwcmVzc2lvbiA9PT0gImhlYWQtc2hha2UiIDogYW5ub3llZDsKICBjb25zdCByb2xsID0gcHJldmlld0V4cHJlc3Npb24gPyBwcmV2aWV3RXhwcmVzc2lvbiA9PT0gImV5ZS1yb2xsIiA6IGFubm95ZWQ7CiAgY29uc3QgcHJlc3MgPSBwcmV2aWV3RXhwcmVzc2lvbiA/IHByZXZpZXdFeHByZXNzaW9uID09PSAicHJlc3NlZC1saXBzIiA6IGFubm95ZWQ7CiAgY29uc3Qgc3F1aW50ID0gcHJldmlld0V4cHJlc3Npb24gPyBwcmV2aWV3RXhwcmVzc2lvbiA9PT0gInNxdWludCIgOiByZWFjdGluZzsKICBjb25zdCBoZWFsdGggPSBNYXRoLm1heCgwLCBNYXRoLm1pbigxLCBtb29kIC8gMTAwKSk7CiAgLy8gUGVya3kgd2hlbiBoZWFsdGh5LCBmbGF0IG9uIHRoZSBkZXNrIHdoZW4gZHlpbmcuCiAgY29uc3QgZHJvb3AgPSAtMjYgKyAoMSAtIGhlYWx0aCkgKiA2MiArIChsZWFmID09PSAid2l0aGVyIiA/IDEwIDogMCkgLSAobGVhZiA9PT0gInBlcmsiID8gMTIgOiAwKTsKICBjb25zdCBzdGVtTGVhbiA9ICgxIC0gaGVhbHRoKSAqIDE0OwogIGNvbnN0IGV5ZU9wZW4gPSBleHByZXNzaW9uID09PSAidW5pbXByZXNzZWQiID8gMC40NSA6IDAuNjUgKyBoZWFsdGggKiAwLjM1OwogIGNvbnN0IG1vdXRoQ3VydmUgPSBzcGVha2luZyA/IDEgOiBoZWFsdGggKiAwLjggLSAwLjQ7CiAgLy8gTGVhdmVzIGJyb3duIG91dCBhcyBtb29kIGRyb3BzLCB0aGVuIHN0YXJ0IGRyb3BwaW5nIG9mZiBlbnRpcmVseS4KICBjb25zdCB3aXRoZXJNaXggPSBNYXRoLnJvdW5kKE1hdGgubWluKDEsIE1hdGgubWF4KDAsICgwLjYgLSBoZWFsdGgpIC8gMC40NSkpICogODUpOwogIGNvbnN0IGxlYWZDb2xvciA9IGBjb2xvci1taXgoaW4gc3JnYiwgdmFyKC0tY29sb3ItcGxhbnQtbGVhZikgJHsxMDAgLSB3aXRoZXJNaXh9JSwgdmFyKC0tY29sb3ItcGxhbnQtd2l0aGVyZWQpKWA7CiAgY29uc3Qgc3RlbUNvbG9yID0gYGNvbG9yLW1peChpbiBzcmdiLCB2YXIoLS1jb2xvci1wbGFudC1zdGVtKSAkezEwMCAtIHdpdGhlck1peH0lLCB2YXIoLS1jb2xvci1wbGFudC13aXRoZXJlZCkpYDsKICAvLyBTaGVkIG9yZGVyOiB0b3Btb3N0IChzbWFsbGVzdCkgbGVhdmVzIGdpdmUgdXAgZmlyc3QuCiAgY29uc3QgYXR0YWNoZWRDb3VudCA9CiAgICBoZWFsdGggPiAwLjU1ID8gNSA6IGhlYWx0aCA+IDAuMzUgPyA0IDogaGVhbHRoID4gMC4xOCA/IDMgOiBoZWFsdGggPiAwLjA1ID8gMiA6IDA7CgogIHJldHVybiAoCiAgICA8c3ZnCiAgICAgIHZpZXdCb3g9IjAgMCAyNDAgMjY4IgogICAgICBjbGFzc05hbWU9ImgtZnVsbCB3LWZ1bGwiCiAgICAgIHJvbGU9ImltZyIKICAgICAgYXJpYS1sYWJlbD17YEdlcmFsZCwgJHtleHByZXNzaW9ufSwgJHtNYXRoLnJvdW5kKG1vb2QpfSBwZXJjZW50IGhhcHB5YH0KICAgICAgZGF0YS1leHByZXNzaW9uPXtleHByZXNzaW9ufQogICAgPgogICAgICA8ZGVmcz4KICAgICAgICA8Y2xpcFBhdGggaWQ9e2V5ZUNsaXB9PgogICAgICAgICAgPGVsbGlwc2UgY3g9IjEwMyIgY3k9IjIyNyIgcng9IjciIHJ5PXs2ICogZXllT3Blbn0gLz4KICAgICAgICAgIDxlbGxpcHNlIGN4PSIxMzciIGN5PSIyMjciIHJ4PSI3IiByeT17NiAqIGV5ZU9wZW59IC8+CiAgICAgICAgPC9jbGlwUGF0aD4KICAgICAgPC9kZWZzPgogICAgICA8ZyBjbGFzc05hbWU9InBsYW50LWJyZWF0aGUiPgogICAgICA8ZyBrZXk9e2ByZWFjdGlvbi0ke3B1bHNlfS0ke3ByZXZpZXdFeHByZXNzaW9ufWB9IGNsYXNzTmFtZT17c2hha2UgPyAicGxhbnQtaGVhZC1zaGFrZSIgOiBwbGVhc2VkID8gInBsYW50LXNtdWctbm9kIiA6IHVuZGVmaW5lZH0+CiAgICAgIDxnCiAgICAgICAga2V5PXtwdWxzZX0KICAgICAgICBzdHlsZT17eyB0cmFuc2Zvcm1PcmlnaW46ICIxMjBweCAyMTBweCIsIHRyYW5zaXRpb246ICJ0cmFuc2Zvcm0gMS40cyBlYXNlLWluLW91dCIgfX0KICAgICAgPgogICAgICAgIHsvKiBzdGVtICovfQogICAgICAgIDxwYXRoCiAgICAgICAgICBkPXtgTTEyMCAyMDggQyAkezExOCAtIHN0ZW1MZWFufSAxNzAsICR7MTIyICsgc3RlbUxlYW59IDEzMCwgJHsxMjAgKyBzdGVtTGVhbn0gNzhgfQogICAgICAgICAgZmlsbD0ibm9uZSIKICAgICAgICAgIHN0cm9rZT17c3RlbUNvbG9yfQogICAgICAgICAgc3Ryb2tlV2lkdGg9IjYiCiAgICAgICAgICBzdHJva2VMaW5lY2FwPSJyb3VuZCIKICAgICAgICAgIHN0eWxlPXt7IHRyYW5zaXRpb246ICJkIDEuNHMgZWFzZS1pbi1vdXQiIH19CiAgICAgICAgLz4KCiAgICAgICAge0FUVEFDSC5tYXAoKGwsIGkpID0+IHsKICAgICAgICAgIGNvbnN0IGFuZ2xlID0gZHJvb3AgKiBsLnNpZGUgKiAoaSAlIDIgPT09IDAgPyAxIDogMC44OCkgKyBsLnNpZGUgKiAtNjsKICAgICAgICAgIGNvbnN0IGF0dGFjaGVkID0gaSA8IGF0dGFjaGVkQ291bnQ7CiAgICAgICAgICBjb25zdCBmYWxsZW4gPSAhYXR0YWNoZWQ7CiAgICAgICAgICByZXR1cm4gKAogICAgICAgICAgICA8ZyBrZXk9e2l9IHRyYW5zZm9ybT17YHRyYW5zbGF0ZSgkezEyMCArIGwuc2lkZSAqIDJ9LCR7bC55fSlgfT4KICAgICAgICAgICAgICB7YXR0YWNoZWQgJiYgKAogICAgICAgICAgICAgICAgPGcKICAgICAgICAgICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgICAgICAgICB0cmFuc2Zvcm06IGByb3RhdGUoJHthbmdsZSAqIGwuc2lkZX1kZWcpIHNjYWxlKCR7bC5zaWRlICogbC5zaXplfSwgJHtsLnNpemV9KWAsCiAgICAgICAgICAgICAgICAgICAgdHJhbnNmb3JtT3JpZ2luOiAiMHB4IDBweCIsCiAgICAgICAgICAgICAgICAgICAgdHJhbnNpdGlvbjogInRyYW5zZm9ybSAxLjRzIGVhc2UtaW4tb3V0IiwKICAgICAgICAgICAgICAgICAgfX0KICAgICAgICAgICAgICAgID4KICAgICAgICAgICAgICAgICAgPHBhdGgKICAgICAgICAgICAgICAgICAgICBkPXtMRUFGX1BBVEh9CiAgICAgICAgICAgICAgICAgICAgZmlsbD17bGVhZkNvbG9yfQogICAgICAgICAgICAgICAgICAgIHN0cm9rZT0idmFyKC0tY29sb3ItcGxhbnQtbGVhZi12ZWluKSIKICAgICAgICAgICAgICAgICAgICBzdHJva2VXaWR0aD0iMS41IgogICAgICAgICAgICAgICAgICAgIG9wYWNpdHk9ezAuNTUgKyBoZWFsdGggKiAwLjQ1fQogICAgICAgICAgICAgICAgICAvPgogICAgICAgICAgICAgICAgICA8cGF0aAogICAgICAgICAgICAgICAgICAgIGQ9Ik0yIDAgQyAyMCAtNCwgNDAgLTMsIDU1IDEiCiAgICAgICAgICAgICAgICAgICAgZmlsbD0ibm9uZSIKICAgICAgICAgICAgICAgICAgICBzdHJva2U9InZhcigtLWNvbG9yLXBsYW50LWxlYWYtdmVpbikiCiAgICAgICAgICAgICAgICAgICAgc3Ryb2tlV2lkdGg9IjEuNSIKICAgICAgICAgICAgICAgICAgICBvcGFjaXR5PSIwLjciCiAgICAgICAgICAgICAgICAgIC8+CiAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgKX0KICAgICAgICAgICAgICB7ZmFsbGVuICYmICgKICAgICAgICAgICAgICAgIDxnCiAgICAgICAgICAgICAgICAgIGtleT17cHVsc2V9CiAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT0icGxhbnQtZmFsbCIKICAgICAgICAgICAgICAgICAgc3R5bGU9ewogICAgICAgICAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgICAgICAgIHRyYW5zZm9ybU9yaWdpbjogIjBweCAwcHgiLAogICAgICAgICAgICAgICAgICAgICAgIi0tZmFsbC14IjogYCR7bC5zaWRlICogMzB9cHhgLAogICAgICAgICAgICAgICAgICAgICAgIi0tZmFsbC1yb3QiOiBgJHtsLnNpZGUgKiAyNDB9ZGVnYCwKICAgICAgICAgICAgICAgICAgICAgICItLWZhbGwtZGVsYXkiOiBgJHsoaSAtIGF0dGFjaGVkQ291bnQpICogMC40NX1zYCwKICAgICAgICAgICAgICAgICAgICB9IGFzIENTU1Byb3BlcnRpZXMKICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgPgogICAgICAgICAgICAgICAgICA8cGF0aAogICAgICAgICAgICAgICAgICAgIGQ9e0xFQUZfUEFUSH0KICAgICAgICAgICAgICAgICAgICBmaWxsPSJ2YXIoLS1jb2xvci1wbGFudC13aXRoZXJlZCkiCiAgICAgICAgICAgICAgICAgICAgc3Ryb2tlPSJ2YXIoLS1jb2xvci1wbGFudC13aXRoZXJlZCkiCiAgICAgICAgICAgICAgICAgICAgc3Ryb2tlV2lkdGg9IjEuNSIKICAgICAgICAgICAgICAgICAgICB0cmFuc2Zvcm09e2BzY2FsZSgke2wuc2lkZSAqIGwuc2l6ZX0sICR7bC5zaXplfSlgfQogICAgICAgICAgICAgICAgICAvPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICl9CiAgICAgICAgICAgIDwvZz4KICAgICAgICAgICk7CiAgICAgICAgfSl9CiAgICAgIDwvZz4KCiAgICAgIHsvKiBwb3QsIHdpdGggYSBmYWNlICovfQogICAgICA8Zz4KICAgICAgICA8cGF0aAogICAgICAgICAgZD0iTTc0IDE5NiBMMTY2IDE5NiBMMTU2IDI1MiBRMTU0IDI2MCAxNDYgMjYwIEw5NCAyNjAgUTg2IDI2MCA4NCAyNTIgWiIKICAgICAgICAgIGZpbGw9InZhcigtLWNvbG9yLXBvdCkiCiAgICAgICAgLz4KICAgICAgICA8cmVjdCB4PSI2OCIgeT0iMTg2IiB3aWR0aD0iMTA0IiBoZWlnaHQ9IjE2IiByeD0iNiIgZmlsbD0idmFyKC0tY29sb3ItcG90LXJpbSkiIC8+CiAgICAgICAgPGVsbGlwc2UgY3g9IjEyMCIgY3k9IjE5MiIgcng9IjQyIiByeT0iNSIgZmlsbD0idmFyKC0tY29sb3Itc29pbCkiIC8+CgogICAgICAgIHsvKiBicm93cyAqL30KICAgICAgICA8cGF0aAogICAgICAgICAgZD17cGxlYXNlZCA/ICJNOTUgMjE1IFExMDMgMjEwIDExMSAyMTQiIDogYW5ub3llZCB8fCBtb29kIDwgNDUgPyAiTTk1IDIxNiBMMTExIDIxOSIgOiBgTTk2ICR7MjE2IC0gaGVhbHRoICogMn0gTDExMCAkezIxOSAtIGhlYWx0aCAqIDR9YH0KICAgICAgICAgIHN0cm9rZT0idmFyKC0tY29sb3ItcG90LWZhY2UpIgogICAgICAgICAgc3Ryb2tlV2lkdGg9IjMiCiAgICAgICAgICBzdHJva2VMaW5lY2FwPSJyb3VuZCIKICAgICAgICAvPgogICAgICAgIDxwYXRoCiAgICAgICAgICBkPXtwbGVhc2VkID8gIk0xMjkgMjEyIFExMzcgMjA3IDE0NSAyMTEiIDogYW5ub3llZCB8fCBtb29kIDwgNDUgPyAiTTEyOSAyMTkgTDE0NSAyMTYiIDogYE0xNDQgJHsyMTYgLSBoZWFsdGggKiAyfSBMMTMwICR7MjE5IC0gaGVhbHRoICogNH1gfQogICAgICAgICAgc3Ryb2tlPSJ2YXIoLS1jb2xvci1wb3QtZmFjZSkiCiAgICAgICAgICBzdHJva2VXaWR0aD0iMyIKICAgICAgICAgIHN0cm9rZUxpbmVjYXA9InJvdW5kIgogICAgICAgIC8+CgogICAgICAgIHsvKiBleWVzICovfQogICAgICAgIDxnIGNsYXNzTmFtZT0icGxhbnQtYmxpbmsiPgogICAgICAgICAgPGcgY2xpcFBhdGg9e2B1cmwoIyR7ZXllQ2xpcH0pYH0+CiAgICAgICAgICAgIDxyZWN0IHg9Ijk0IiB5PSIyMTgiIHdpZHRoPSI1MiIgaGVpZ2h0PSIxOCIgZmlsbD0idmFyKC0tY29sb3ItcGxhbnQtZXllKSIgLz4KICAgICAgICAgICAgPGcgY2xhc3NOYW1lPXtyb2xsID8gInBsYW50LWV5ZS1yb2xsIiA6IHBsZWFzZWQgPyAicGxhbnQtc2lkZS1leWUiIDogInBsYW50LWlkbGUtZ2xhbmNlIn0+CiAgICAgICAgICAgICAgPGVsbGlwc2UgY3g9IjEwMyIgY3k9IjIyNyIgcng9IjMuMiIgcnk9IjQiIGZpbGw9InZhcigtLWNvbG9yLXBvdC1mYWNlKSIgLz4KICAgICAgICAgICAgICA8ZWxsaXBzZSBjeD0iMTM3IiBjeT0iMjI3IiByeD0iMy4yIiByeT0iNCIgZmlsbD0idmFyKC0tY29sb3ItcG90LWZhY2UpIiAvPgogICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik05NCAyMTggSDE0NiBWMjIzIEg5NCBaIiBmaWxsPSJ2YXIoLS1jb2xvci1wb3QpIiBjbGFzc05hbWU9e3NxdWludCA/ICJwbGFudC1zcXVpbnQiIDogInBsYW50LWxpZHMifSAvPgogICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KCiAgICAgICAgey8qIG1vdXRoOiBhIGZsYXQgbGluZSB0aGF0IG9wZW5zIHdoZW4gaGUgdGFsa3MgKi99CiAgICAgICAge3NwZWFraW5nID8gKAogICAgICAgICAgPGVsbGlwc2UKICAgICAgICAgICAgY3g9IjEyMCIKICAgICAgICAgICAgY3k9IjI0MSIKICAgICAgICAgICAgcng9IjkiCiAgICAgICAgICAgIHJ5PSI2IgogICAgICAgICAgICBmaWxsPSJ2YXIoLS1jb2xvci1wb3QtZmFjZSkiCiAgICAgICAgICAgIGNsYXNzTmFtZT0icGxhbnQtdGFsayIKICAgICAgICAgIC8+CiAgICAgICAgKSA6ICgKICAgICAgICAgIDxwYXRoCiAgICAgICAgICAgIGQ9e2Fubm95ZWQgfHwgZXhwcmVzc2lvbiA9PT0gInVuaW1wcmVzc2VkIiA/ICJNMTA2IDI0MiBRMTIwIDI0MSAxMzQgMjQyIiA6IHBsZWFzZWQgPyAiTTEwOCAyNDIgUTEyMiAyNDcgMTM0IDIzOSIgOiBgTTEwOCAyNDEgUTEyMCAkezI0MSArIG1vdXRoQ3VydmUgKiAxMn0gMTMyIDI0MWB9CiAgICAgICAgICAgIGZpbGw9Im5vbmUiCiAgICAgICAgICAgIHN0cm9rZT0idmFyKC0tY29sb3ItcG90LWZhY2UpIgogICAgICAgICAgICBzdHJva2VXaWR0aD17YW5ub3llZCA/ICIyIiA6ICIzIn0KICAgICAgICAgICAgc3Ryb2tlTGluZWNhcD0icm91bmQiCiAgICAgICAgICAgIGNsYXNzTmFtZT17cHJlc3MgPyAicGxhbnQtbGlwLXByZXNzIiA6IHVuZGVmaW5lZH0KICAgICAgICAgICAgc3R5bGU9e3sgdHJhbnNpdGlvbjogImQgMC42cyBlYXNlLWluLW91dCIgfX0KICAgICAgICAgIC8+CiAgICAgICAgKX0KICAgICAgPC9nPgogICAgICA8L2c+CiAgICAgIDwvZz4KICAgIDwvc3ZnPgogICk7Cn0K
+import { useEffect, useId, useState, type CSSProperties } from "react";
+import type { EventKind, Leaf } from "@/lib/plant-core";
+
+/**
+ * Gerald. A potted plant whose leaves physically droop as his mood drops, and
+ * whose face sighs when he speaks.
+ */
+
+const ATTACH = [
+  { y: 154, side: -1, size: 1 },
+  { y: 136, side: 1, size: 1.12 },
+  { y: 118, side: -1, size: 1.05 },
+  { y: 101, side: 1, size: 0.9 },
+  { y: 86, side: -1, size: 0.78 },
+];
+
+const LEAF_PATH = "M0 0 C 20 -16, 44 -13, 58 1 C 44 15, 20 17, 0 0 Z";
+
+export type PlantExpression = "squint" | "eye-roll" | "pressed-lips" | "head-shake" | "smug" | "unimpressed" | "watchful";
+
+export function Plant({
+  mood,
+  leaf,
+  speaking,
+  pulse,
+  reaction,
+  previewExpression,
+}: {
+  mood: number;
+  leaf: Leaf;
+  speaking: boolean;
+  pulse: number;
+  reaction?: EventKind | undefined;
+  previewExpression?: PlantExpression | undefined;
+}) {
+  const eyeClip = useId().replace(/:/g, "");
+  const [reacting, setReacting] = useState(false);
+  useEffect(() => {
+    if (pulse === 0) return;
+    setReacting(true);
+    const timeout = setTimeout(() => setReacting(false), 4200);
+    return () => clearTimeout(timeout);
+  }, [pulse]);
+  const pleased = previewExpression ? previewExpression === "smug" : reacting && (reaction === "drink" || reaction === "back" || reaction === "fixed");
+  const annoyed = previewExpression ? ["squint", "eye-roll", "pressed-lips", "head-shake"].includes(previewExpression) : reacting && !pleased;
+  const expression = previewExpression ?? (pleased ? "smug" : annoyed ? "annoyed" : mood < 45 ? "unimpressed" : "watchful");
+  const shake = previewExpression ? previewExpression === "head-shake" : annoyed;
+  const roll = previewExpression ? previewExpression === "eye-roll" : annoyed;
+  const press = previewExpression ? previewExpression === "pressed-lips" : annoyed;
+  const squint = previewExpression ? previewExpression === "squint" : reacting;
+  const health = Math.max(0, Math.min(1, mood / 100));
+  // Perky when healthy, flat on the desk when dying.
+  const droop = -26 + (1 - health) * 62 + (leaf === "wither" ? 10 : 0) - (leaf === "perk" ? 12 : 0);
+  const stemLean = (1 - health) * 14;
+  const eyeOpen = expression === "unimpressed" ? 0.45 : 0.65 + health * 0.35;
+  const mouthCurve = speaking ? 1 : health * 0.8 - 0.4;
+  // Leaves brown out as mood drops, then start dropping off entirely.
+  const witherMix = Math.round(Math.min(1, Math.max(0, (0.6 - health) / 0.45)) * 85);
+  const leafColor = `color-mix(in srgb, var(--color-plant-leaf) ${100 - witherMix}%, var(--color-plant-withered))`;
+  const stemColor = `color-mix(in srgb, var(--color-plant-stem) ${100 - witherMix}%, var(--color-plant-withered))`;
+  // Shed order: topmost (smallest) leaves give up first.
+  const attachedCount =
+    health > 0.55 ? 5 : health > 0.35 ? 4 : health > 0.18 ? 3 : health > 0.05 ? 2 : 0;
+
+  return (
+    <svg
+      viewBox="0 0 240 268"
+      className="h-full w-full"
+      role="img"
+      aria-label={`Gerald, ${expression}, ${Math.round(mood)} percent happy`}
+      data-expression={expression}
+    >
+      <defs>
+        <clipPath id={eyeClip}>
+          <ellipse cx="103" cy="227" rx="7" ry={6 * eyeOpen} />
+          <ellipse cx="137" cy="227" rx="7" ry={6 * eyeOpen} />
+        </clipPath>
+      </defs>
+      <g className="plant-breathe">
+      <g key={`reaction-${pulse}-${previewExpression}`} className={shake ? "plant-head-shake" : pleased ? "plant-smug-nod" : undefined}>
+      <g
+        key={pulse}
+        style={{ transformOrigin: "120px 210px", transition: "transform 1.4s ease-in-out" }}
+      >
+        {/* stem */}
+        <path
+          d={`M120 208 C ${118 - stemLean} 170, ${122 + stemLean} 130, ${120 + stemLean} 78`}
+          fill="none"
+          stroke={stemColor}
+          strokeWidth="6"
+          strokeLinecap="round"
+          style={{ transition: "d 1.4s ease-in-out" }}
+        />
+
+        {ATTACH.map((l, i) => {
+          const angle = droop * l.side * (i % 2 === 0 ? 1 : 0.88) + l.side * -6;
+          const attached = i < attachedCount;
+          const fallen = !attached;
+          return (
+            <g key={i} transform={`translate(${120 + l.side * 2},${l.y})`}>
+              {attached && (
+                <g
+                  style={{
+                    transform: `rotate(${angle * l.side}deg) scale(${l.side * l.size}, ${l.size})`,
+                    transformOrigin: "0px 0px",
+                    transition: "transform 1.4s ease-in-out",
+                  }}
+                >
+                  <path
+                    d={LEAF_PATH}
+                    fill={leafColor}
+                    stroke="var(--color-plant-leaf-vein)"
+                    strokeWidth="1.5"
+                    opacity={0.55 + health * 0.45}
+                  />
+                  <path
+                    d="M2 0 C 20 -4, 40 -3, 55 1"
+                    fill="none"
+                    stroke="var(--color-plant-leaf-vein)"
+                    strokeWidth="1.5"
+                    opacity="0.7"
+                  />
+                </g>
+              )}
+              {fallen && (
+                <g
+                  key={pulse}
+                  className="plant-fall"
+                  style={
+                    {
+                      transformOrigin: "0px 0px",
+                      "--fall-x": `${l.side * 30}px`,
+                      "--fall-rot": `${l.side * 240}deg`,
+                      "--fall-delay": `${(i - attachedCount) * 0.45}s`,
+                    } as CSSProperties
+                  }
+                >
+                  <path
+                    d={LEAF_PATH}
+                    fill="var(--color-plant-withered)"
+                    stroke="var(--color-plant-withered)"
+                    strokeWidth="1.5"
+                    transform={`scale(${l.side * l.size}, ${l.size})`}
+                  />
+                </g>
+              )}
+            </g>
+          );
+        })}
+      </g>
+
+      {/* pot, with a face */}
+      <g>
+        <path
+          d="M74 196 L166 196 L156 252 Q154 260 146 260 L94 260 Q86 260 84 252 Z"
+          fill="var(--color-pot)"
+        />
+        <rect x="68" y="186" width="104" height="16" rx="6" fill="var(--color-pot-rim)" />
+        <ellipse cx="120" cy="192" rx="42" ry="5" fill="var(--color-soil)" />
+
+        {/* brows */}
+        <path
+          d={pleased ? "M95 215 Q103 210 111 214" : annoyed || mood < 45 ? "M95 216 L111 219" : `M96 ${216 - health * 2} L110 ${219 - health * 4}`}
+          stroke="var(--color-pot-face)"
+          strokeWidth="3"
+          strokeLinecap="round"
+        />
+        <path
+          d={pleased ? "M129 212 Q137 207 145 211" : annoyed || mood < 45 ? "M129 219 L145 216" : `M144 ${216 - health * 2} L130 ${219 - health * 4}`}
+          stroke="var(--color-pot-face)"
+          strokeWidth="3"
+          strokeLinecap="round"
+        />
+
+        {/* eyes */}
+        <g className="plant-blink">
+          <g clipPath={`url(#${eyeClip})`}>
+            <rect x="94" y="218" width="52" height="18" fill="var(--color-plant-eye)" />
+            <g className={roll ? "plant-eye-roll" : pleased ? "plant-side-eye" : "plant-idle-glance"}>
+              <ellipse cx="103" cy="227" rx="3.2" ry="4" fill="var(--color-pot-face)" />
+              <ellipse cx="137" cy="227" rx="3.2" ry="4" fill="var(--color-pot-face)" />
+            </g>
+            <path d="M94 218 H146 V223 H94 Z" fill="var(--color-pot)" className={squint ? "plant-squint" : "plant-lids"} />
+          </g>
+        </g>
+
+        {/* mouth: a flat line that opens when he talks */}
+        {speaking ? (
+          <ellipse
+            cx="120"
+            cy="241"
+            rx="9"
+            ry="6"
+            fill="var(--color-pot-face)"
+            className="plant-talk"
+          />
+        ) : (
+          <path
+            d={annoyed || expression === "unimpressed" ? "M106 242 Q120 241 134 242" : pleased ? "M108 242 Q122 247 134 239" : `M108 241 Q120 ${241 + mouthCurve * 12} 132 241`}
+            fill="none"
+            stroke="var(--color-pot-face)"
+            strokeWidth={annoyed ? "2" : "3"}
+            strokeLinecap="round"
+            className={press ? "plant-lip-press" : undefined}
+            style={{ transition: "d 0.6s ease-in-out" }}
+          />
+        )}
+      </g>
+      </g>
+      </g>
+    </svg>
+  );
+}

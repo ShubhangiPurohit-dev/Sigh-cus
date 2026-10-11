@@ -1,1 +1,128 @@
-aW1wb3J0IHsgY3JlYXRlU2VydmVyRm4gfSBmcm9tICJAdGFuc3RhY2svcmVhY3Qtc3RhcnQiOwppbXBvcnQgeyB6IH0gZnJvbSAiem9kIjsKCmNvbnN0IGlucHV0U2NoZW1hID0gei5vYmplY3QoewogIGltYWdlOiB6LnN0cmluZygpLnN0YXJ0c1dpdGgoImRhdGE6aW1hZ2UvIikubWF4KDZfMDAwXzAwMCksCiAgc3R5bGU6IHouZW51bShbIkZhbnRhc3kiLCAiU2NpLUZpIiwgIk5vaXIiLCAiQ296eSJdKSwKfSk7CgpleHBvcnQgdHlwZSBSZW1peFJlc3VsdCA9IHsKICBvYmplY3RfbmFtZTogc3RyaW5nOwogIHRhZ2xpbmU6IHN0cmluZzsKICBjaGFwdGVyczogeyB0aXRsZTogc3RyaW5nOyBuYXJyYXRpb246IHN0cmluZyB9W107CiAgZnVuX2ZhY3Q6IHN0cmluZzsKICBlY286IHsKICAgIG1hdGVyaWFsOiBzdHJpbmc7CiAgICBmb290cHJpbnRfbm90ZTogc3RyaW5nOwogICAgcmV1c2VfaWRlYXM6IHN0cmluZ1tdOwogICAgcXVlc3Q6IHN0cmluZzsKICB9Owp9OwoKY29uc3QganNvblNjaGVtYSA9IHsKICB0eXBlOiAib2JqZWN0IiwKICBhZGRpdGlvbmFsUHJvcGVydGllczogZmFsc2UsCiAgcmVxdWlyZWQ6IFsib2JqZWN0X25hbWUiLCAidGFnbGluZSIsICJjaGFwdGVycyIsICJmdW5fZmFjdCIsICJlY28iXSwKICBwcm9wZXJ0aWVzOiB7CiAgICBvYmplY3RfbmFtZTogeyB0eXBlOiAic3RyaW5nIiB9LAogICAgdGFnbGluZTogeyB0eXBlOiAic3RyaW5nIiB9LAogICAgY2hhcHRlcnM6IHsKICAgICAgdHlwZTogImFycmF5IiwKICAgICAgaXRlbXM6IHsKICAgICAgICB0eXBlOiAib2JqZWN0IiwKICAgICAgICBhZGRpdGlvbmFsUHJvcGVydGllczogZmFsc2UsCiAgICAgICAgcmVxdWlyZWQ6IFsidGl0bGUiLCAibmFycmF0aW9uIl0sCiAgICAgICAgcHJvcGVydGllczogeyB0aXRsZTogeyB0eXBlOiAic3RyaW5nIiB9LCBuYXJyYXRpb246IHsgdHlwZTogInN0cmluZyIgfSB9LAogICAgICB9LAogICAgfSwKICAgIGZ1bl9mYWN0OiB7IHR5cGU6ICJzdHJpbmciIH0sCiAgICBlY286IHsKICAgICAgdHlwZTogIm9iamVjdCIsCiAgICAgIGFkZGl0aW9uYWxQcm9wZXJ0aWVzOiBmYWxzZSwKICAgICAgcmVxdWlyZWQ6IFsibWF0ZXJpYWwiLCAiZm9vdHByaW50X25vdGUiLCAicmV1c2VfaWRlYXMiLCAicXVlc3QiXSwKICAgICAgcHJvcGVydGllczogewogICAgICAgIG1hdGVyaWFsOiB7IHR5cGU6ICJzdHJpbmciIH0sCiAgICAgICAgZm9vdHByaW50X25vdGU6IHsgdHlwZTogInN0cmluZyIgfSwKICAgICAgICByZXVzZV9pZGVhczogeyB0eXBlOiAiYXJyYXkiLCBpdGVtczogeyB0eXBlOiAic3RyaW5nIiB9IH0sCiAgICAgICAgcXVlc3Q6IHsgdHlwZTogInN0cmluZyIgfSwKICAgICAgfSwKICAgIH0sCiAgfSwKfTsKCmV4cG9ydCBjb25zdCByZW1peE9iamVjdCA9IGNyZWF0ZVNlcnZlckZuKHsgbWV0aG9kOiAiUE9TVCIgfSkKICAuaW5wdXRWYWxpZGF0b3IoKGlucHV0OiB1bmtub3duKSA9PiBpbnB1dFNjaGVtYS5wYXJzZShpbnB1dCkpCiAgLmhhbmRsZXIoYXN5bmMgKHsgZGF0YSB9KTogUHJvbWlzZTxSZW1peFJlc3VsdD4gPT4gewogICAgY29uc3QgYXBpS2V5ID0gcHJvY2Vzcy5lbnZbIkxPVkFCTEVfQVBJX0tFWSJdOwogICAgaWYgKCFhcGlLZXkpIHRocm93IG5ldyBFcnJvcigiQUkgaXMgbm90IGNvbmZpZ3VyZWQuIik7CgogICAgY29uc3QgcHJvbXB0ID0gYExvb2sgYXQgdGhlIG1haW4gb2JqZWN0IGluIHRoaXMgcGhvdG8gYW5kIHJlbWl4IGl0IGludG8gYSBzaG9ydCBpbW1lcnNpdmUgZXhwZXJpZW5jZSBpbiBhICR7ZGF0YS5zdHlsZX0gc3R5bGUuClJldHVybjogdGhlIG9iamVjdCdzIG5hbWU7IGEgb25lLWxpbmUgdGFnbGluZTsgZXhhY3RseSAzIHN0b3J5IGNoYXB0ZXJzIChlYWNoIHdpdGggYSBzaG9ydCB0aXRsZSBhbmQgMi0zIHZpdmlkIHNlbnRlbmNlcyBvZiBuYXJyYXRpb24gd3JpdHRlbiB0byBiZSByZWFkIGFsb3VkLCBzdGFycmluZyB0aGUgb2JqZWN0IGFzIHRoZSBoZXJvKTsgb25lIHN1cnByaXNpbmcgdHJ1ZSBmdW4gZmFjdCBhYm91dCB0aGlzIGtpbmQgb2Ygb2JqZWN0OyBhbmQgYW4gZWNvIHNlY3Rpb246IHRoZSBtYWluIG1hdGVyaWFsKHMpLCBhIGJyaWVmIFJPVUdIIEVTVElNQVRFIG5vdGUgYWJvdXQgaXRzIGVudmlyb25tZW50YWwgZm9vdHByaW50IChjbGVhcmx5IHNheSBpdCBpcyBhbiBlc3RpbWF0ZSksIGV4YWN0bHkgMyBwcmFjdGljYWwgcmV1c2UvcmVwYWlyL3JlY3ljbGUgaWRlYXMsIGFuZCBvbmUgZnVuIDUtbWludXRlICJlY28gcXVlc3QiIHRoZSB1c2VyIGNhbiBkbyByaWdodCBub3cuYDsKCiAgICBjb25zdCByZXMgPSBhd2FpdCBmZXRjaCgiaHR0cHM6Ly9haS5nYXRld2F5LmxvdmFibGUuZGV2L3YxL3Jlc3BvbnNlcyIsIHsKICAgICAgbWV0aG9kOiAiUE9TVCIsCiAgICAgIGhlYWRlcnM6IHsKICAgICAgICAiQ29udGVudC1UeXBlIjogImFwcGxpY2F0aW9uL2pzb24iLAogICAgICAgICJMb3ZhYmxlLUFQSS1LZXkiOiBhcGlLZXksCiAgICAgICAgIlgtTG92YWJsZS1BSUctU0RLIjogImZldGNoIiwKICAgICAgfSwKICAgICAgYm9keTogSlNPTi5zdHJpbmdpZnkoewogICAgICAgIG1vZGVsOiAib3BlbmFpL2dwdC02LWFzdHJhIiwKICAgICAgICBzdHJlYW06IHRydWUsCiAgICAgICAgc3RvcmU6IGZhbHNlLAogICAgICAgIHJlYXNvbmluZzogeyBlZmZvcnQ6ICJsb3ciIH0sCiAgICAgICAgaW5jbHVkZTogWyJyZWFzb25pbmcuZW5jcnlwdGVkX2NvbnRlbnQiXSwKICAgICAgICB0ZXh0OiB7CiAgICAgICAgICBmb3JtYXQ6IHsgdHlwZTogImpzb25fc2NoZW1hIiwgbmFtZTogInJlbWl4Iiwgc3RyaWN0OiB0cnVlLCBzY2hlbWE6IGpzb25TY2hlbWEgfSwKICAgICAgICB9LAogICAgICAgIGlucHV0OiBbCiAgICAgICAgICB7CiAgICAgICAgICAgIHJvbGU6ICJ1c2VyIiwKICAgICAgICAgICAgY29udGVudDogWwogICAgICAgICAgICAgIHsgdHlwZTogImlucHV0X3RleHQiLCB0ZXh0OiBwcm9tcHQgfSwKICAgICAgICAgICAgICB7IHR5cGU6ICJpbnB1dF9pbWFnZSIsIGltYWdlX3VybDogZGF0YS5pbWFnZSB9LAogICAgICAgICAgICBdLAogICAgICAgICAgfSwKICAgICAgICBdLAogICAgICB9KSwKICAgIH0pOwoKICAgIGlmICghcmVzLm9rIHx8ICFyZXMuYm9keSkgewogICAgICBsZXQgbXNnID0gYEFJIHJlcXVlc3QgZmFpbGVkICgke3Jlcy5zdGF0dXN9KWA7CiAgICAgIHRyeSB7CiAgICAgICAgY29uc3QgaiA9IGF3YWl0IHJlcy5qc29uKCk7CiAgICAgICAgbXNnID0gaj8uZXJyb3I/Lm1lc3NhZ2UgPz8gaj8ubWVzc2FnZSA/PyBtc2c7CiAgICAgIH0gY2F0Y2ggewogICAgICAgIC8qIGlnbm9yZSAqLwogICAgICB9CiAgICAgIHRocm93IG5ldyBFcnJvcihtc2cpOwogICAgfQoKICAgIGNvbnN0IHJlYWRlciA9IHJlcy5ib2R5LmdldFJlYWRlcigpOwogICAgY29uc3QgZGVjb2RlciA9IG5ldyBUZXh0RGVjb2RlcigpOwogICAgbGV0IGJ1ZiA9ICIiOwogICAgbGV0IHRleHQgPSAiIjsKICAgIGZvciAoOzspIHsKICAgICAgY29uc3QgeyBkb25lLCB2YWx1ZSB9ID0gYXdhaXQgcmVhZGVyLnJlYWQoKTsKICAgICAgaWYgKGRvbmUpIGJyZWFrOwogICAgICBidWYgKz0gZGVjb2Rlci5kZWNvZGUodmFsdWUsIHsgc3RyZWFtOiB0cnVlIH0pOwogICAgICBjb25zdCBsaW5lcyA9IGJ1Zi5zcGxpdCgiXG4iKTsKICAgICAgYnVmID0gbGluZXMucG9wKCkgPz8gIiI7CiAgICAgIGZvciAoY29uc3QgbGluZSBvZiBsaW5lcykgewogICAgICAgIGlmICghbGluZS5zdGFydHNXaXRoKCJkYXRhOiIpKSBjb250aW51ZTsKICAgICAgICBjb25zdCBwYXlsb2FkID0gbGluZS5zbGljZSg1KS50cmltKCk7CiAgICAgICAgaWYgKCFwYXlsb2FkIHx8IHBheWxvYWQgPT09ICJbRE9ORV0iKSBjb250aW51ZTsKICAgICAgICB0cnkgewogICAgICAgICAgY29uc3QgZXYgPSBKU09OLnBhcnNlKHBheWxvYWQpOwogICAgICAgICAgaWYgKGV2LnR5cGUgPT09ICJyZXNwb25zZS5vdXRwdXRfdGV4dC5kZWx0YSIpIHRleHQgKz0gZXYuZGVsdGE7CiAgICAgICAgICBpZiAoZXYudHlwZSA9PT0gInJlc3BvbnNlLmZhaWxlZCIgfHwgZXYudHlwZSA9PT0gImVycm9yIikKICAgICAgICAgICAgdGhyb3cgbmV3IEVycm9yKGV2LnJlc3BvbnNlPy5lcnJvcj8ubWVzc2FnZSA/PyBldi5tZXNzYWdlID8/ICJBSSBlcnJvciIpOwogICAgICAgIH0gY2F0Y2ggKGUpIHsKICAgICAgICAgIGlmIChlIGluc3RhbmNlb2YgRXJyb3IgJiYgZS5tZXNzYWdlICE9PSAiVW5leHBlY3RlZCBlbmQgb2YgSlNPTiBpbnB1dCIgJiYgIShlIGluc3RhbmNlb2YgU3ludGF4RXJyb3IpKQogICAgICAgICAgICB0aHJvdyBlOwogICAgICAgIH0KICAgICAgfQogICAgfQogICAgaWYgKCF0ZXh0KSB0aHJvdyBuZXcgRXJyb3IoIlRoZSBBSSByZXR1cm5lZCBub3RoaW5nLiBUcnkgYW5vdGhlciBwaG90by4iKTsKICAgIHJldHVybiBKU09OLnBhcnNlKHRleHQpIGFzIFJlbWl4UmVzdWx0OwogIH0pOwo=
+import { createServerFn } from "@tanstack/react-start";
+import { z } from "zod";
+
+const inputSchema = z.object({
+  image: z.string().startsWith("data:image/").max(6_000_000),
+  style: z.enum(["Fantasy", "Sci-Fi", "Noir", "Cozy"]),
+});
+
+export type RemixResult = {
+  object_name: string;
+  tagline: string;
+  chapters: { title: string; narration: string }[];
+  fun_fact: string;
+  eco: {
+    material: string;
+    footprint_note: string;
+    reuse_ideas: string[];
+    quest: string;
+  };
+};
+
+const jsonSchema = {
+  type: "object",
+  additionalProperties: false,
+  required: ["object_name", "tagline", "chapters", "fun_fact", "eco"],
+  properties: {
+    object_name: { type: "string" },
+    tagline: { type: "string" },
+    chapters: {
+      type: "array",
+      items: {
+        type: "object",
+        additionalProperties: false,
+        required: ["title", "narration"],
+        properties: { title: { type: "string" }, narration: { type: "string" } },
+      },
+    },
+    fun_fact: { type: "string" },
+    eco: {
+      type: "object",
+      additionalProperties: false,
+      required: ["material", "footprint_note", "reuse_ideas", "quest"],
+      properties: {
+        material: { type: "string" },
+        footprint_note: { type: "string" },
+        reuse_ideas: { type: "array", items: { type: "string" } },
+        quest: { type: "string" },
+      },
+    },
+  },
+};
+
+export const remixObject = createServerFn({ method: "POST" })
+  .inputValidator((input: unknown) => inputSchema.parse(input))
+  .handler(async ({ data }): Promise<RemixResult> => {
+    const apiKey = process.env["LOVABLE_API_KEY"];
+    if (!apiKey) throw new Error("AI is not configured.");
+
+    const prompt = `Look at the main object in this photo and remix it into a short immersive experience in a ${data.style} style.
+Return: the object's name; a one-line tagline; exactly 3 story chapters (each with a short title and 2-3 vivid sentences of narration written to be read aloud, starring the object as the hero); one surprising true fun fact about this kind of object; and an eco section: the main material(s), a brief ROUGH ESTIMATE note about its environmental footprint (clearly say it is an estimate), exactly 3 practical reuse/repair/recycle ideas, and one fun 5-minute "eco quest" the user can do right now.`;
+
+    const res = await fetch("https://ai.gateway.lovable.dev/v1/responses", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Lovable-API-Key": apiKey,
+        "X-Lovable-AIG-SDK": "fetch",
+      },
+      body: JSON.stringify({
+        model: "openai/gpt-6-astra",
+        stream: true,
+        store: false,
+        reasoning: { effort: "low" },
+        include: ["reasoning.encrypted_content"],
+        text: {
+          format: { type: "json_schema", name: "remix", strict: true, schema: jsonSchema },
+        },
+        input: [
+          {
+            role: "user",
+            content: [
+              { type: "input_text", text: prompt },
+              { type: "input_image", image_url: data.image },
+            ],
+          },
+        ],
+      }),
+    });
+
+    if (!res.ok || !res.body) {
+      let msg = `AI request failed (${res.status})`;
+      try {
+        const j = await res.json();
+        msg = j?.error?.message ?? j?.message ?? msg;
+      } catch {
+        /* ignore */
+      }
+      throw new Error(msg);
+    }
+
+    const reader = res.body.getReader();
+    const decoder = new TextDecoder();
+    let buf = "";
+    let text = "";
+    for (;;) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      buf += decoder.decode(value, { stream: true });
+      const lines = buf.split("\n");
+      buf = lines.pop() ?? "";
+      for (const line of lines) {
+        if (!line.startsWith("data:")) continue;
+        const payload = line.slice(5).trim();
+        if (!payload || payload === "[DONE]") continue;
+        try {
+          const ev = JSON.parse(payload);
+          if (ev.type === "response.output_text.delta") text += ev.delta;
+          if (ev.type === "response.failed" || ev.type === "error")
+            throw new Error(ev.response?.error?.message ?? ev.message ?? "AI error");
+        } catch (e) {
+          if (e instanceof Error && e.message !== "Unexpected end of JSON input" && !(e instanceof SyntaxError))
+            throw e;
+        }
+      }
+    }
+    if (!text) throw new Error("The AI returned nothing. Try another photo.");
+    return JSON.parse(text) as RemixResult;
+  });
