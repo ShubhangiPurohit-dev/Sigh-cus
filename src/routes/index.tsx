@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Plant } from "@/components/Plant";
 import { Button } from "@/components/ui/button";
-import { PictureInPicture2 } from "lucide-react";
+import { PictureInPicture2, Volume2, VolumeX } from "lucide-react";
 import { createPortal } from "react-dom";
 import { StreakChart } from "@/components/StreakChart";
 import { playFanfare } from "@/lib/fanfare";
@@ -19,10 +19,12 @@ import {
   type PlantState,
   type Reading,
 } from "@/lib/plant-core";
+import { recallHabits, rememberHabit } from "@/lib/memory.functions";
 import { checkDrinkVessel, judgePosture, plantLine, plantVoice } from "@/lib/plant.functions";
 import { useFaceSensor } from "@/lib/use-face-sensor";
 
-const TEXT_ONLY = true;
+/** Gerald keeps his mouth shut until you tell him otherwise. */
+const VOICE_ON_BY_DEFAULT = false;
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -37,7 +39,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "Slouch for two minutes and your desk plant audibly despairs. Drink water and it throws a gospel choir.",
+          "Slouch for five seconds and your desk plant audibly despairs. Drink water and it throws a gospel choir.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -93,12 +95,40 @@ function PlantApp() {
   const [judging, setJudging] = useState<string | null>(null);
   const [log, setLog] = useState<{ at: number; kind: string; line: string }[]>([]);
   const [demoSpeed, setDemoSpeed] = useState(1);
+  const [voiceOn, setVoiceOn] = useState(VOICE_ON_BY_DEFAULT);
+  const voiceRef = useRef(VOICE_ON_BY_DEFAULT);
+  voiceRef.current = voiceOn;
 
   const readingRef = useRef<Reading | null>(null);
   const demoRef = useRef<Reading>({ ...SYNTH_BASELINE, at: Date.now(), faceVisible: true });
   const calibSamples = useRef<Reading[]>([]);
   const collecting = useRef(false);
   const recentLines = useRef<string[]>([]);
+  const memories = useRef<string[]>([]);
+  const MEM_KEY = "sigh-cus-memory-id";
+  const remember = useCallback(async (ev: PlantEvent) => {
+    if (ev.kind === "back") return;
+    const label = ev.kind === "fixed" ? `fixed their ${ev.of ?? "slouch"} habit` : ev.kind === "drink" ? "finally drank water" : `triggered a ${ev.kind} nag`;
+    const text = `On ${new Date().toDateString()} at ${new Date().toLocaleTimeString()}, the user ${label}.`;
+    try {
+      const out = await rememberHabit({ data: { assistantId: localStorage.getItem(MEM_KEY) ?? undefined, text } });
+      if (out.assistantId) {
+        localStorage.setItem(MEM_KEY, out.assistantId);
+        memories.current = [...memories.current, text].slice(-8);
+      }
+    } catch {
+      /* memory is optional */
+    }
+  }, []);
+  useEffect(() => {
+    const id = localStorage.getItem(MEM_KEY);
+    if (!id) return;
+    void recallHabits({ data: { assistantId: id } })
+      .then((r) => {
+        memories.current = r.memories;
+      })
+      .catch(() => {});
+  }, []);
   const busy = useRef(false);
   const modeRef = useRef<Mode>("off");
   const speedRef = useRef(1);
@@ -207,8 +237,8 @@ function PlantApp() {
   }, [stop]);
 
   const speak = useCallback(async (text: string, delivery: string) => {
-    // Text-only while the user validates responses: no ElevenLabs, no browser voice.
-    if (TEXT_ONLY) {
+    // Gerald stays silent until "Fine, I'll Speak" is pressed.
+    if (!voiceRef.current) {
       setSpeaking(false);
       return;
     }
@@ -258,10 +288,29 @@ function PlantApp() {
     setSpeaking(false);
   }
 
+  /** The button: lets Gerald speak out loud, or puts him back in his pot. */
+  async function toggleVoice() {
+    const next = !voiceRef.current;
+    voiceRef.current = next;
+    setVoiceOn(next);
+    if (!next) {
+      audioRef.current?.pause();
+      if ("speechSynthesis" in window) window.speechSynthesis.cancel();
+      setSpeaking(false);
+      setVoiceNote("Gerald is back to typing.");
+      return;
+    }
+    setVoiceNote(null);
+    await speak("Fine. You asked for this.", "sigh");
+  }
+
   const react = useCallback(
     async (events: PlantEvent[]) => {
       if (!events.length) return;
-      const ev = events.find((x) => x.kind === "drink") ?? events[events.length - 1];
+      const ev =
+        events.find((x) => x.kind === "drink") ??
+        events.find((x) => x.kind === "fixed") ??
+        events[events.length - 1];
       if (!ev) return;
       // quiet time: keep counting, say nothing
       if (quietRef.current && Date.now() < quietRef.current) {
@@ -270,6 +319,32 @@ function PlantApp() {
           setPulse((p) => p + 1);
           setBubble({ line: "Sip counted.", delivery: "whisper", leaf: "perk", kind: "drink" });
         }
+        return;
+      }
+      // a corrected habit gets its backhanded compliment instantly, no waiting on AI
+      if (ev.kind === "fixed") {
+        const pool = ev.of && ev.of !== "slouch" ? [
+          "Oh, you stopped. Truly, a hero walks among us.",
+          "Fixed it. Only took being shamed by a fern.",
+          "Better. Not good, but better. Baby steps.",
+          "Wow, self-control. I'll mark the calendar.",
+          "Look at that, you can be taught. Slowly.",
+        ] : [
+          "Oh, a straight spine. Look at you, doing the bare minimum.",
+          "Posture corrected. I'd clap, but I'm a plant.",
+          "There it is. Was that so hard? Apparently, yes.",
+          "Sitting up. Truly, you contain multitudes.",
+          "Vertical again. Evolution thanks you.",
+        ];
+        const fresh = pool.filter((l) => !recentLines.current.includes(l));
+        const pick = fresh.length ? fresh : pool;
+        const line = pick[Math.floor(Math.random() * pick.length)] ?? pool[0]!;
+        recentLines.current = [line, ...recentLines.current].slice(0, 12);
+        setLeaf("perk");
+        setPulse((p) => p + 1);
+        setBubble({ line, delivery: "whisper", leaf: "perk", kind: "fixed" });
+        setLog((l) => [{ at: ev.at, kind: ev.kind, line }, ...l].slice(0, 12));
+        void speak(line, "whisper");
         return;
       }
       // a drink always gets its comment, even if another line is mid-flight
@@ -288,8 +363,10 @@ function PlantApp() {
             drinks: s.drinkCount,
             streak: s.drinkStreak,
             recentLines: recentLines.current,
+            memories: memories.current,
           },
         });
+        void remember(ev);
         const nextLeaf = out.leaf as "wither" | "perk" | "droop";
         setLeaf(nextLeaf);
         setPulse((p) => p + 1);
@@ -303,21 +380,6 @@ function PlantApp() {
         busy.current = false;
         await speak(out.line, out.delivery);
       } catch (e) {
-        if (ev.kind === "fixed") {
-          const pool = ev.of && ev.of !== "slouch" ? [
-            "Oh, you stopped. Truly, a hero walks among us.",
-            "Fixed it. Only took being shamed by a fern.",
-            "Better. Not good, but better. Baby steps.",
-          ] : [
-            "Oh, a straight spine. Look at you, doing the bare minimum.",
-            "Posture corrected. I'd clap, but I'm a plant.",
-            "There it is. Was that so hard? Apparently, yes.",
-            "Sitting up. Truly, you contain multitudes.",
-          ];
-          const line = pool[Math.floor(Math.random() * pool.length)] ?? pool[0]!;
-          setBubble({ line, delivery: "whisper", leaf: "perk", kind: "fixed" });
-          setLog((l) => [{ at: ev.at, kind: ev.kind, line }, ...l].slice(0, 12));
-        }
         if (ev.kind === "drink") {
           const pool = [
             "Wow. Hydrated. Truly, a historic achievement for someone of your caliber.",
@@ -336,7 +398,7 @@ function PlantApp() {
         busy.current = false;
       }
     },
-    [speak],
+    [speak, remember],
   );
 
   // the watching loop
@@ -368,7 +430,8 @@ function PlantApp() {
           .then((v) => v.holdingDrink)
           .catch(() => true) // if the check fails, trust the head tilt
           .then((ok) => {
-            if (ok) {
+            // a hand at the mouth with a tilt is a sip even if the cup is out of frame
+            if (ok || readingRef.current?.handAtMouth) {
               void react(out.events.filter((e) => e.kind === "drink"));
               return;
             }
@@ -543,10 +606,14 @@ function PlantApp() {
           <div className="mx-auto h-72 w-full max-w-xs">
             <Plant mood={state.mood} leaf={leaf} speaking={speaking} pulse={pulse} reaction={bubble?.kind} />
           </div>
-          <div className="mt-2 flex justify-center">
+          <div className="mt-2 flex flex-wrap justify-center gap-2">
             <Button variant="outline" size="sm" onClick={() => (pipWin ? pipWin.close() : void openFloat())}>
               <PictureInPicture2 className="mr-2 h-4 w-4" />
               {pipWin ? "Bring Gerald back in" : "Float Gerald over other windows"}
+            </Button>
+            <Button variant={voiceOn ? "default" : "outline"} size="sm" onClick={() => void toggleVoice()}>
+              {voiceOn ? <VolumeX className="mr-2 h-4 w-4" /> : <Volume2 className="mr-2 h-4 w-4" />}
+              {voiceOn ? "That's Enough, Gerald" : "Fine, I'll Speak"}
             </Button>
           </div>
           {pipWin &&
