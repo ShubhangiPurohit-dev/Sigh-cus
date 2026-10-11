@@ -4,6 +4,7 @@ import { Plant } from "@/components/Plant";
 import { Button } from "@/components/ui/button";
 import { PictureInPicture2, Volume2, VolumeX } from "lucide-react";
 import { createPortal } from "react-dom";
+import { TriggerSettings } from "@/components/TriggerSettings";
 import { StreakChart } from "@/components/StreakChart";
 import { playFanfare } from "@/lib/fanfare";
 import {
@@ -14,6 +15,8 @@ import {
   moodLabel,
   RULES,
   tick,
+  defaultTriggers,
+  type Triggers,
   type Baseline,
   type PlantEvent,
   type PlantState,
@@ -95,6 +98,9 @@ function PlantApp() {
   const [judging, setJudging] = useState<string | null>(null);
   const [log, setLog] = useState<{ at: number; kind: string; line: string }[]>([]);
   const [demoSpeed, setDemoSpeed] = useState(1);
+  const [triggers, setTriggers] = useState<Triggers>(defaultTriggers);
+  const triggersRef = useRef(triggers);
+  triggersRef.current = triggers;
   const [voiceOn, setVoiceOn] = useState(VOICE_ON_BY_DEFAULT);
   const voiceRef = useRef(VOICE_ON_BY_DEFAULT);
   voiceRef.current = voiceOn;
@@ -414,7 +420,7 @@ function PlantApp() {
         modeRef.current === "camera" ? readingRef.current : { ...demoRef.current, at: now };
       if (!reading) return;
       const prev = stateRef.current;
-      const out = tick(prev, reading, dt, base);
+      const out = tick(prev, reading, dt, base, triggersRef.current);
       commit(out.state);
       const sip = out.events.some((e) => e.kind === "drink");
       if (sip && modeRef.current === "camera") {
@@ -615,6 +621,9 @@ function PlantApp() {
               {voiceOn ? <VolumeX className="mr-2 h-4 w-4" /> : <Volume2 className="mr-2 h-4 w-4" />}
               {voiceOn ? "That's Enough, Gerald" : "Fine, I'll Speak"}
             </Button>
+          </div>
+          <div className="mt-3">
+            <TriggerSettings value={triggers} onChange={setTriggers} />
           </div>
           {pipWin &&
             createPortal(
