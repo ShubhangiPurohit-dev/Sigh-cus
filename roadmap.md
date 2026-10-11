@@ -10,15 +10,15 @@
 - [x] Test the state-machine rules (2-minute slouch, drink detection, nags) — 14 tests green
 - [x] Verify end-to-end in the browser (demo mode: drink cheers, slouch nags, chart fills)
 - [x] ElevenLabs spoken sighs and gospel cheers — key permissions ticked, voice live
-- [ ] Backboard memory of past sessions — blocked: needs the user's Backboard API key
+- [x] Backboard memory of past sessions — done: the user's key is saved as a secret, Gerald records each nag, drink and habit with a date and can refer back on later visits; verified in demo mode (a memory profile is created and the event saved)
 - [ ] Tiger Data streak history — blocked: needs Lovable Cloud enabled
 - [x] Custom domain for the app — done with sigh-cus.design; fernforgivemenot.live was not bought and is not needed
 - [x] Code is on GitHub at github.com/KeertiUmadi/Sigh-cus — 86 project files plus a README, pushed through the linked GitHub connection
-- [x] Copy the code into the team repo github.com/ShubhangiPurohit-dev/Sigh-cus — dropped: not needed, Keerti's repo already carries the current published code (pushed 05:11 UTC today)
+- [x] Copy the code into the team repo github.com/ShubhangiPurohit-dev/Sigh-cus — done after Shubhangi added Keerti as a collaborator: all 87 files on main, verified the copy reads as real source and contains the six new habits
 - [x] Hand the user a zip of the project files — saved as guilt-trip-plant.zip in Files
 - [x] Publish the app so anyone with a link can open it — live at https://sigh-cus.design (public visibility)
 - [x] Rename the app to Sigh-cus everywhere — page title, heading, tracks page, README, and the address itself
-- [ ] Refresh the README on GitHub — the name is already correct there, but its rules table still lists old timings (2-minute slouch, 45-minute thirst, 20-second away) and 14 tests, while the app now uses 10-second slouch, 1-minute thirst, the six new habits and 20 tests
+- [x] Refresh the README on GitHub — done in both repos (KeertiUmadi and ShubhangiPurohit-dev): current timings, all ten habits with how each is confirmed fixed, 20 tests, voice-is-text-only note; verified by reading the copies back. Note: pushing straight to Keerti's repo triggered Lovable's "a repository push replaced your Lovable work" banner and rolled back one roadmap line — future README edits go through the project so they sync normally
 
 - [x] Snooze: pause Gerald's comments for a while (keep counting)
 - [x] Fix sip detection (chin-up sign was inverted) + manual "I just drank water" button
@@ -29,3 +29,10 @@
 - [x] Republish so the wider camera preview reaches https://sigh-cus.design — published with the new habits
 - [x] Six new habits (frown/squint, staring, leaning close, nail-biting, yawning, phone) with sarcastic "you fixed it" lines; faster timings (thirst 1 min, slouch/away/stare/close 10 s, frown/nails/yawn 5 s, phone 20 s)
 - [x] Publish the new habits to https://sigh-cus.design — publishing requested for the public site
+- [x] "Fine, I'll Speak" voice button — Gerald types until you press it, then speaks his lines with ElevenLabs and the button becomes "That's Enough, Gerald"; verified audio plays when on, no voice calls when off, and it is live on sigh-cus.design
+- [x] Faster triggers + instant compliments — every habit except drinking now nags after 5 seconds (thirst stays 1 minute); fixing a habit earns a backhanded line immediately instead of waiting for the AI to write one
+- [x] Sip rules tightened — a head tilt must hold 3 seconds and only counts after Gerald has nagged about water; the automatic checks pass (21), but this has not been tried on a real camera
+- [x] Publish these to https://sigh-cus.design — publishing requested; the Lovable address is now https://sigh-cus.lovable.app
+- [ ] Real-camera check of every habit — blocked: needs someone sitting in front of a webcam
+- [ ] Screen time still 60 minutes — a 5-second limit would nag nonstop; waiting on the user's word
+- [ ] Gerald's opening line still says "Slouch for two minutes" — the real rule is 5 seconds; waiting on the user's word
